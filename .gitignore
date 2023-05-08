@@ -1,0 +1,9 @@
+*/build-*.log
+*/test-build-*.log
+*/test
+*/backtesting
+*/log-*
+*/result-*
+!*/src-test
+*/*-cache
+*/[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]*/
