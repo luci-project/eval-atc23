@@ -24,7 +24,7 @@ applied = []
 translated = {}
 if args.translate:
 	# Hack for Debian / Ubuntu to match library on identical version number
-	regex_status = re.compile(r"^SUCCESS .*? libexpat.so.* at (?P<time>.+)$")
+	regex_status = re.compile(r"^(?:SUCCESS|IGNORED) .*? libexpat\.so.* at (?P<time>.+)$")
 	path = os.path.join(args.directory, 'status.log')
 	if not os.path.isfile(path):
 		print("status.log' missing (but required for translation)", file=sys.stderr)

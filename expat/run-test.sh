@@ -103,7 +103,7 @@ function run() {
 		restart
 	elif ! kill -0 $PID > /dev/null ; then
 		restart
-	elif [ -f "$LD_STATUS_INFO" ] && egrep "^FAILED .* libexpat.so" "$LD_STATUS_INFO" ; then
+	elif [ -f "$LD_STATUS_INFO" ] && egrep "^(FAILED|ERROR) .* libexpat.so" "$LD_STATUS_INFO" ; then
 		echo "Luci status has failed update:" | testlog
 		sed -e "s/^/    /" "$LD_STATUS_INFO" | testlog
 		cat "$LD_STATUS_INFO" >> "$STATUS_LOG"
@@ -136,12 +136,12 @@ function cleanup() {
 		kill $ELFVARSD
 	fi
 	echo "Creating summary" | testlog
-	echo "**Expat dynamic updates with Luci**" >  $2/run-summary.txt
+	echo "**Expat dynamic updates with Luci**" > $2/run-summary.txt
 	if grep "/backtesting/" $2/link.log >/dev/null 2>&1 ; then
 		# Version output of expat is not sufficient for backtesting - we need to translate it to the package number
-		$1/summary-runs.py -t $2 > $2/run-summary.txt | testlog
+		$1/summary-runs.py -t $2 >> $2/run-summary.txt | testlog
 	else
-		$1/summary-runs.py $2 > $2/run-summary.txt | testlog
+		$1/summary-runs.py $2 >> $2/run-summary.txt | testlog
 	fi
 	echo "Logs are stored in $2"
 }

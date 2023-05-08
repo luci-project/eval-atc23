@@ -1,28 +1,12 @@
 #!/bin/bash
 
-function title() {
-	spaces="                                                             "
-	echo -e "\e]2;[Luci Expat] $1\a\n\e[1;7m  ${spaces:0:${#1}}  \n  $1  \n  ${spaces:0:${#1}}  \n\e[0m"
-}
-
 DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-if [[ -z ${LOGDATE+exist} ]] ; then
-	export LOGDATE=$(date +%Y-%m-%d_%H-%M)
-fi
-
-
-if [[ ! -x "${DIR}/../luci/ld-luci-debian-bullseye-x64.so" ]] ; then
-	title "Building Luci"
-	../setup.sh
-fi
-
-RESULTDIR="${DIR}/result-${LOGDATE}"
-mkdir "${RESULTDIR}"
-
-
-
 cd "$DIR"
+
+EVALNAME="Expat"
+
+source ../tools/run-config.sh
 
 ## Vanilla
 
@@ -56,7 +40,7 @@ test -f "log-vanilla-test-${LOGDATE}/run-summary.txt" && ln -rs "log-vanilla-tes
 title "Retrieving packages for Debian Buster"
 # There are some packages missing in the metasnap dates list
 ../tools/snapshot-dates.py -a debian debian-security -s "buster.*" -- libexpat1 | sed -e 's/^.* \([^ ]*\)$/\1/' | uniq
-../tools/snapshot-fetch.py -d backtesting/debian/buster libexpat1 2.2.0-2 2.2.1-{1,2,3} 2.2.2-{1,2} 2.2.3-{1,2} 2.2.5-{1,2,3} 2.2.6-{1,2} 2.2.6-2+deb10u{1,2,3,4,5,6} -x
+../tools/snapshot-fetch.py -d backtesting/debian/buster -x libexpat1 2.2.0-2 2.2.1-{1,2,3} 2.2.2-{1,2} 2.2.3-{1,2} 2.2.5-{1,2,3} 2.2.6-{1,2} 2.2.6-2+deb10u{1,2,3,4,5,6}
 title "Generating comparison table for Debian Buster"
 bean-compare -v -l libexpat.so.1 -r -d -N backtesting/debian/buster/libexpat1  -o "${RESULTDIR}/table2-debian-buster-elf-section.htm"
 title "Evaluating Debian Buster packages"
@@ -67,29 +51,35 @@ test -f "log-debian-buster-${LOGDATE}/run-summary.txt" && ln -rs "log-debian-bus
 
 title "Retrieving packages for Debian Bullseye"
 ../tools/snapshot-dates.py -a debian debian-security -s "bullseye.*" -- libexpat1 | sed -e 's/^.* \([^ ]*\)$/\1/' | uniq
-../tools/snapshot-fetch.py -d backtesting/debian/bullseye libexpat1 2.2.6-2 2.2.7-{1,2} 2.2.9-1 2.2.10-{1,2} 2.2.10-2+deb11u{1,2,3,4,5} -x
+../tools/snapshot-fetch.py -d backtesting/debian/bullseye -x libexpat1 2.2.6-2 2.2.7-{1,2} 2.2.9-1 2.2.10-{1,2} 2.2.10-2+deb11u{1,2,3,4,5}
 title "Generating comparison table for Debian Bullseye"
 bean-compare -v -l libexpat.so.1 -r -d -N backtesting/debian/bullseye/libexpat1  -o "${RESULTDIR}/table2-debian-bullseye-elf-section.htm"
 title "Evaluating Debian Bullseye packages"
 ./eval-distribution-package.sh debian bullseye libexpat1
 test -d "log-debian-bullseye-${LOGDATE}" && ln -rs "log-debian-bullseye-${LOGDATE}" "${RESULTDIR}/log-debian-bullseye" || true
-test -f "log-debian-buster-${LOGDATE}/run-bullseye.txt" && ln -rs "log-debian-buster-${LOGDATE}/run-summary.txt" "${RESULTDIR}/table2-run-debian-bullseye-luci.txt"
+test -f "log-debian-bullseye-${LOGDATE}/run-summary.txt" && ln -rs "log-debian-bullseye-${LOGDATE}/run-summary.txt" "${RESULTDIR}/table2-run-debian-bullseye-luci.txt"
 
 
 title "Retrieving packages for Ubuntu Focal"
 ../tools/launchpad-dates.py -s focal -- libexpat1
 ../tools/launchpad-fetch.sh -V focal -d backtesting/ubuntu/focal/libexpat1 -x libexpat1
+title "Generating comparison table for Ubuntu Focal"
+bean-compare -v -l libexpat.so.1 -r -d -N backtesting/ubuntu/focal/libexpat1  -o "${RESULTDIR}/misc-ubuntu-focal-elf-section.htm"
 title "Evaluating Ubuntu Focal packages"
 ./eval-distribution-package.sh ubuntu focal libexpat1
 test -d "log-ubuntu-focal-${LOGDATE}" && ln -rs "log-ubuntu-focal-${LOGDATE}" "${RESULTDIR}/log-ubuntu-focal" || true
+test -f "log-ubuntu-focal-${LOGDATE}/run-summary.txt" && ln -rs "log-ubuntu-focal-${LOGDATE}/run-summary.txt" "${RESULTDIR}/misc-run-ubuntu-focal-luci.txt"
 
 title "Retrieving packages for Ubuntu Jammy"
 # Must run on a platform with dpkg supporting zstd -- e.g. ubuntu focal
-../tools/launchpad-dates.py -s jammy -- libexpat1 
+../tools/launchpad-dates.py -s jammy -- libexpat1
 ../tools/launchpad-fetch.sh -V jammy -d backtesting/ubuntu/jammy/libexpat1 -x libexpat1
+title "Generating comparison table for Ubuntu Jammy"
+bean-compare -v -l libexpat.so.1 -r -d -N backtesting/ubuntu/jammy/libexpat1  -o "${RESULTDIR}/misc-ubuntu-jammy-elf-section.htm"
 title "Evaluating Ubuntu Jammy packages"
 ./eval-distribution-package.sh ubuntu jammy libexpat1
 test -d "log-ubuntu-jammy-${LOGDATE}" && ln -rs "log-ubuntu-jammy-${LOGDATE}" "${RESULTDIR}/log-ubuntu-jammy" || true
+test -f "log-ubuntu-jammy-${LOGDATE}/run-summary.txt" && ln -rs "log-ubuntu-jammy-${LOGDATE}/run-summary.txt" "${RESULTDIR}/misc-run-ubuntu-jammy-luci.txt"
 
 # generating summary
 ./summary-distribution-package.sh log-{vanilla-test,debian-buster,debian-bullseye,ubuntu-focal,ubuntu-jammy}-${LOGDATE} > "${RESULTDIR}/table3-distribution-package-summary.txt"

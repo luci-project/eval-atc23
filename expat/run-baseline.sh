@@ -82,7 +82,7 @@ function stop() {
 function cleanup() {
 	echo "Creating summary" | testlog
 	echo "**Expat Vanilla Baseline**" > $2/run-summary.txt
-	$1/summary-runs.py $2 > $2/run-summary.txt | testlog
+	$1/summary-runs.py $2 >> $2/run-summary.txt | testlog
 	echo "Logs are stored in $2"
 }
 
