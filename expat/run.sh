@@ -21,8 +21,10 @@ title "Generating comparison tables"
 bean-compare -vv -l libexpat.so.1 -r -d -s release -o "${RESULTDIR}/table1-compatibility-vanilla-with-dwarf.htm"
 bean-compare -vv -l libexpat.so.1 -r -d -N release -o "${RESULTDIR}/table1-compatibility-vanilla-elf-only.htm"
 
-title "Building test binary"
-./gen-test.sh R_2_4_0
+if [[ ! -x test/runtests ]] ; then
+	title "Building test binary"
+	./gen-test.sh R_2_4_0
+fi
 
 title "Evaluating Vanilla Baseline"
 ./eval-vanilla.sh baseline 2.0.0 2.5.0

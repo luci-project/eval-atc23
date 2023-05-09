@@ -103,7 +103,7 @@ function run() {
 		restart
 	elif ! kill -0 $PID > /dev/null ; then
 		restart
-	elif [ -f "$LD_STATUS_INFO" ] && egrep "^(FAILED|ERROR) .* libexpat.so" "$LD_STATUS_INFO" ; then
+	elif [ -f "$LD_STATUS_INFO" ] && egrep "^(FAILED|ERROR) .* libexpat\.so" "$LD_STATUS_INFO" ; then
 		echo "Luci status has failed update:" | testlog
 		sed -e "s/^/    /" "$LD_STATUS_INFO" | testlog
 		cat "$LD_STATUS_INFO" >> "$STATUS_LOG"

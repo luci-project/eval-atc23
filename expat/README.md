@@ -72,7 +72,7 @@ The top of Table 1 can now be generated using
 
 which will analyze the shared objects in the folders and decide if the libraries are eligible for subsequent dynamic updates.
 
-> **Please note:** If your terminal width is not width enough or the colors are confusing, you can view `table1-compatibility-vanilla-with-dwarf.htm` in your web browser instead.
+> **Please note:** If your terminal width is not wide enough or the colors are confusing, you can view `table1-compatibility-vanilla-with-dwarf.htm` in your web browser instead.
 
 The versions of the shared library are listed in ascending order, each version having its own column and highlighting (bright color on dark terminal themes) changes to the previous one.
 Names in bold font correspond to sections in which changes cause incompatibilities and preventing an update (hence requiring a restart of the application).
