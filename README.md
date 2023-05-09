@@ -4,7 +4,16 @@ Luci Artifacts
 Preface
 -------
 
-The Git repositorities for the artifacts are hosted in a [public project](https://gitlab.cs.fau.de/luci-project) on a GitLab instance of [Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)](https://www.fau.eu/) with an automatic mirror on [GitHub](https://github.com/luci-project).
+The dynamic linker/loader consists of the following parts:
+
+  * [DLH](https://gitlab.cs.fau.de/luci-project/dlh) provides basic functionality similar to libc/STL for creating static freestanding applications (without *glibc*)
+  * [Elfo](https://gitlab.cs.fau.de/luci-project/elfo) is lightweight parser for the [Executable and Linking Format](https://de.wikipedia.org/wiki/Executable_and_Linking_Format), supporting common GNU/Linux extensions
+  * [Bean](https://gitlab.cs.fau.de/luci-project/bean) — binary explorer/analyzer to compare shared libraries and detect changes
+  * [Luci](](https://gitlab.cs.fau.de/luci-project/luci), the actual dynamic linker/loader with DSU capabilities and *glibc* compatibility (`ld-linux-x86-64`), employing the beforementioned tools.
+
+This [artifact evaluation repository](https://gitlab.cs.fau.de/luci-project/eval-atc23) contains the *Luci* and scripts to perform the evaluation.
+
+These Git repositorities are hosted in a [public project](https://gitlab.cs.fau.de/luci-project) on a GitLab instance of [Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)](https://www.fau.eu/) with an automatic mirror on [GitHub](https://github.com/luci-project).
 
 Further dependencies are the official repositorities of
 
@@ -29,7 +38,7 @@ Recursively clone this repository (the path must not contain spaces or special c
     cd eval-atc23
     ./setup.sh
 
-This will create the directory `/opt/luci` (using `sudo`, changing ownership to current user) and install the *Luci* runtime into according to its [build instructions](luci/README.md).
+This will create the directory `/opt/luci` (using `sudo`, changing ownership to current user) and install the *Luci* runtime into according to its [build instructions](https://gitlab.cs.fau.de/luci-project/luci#build).
 
 ### Virtual Machine
 
@@ -37,7 +46,7 @@ A preconfigured Ubuntu Focal VM image for [VirtualBox 7](https://www.virtualbox.
 Its VM user is `user` and password `pass`, the required utilities for building and testing are installed.
 This repository is cloned to `/home/user/eval` (run `/home/user/eval/update.sh` to pull the `master` branch).
 
-In addition, this image also contains the `.deb.` package files for Debian and Ubuntu (to prevent issues due to rate limits) - however, the utils to automaticall download them from the official sources are included, so you can verify the integrity.
+In addition, this image also contains the `.deb.` package files for Debian and Ubuntu (to prevent issues due to rate limits) — however, the utils to automaticall download them from the official sources are included, so you can verify the integrity.
 
 
 Getting started

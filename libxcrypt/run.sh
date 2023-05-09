@@ -70,14 +70,14 @@ title "Retrieving packages for Ubuntu Jammy"
 ../tools/launchpad-dates.py -s jammy -- libcrypt1
 ../tools/launchpad-fetch.sh -V jammy -d backtesting/ubuntu/jammy/libcrypt1 -x libcrypt1
 title "Generating comparison table for Ubuntu Jammy"
-bean-compare -v -l libcrypt1.so.1 -r -d -N backtesting/ubuntu/jammy/libcrypt1 -o "${RESULTDIR}/misc-ubuntu-jammy-elf-section.htm"
+bean-compare -v -l libcrypt.so.1 -r -d -N backtesting/ubuntu/jammy/libcrypt1 -o "${RESULTDIR}/misc-ubuntu-jammy-elf-section.htm"
 title "Evaluating Ubuntu Jammy packages"
 ./eval-distribution-package.sh ubuntu jammy libcrypt1
 test -d "log-ubuntu-jammy-${LOGDATE}" && ln -rs "log-ubuntu-jammy-${LOGDATE}" "${RESULTDIR}/log-ubuntu-jammy" || true
 test -f "log-ubuntu-jammy-${LOGDATE}/run-summary.txt" && ln -rs "log-ubuntu-jammy-${LOGDATE}/run-summary.txt" "${RESULTDIR}/misc-run-ubuntu-jammy-luci.txt"
 
 # generating summary
-./summary-distribution-package.sh log-{vanilla-test,debian-buster,debian-bullseye,ubuntu-focal,ubuntu-jammy}-${LOGDATE} > "${RESULTDIR}/table3-distribution-package-summary.txt"
+./summary-distribution-package.sh log-{vanilla-test,debian-bullseye,ubuntu-focal,ubuntu-jammy}-${LOGDATE} > "${RESULTDIR}/table4-distribution-package-summary.txt"
 
 title "Done"
 echo "For results see ${RESULTDIR}"

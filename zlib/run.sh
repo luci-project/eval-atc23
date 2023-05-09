@@ -83,7 +83,7 @@ test -d "log-ubuntu-jammy-${LOGDATE}" && ln -rs "log-ubuntu-jammy-${LOGDATE}" "$
 test -f "log-ubuntu-jammy-${LOGDATE}/run-summary.txt" && ln -rs "log-ubuntu-jammy-${LOGDATE}/run-summary.txt" "${RESULTDIR}/misc-run-ubuntu-jammy-luci.txt"
 
 # generating summary
-./summary-distribution-package.sh log-{vanilla-test,debian-buster,debian-bullseye,ubuntu-focal,ubuntu-jammy}-${LOGDATE} > "${RESULTDIR}/table3-distribution-package-summary.txt"
+./summary-distribution-package.sh log-{vanilla-test,debian-buster,debian-bullseye,ubuntu-focal,ubuntu-jammy}-${LOGDATE} > "${RESULTDIR}/table5-distribution-package-summary.txt"
 
 title "Done"
 echo "For results see ${RESULTDIR}"
