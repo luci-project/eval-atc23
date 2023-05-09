@@ -31,7 +31,14 @@ We strongly recommend using a freshly installed *Ubuntu Focal Fossa (20.04)* for
 
 ### Local Install
 
-Make sure that you meet the requirements (e.g., [Docker engine](https://docs.docker.com/engine/install/) installed).
+Make sure that you meet the requirements (e.g., [Docker engine](https://docs.docker.com/engine/install/) installed) — for a new *Ubuntu Focal* installation execute
+
+    sudo apt-get update
+    sudo apt-get install -y apt-transport-https build-essential ca-certificates clang curl file fpc g++ gcc gccgo gfortran git gnat gnupg golang less libcap2-bin libstdc++-10-dev make rustc
+    curl -fsSL https://get.docker.com | sudo sh
+    sudo usermod -aG docker $USER
+    sudo reboot
+
 Recursively clone this repository (the path must not contain spaces or special characters) and run the setup script.
 
     git clone --recursive https://gitlab.cs.fau.de/luci-project/eval-atc23.git
@@ -54,7 +61,7 @@ Getting started
 
 Either start the VM or install locally (as described above) and switch with a terminal into this repositorities, then run
 
-    luci/example/demo.sh
+    ./luci/example/demo.sh
 
 for a ~1 minute demonstration of an application employing a library to calculate Fibonacci sequence numbers — while every 10 seconds the library gets exchanged with another version using an different algorithm.
 Neither source nor build script in [`luci/example`](luci/example) have adjustments for dynamic software updates.

@@ -12,7 +12,7 @@ function setup() {
 function build() {
 	TEST_DIR=$(readlink -f "$2/../test")
 	mkdir -p "$TEST_DIR"
-	make BUILD_ROOT=$2 TARGET_DIR=$TEST_DIR -C $2/../test-src -B
+	make BUILD_ROOT=$2 TARGET_DIR=$TEST_DIR -C $2/../src-test -B
 	chown -R "$3" "${TEST_DIR}" || true
 }
 

@@ -2,24 +2,24 @@
 Expat Test
 ==========
 
-The XML parser library [Expat](https://libexpat.github.io/) is the primary evaluation target, since it meets several criteria:
+The XML parser library [Expat](https://libexpat.github.io/) is the primary evaluation target since it meets several criteria:
 
- * [popular](https://qa.debian.org/popcon.php?package=expat) and widely used (ranked #51 of [most installed debian packages](https://popcon.debian.org/by_inst))
+ * [popular](https://qa.debian.org/popcon.php?package=expat) and widely used: ranked #51 of [most installed debian packages](https://popcon.debian.org/by_inst)
  * [frequent releases](https://github.com/libexpat/libexpat/releases) allowing good testing
- * several [vulnerabilities](https://www.cvedetails.com/product/39003/Libexpat-Project-Libexpat.html?vendor_id=16735) emphasizing relevance for live patching
+ * several [vulnerabilities](https://www.cvedetails.com/product/39003/Libexpat-Project-Libexpat.html?vendor_id=16735) emphasizing relevance for live-patching
  * extensive (official) [test suite](https://github.com/libexpat/libexpat/tree/master/expat/tests)
 
 We evaluate *Luci* with the test suite using custom (vanilla) library builds and the corresponding packages distributed by Debian and Ubuntu.
 
-> **Please note:** Expat builds two shared libraries, which only differ in the encoding they support: `libexpat.so` for UTF-8 and `libexpatw.so` using `wchar_t` for  for UTF-16. Since they are rather identical when it comes to the functionality, we only focus on the first version in the tests
+> **Please note:** Expat builds two shared libraries, which only differ in the encoding they support: `libexpat.so` for UTF-8 and `libexpatw.so` using `wchar_t` for UTF-16. Since they are rather identical when it comes to functionality, we only focus on the first version in the tests.
 
 
 Preparation
 -----------
 
-We strongly recommend using a standard installation of *Ubuntu Focal* (due to the compatibility to Ubuntus package compression method) with no modifications regarding the system configuration for evaluation.
+We strongly recommend using a standard installation of *Ubuntu Focal* (due to the compatibility with Ubuntu's package compression method) with no modifications regarding the system configuration for the artifact evaluation.
 
-[Docker Engine](https://docs.docker.com/engine/install/ubuntu/) is required for building and testing (using the [offical Debian Bullseye Docker image](https://hub.docker.com/_/debian)).
+[Docker Engine](https://docs.docker.com/engine/install/ubuntu/) is required for building and testing (using the [official Debian Bullseye Docker image](https://hub.docker.com/_/debian)).
 
 You have to setup the environment by building and installing *Luci* and its submodules:
 
@@ -29,23 +29,22 @@ In case you have already performed evaluation runs and want to start over again,
 
     ./cleanup.sh
 
-The following documentation contains a detail description of the steps to reproduce the Expat artifacts of the paper.
+The following documentation contains a detailed description of the steps to reproduce the Expat artifacts of the paper.
 
 However, all steps described bellow can also be automatically executed with
 
     ./run.sh
 
-At the end, the results of all individual tests (baseline, vanilla and backtesting) are stored in a `result-DATE` directory.
+In the end, the results of all individual tests (baseline, vanilla, and backtesting) are stored in a `result-DATE` directory.
 
 > **Please note:** The *failed test cases* in the `run-` output files do not refer to issues with *Luci* but to bugs in older libraries and, hence, are expected.
-> These *failed test cases* can be seen in the baseline as well and, when using dynamic updates via *Luci*. should reduce with increased library version.
+> These *failed test cases* can be seen in the baseline as well and, when using dynamic updates via *Luci*. These failed tests reduce with increasing library version.
 
 Files prefixed with `tableX` correspond to table *X* in the paper.
-However, a single table in the taber may be based on multiple such files (see detailed description for further information).
-
+However, a single table in the paper may be based on multiple such files (see detailed description for further information).
 
 > **Please note:** The summary files (`run-summary.txt`, `table*-run-*.txt`) are aggregated using the output of the test application and (in case of backtesting) other log files to match the package names (even when version numbers are identical).
-> However, it is possible that the script producing this file has bugs (especially in corner cases), therefore if in doubt please check the actual log files `run-*.out` (output of a single test application process), `link.log` (changes of library symlink by the observer script) and `status.log` (link status output of *Luci*).
+> However, it is possible that the script producing this file has bugs (especially in corner cases), therefore if in doubt please check the actual log files `run-*.out` (output of a single test application process), `link.log` (changes of library symlink by the observer script), and `status.log` (link status output of *Luci*).
 
 
 Vanilla Build
@@ -55,7 +54,7 @@ Testing a range of official releases.
 
 ### Build Libraries
 
-The build process is performed in a fresh environment using the [offical Debian Bullseye Docker image](https://hub.docker.com/_/debian) and installing the necessary build utilities
+The build process is performed in a fresh environment using the [official Debian Bullseye Docker image](https://hub.docker.com/_/debian) and installing the necessary build utilities
 
     apt-get install -y git gcc cmake automake libtool gettext docbook2x
 
@@ -66,10 +65,10 @@ For more recent versions, this is encapsulated in the `buildconf.sh`, while olde
     autoheader
     autoconf
 
-For `configure`, only the the `--prefix` parameter (to adjust the install directory) will be set.
+For `configure`, only the `--prefix` parameter (to adjust the install directory) will be set.
 
 To speed up build several releases, we can avoid restarting the container (retrieving the repository & installing build utils) by using a separate build directory, which gets deleted after finishing the build.
-This prevents the build system from umsing artifacts of previous builds.
+This prevents the build system from using artifacts of previous builds.
 
 The whole process is automated in `gen-lib.sh`, which takes the git tags of releases to build as parameter.
 For the evaluation, all releases of version 2 (2.0.0 - 2.5.0) are taken into account:
@@ -95,7 +94,7 @@ Since debug symbols are included in the shared libraries, the `.debug` section c
   * `dt`: *internal types*
   * `fn`: *external API*
 
-If you want to ommit the DWARF debug symbols, exchange Parameter `-s` with `-N`:
+If you want to omit the DWARF debug symbols, exchange Parameter `-s` with `-N`:
 
     bean-compare -vv -l libexpat.so.1 -r -d -N release -o table1-compatibility-vanilla-elf-only.htm
 
@@ -116,11 +115,11 @@ before calling `./configure`
 
 ### Build Test Suite
 
-Since the Expat team maintains an [exemplary test suite](https://github.com/libexpat/libexpat/tree/master/expat/tests) (which is extended with each new release) having a good code overage, its [latest version is the starting point](https://github.com/libexpat/libexpat/tree/R_2_5_0/expat/tests).
+Since the Expat team maintains an [exemplary test suite](https://github.com/libexpat/libexpat/tree/master/expat/tests) (which is extended with each new release) with a good code overage, its [latest version is the starting point](https://github.com/libexpat/libexpat/tree/R_2_5_0/expat/tests).
 
 However, we had to perform certain adjustments:
- * we've extracted certain internal dependencies (`ascii.h`, `internal.h` and `siphash.h` from the library folder, fucntions `unsignedCharToPrintable` from `xmlparse.c` and `_INTERNAL_trim_to_complete_utf8_characters` from `xmltok.c` into `internal.c`)
- * since certain tests will cause serious issues like `segfault` on older releases, we query the library version (provided by the API) and only execute the following test cases if the the criteria is met:
+ * we have extracted certain internal dependencies (`ascii.h`, `internal.h` and `siphash.h` from the library folder, functions `unsignedCharToPrintable` from `xmlparse.c` and `_INTERNAL_trim_to_complete_utf8_characters` from `xmltok.c` into `internal.c`)
+ * since certain tests will cause serious issues like `segfault` on older releases, we query the library version (provided by the API) and only execute the following test cases if the criteria is met:
    - `test_set_foreign_dtd` if version >= 2.1.0 (newly introduced in API)
    - `test_foreign_dtd_with_doctype` if version >= 2.1.0 (newly introduced in API)
    - `test_invalid_tag_in_dtd` if version >= 2.2.1 (else endless loop)
@@ -154,44 +153,44 @@ After completion, the resulting test binary is stored in `test/runtests`.
 
 ### Measure Baseline
 
-For every library version, we start the test application using the systems default RTLD, which dynamically links it against the corresponding shared library build, and kill it after approx. 25 seconds, continuing with the next version.
+For every library version, we start the test application using the system's default RTLD, which dynamically links it against the corresponding shared library build, and kill it after approx. 25 seconds, continuing with the next version.
 
-The `run-baseline.sh` script performs this inside a Docker container with Debian Bullseye image.
-It called by
+The `run-baseline.sh` script performs this inside a Docker container with a Debian Bullseye image.
+It is called by
 
     ./eval-vanilla.sh baseline 2.0.0 2.5.0
 
 and stores the artifacts (logs) in a directory with the format `log-vanilla-baseline-DATE-TIME`:
-The output of the test application `run-*.log` contains the results for the baseline measurment, the summarized results in `run-summary.txt` correspond to the bottom part of Table 1.
+The output of the test application `run-*.log` contains the results for the baseline measurement.
+The summarized results in `run-summary.txt` correspond to the bottom part of Table 1 in the paper.
 
 
 ### Dynamic Updates with Luci
 
 Since DWARF debug information should be considered, we first start the `bean-elfvarsd` service (hashing information from the debug symbols) which listens on a local TCP port (9001) for queries from *Luci*.
-The tests itself are performed inside a Docker container with Debian Bullseye image:
+The tests itself are performed inside a Docker container with a Debian Bullseye image:
 
 Initially, a symbolic link to the first version of the library.
 The interpreter of the test application is modified to start with *Luci* instead of the system RTLD (using `elfo-setinterp`).
 
-*Luci* configuration is stored in environmental variables:
- * Dynamic updates are enabled
+*Luci*'s configuration is stored in environmental variables:
+ * dynamic updates are enabled
  * detection of outdated code (using *userfaultfd*) is enabled
- * Debug output stored to `luci.log`
- * Status info with information about succesfull and rejected dynamic updates are stored in a `status,info` file
+ * debug output stored to `luci.log`
+ * status info with information about succesfull and rejected dynamic updates are stored in a `status,info` file
  * connection information for `bean-elfvarsd` service is set
 
-Then the test application is executed 
-
+Then the test application is executed.
 After a certain time, the symbolic link is modified to point to the subsequent version of the library (and noted with timestamp in `link.log`).
 
-*Luci* should now detect the change (employing *inotify*), check the compatibility (including quering `bean-elfvarsd`) and then either perform the update to the new version or discard it and continue the test application with the previous version.
-In either case it writes to `status.info` (`SUCCESS` or `FAILED`).
+*Luci* should now detect the change (employing *inotify*), check the compatibility (including quering `bean-elfvarsd`), and then either perform the update to the new version or discard it and continue the test application with the previous version.
+In either case, it writes to `status.info` (`SUCCESS` or `FAILED`).
 
-The control script will check this status file after a few seconds:
+The control script `run-test.sh` will check this status file after a few seconds:
 If it detects a failure, it will kill the test application and restart it - which will dynamically link it with the current version.
-This causes the `run`-Logfile to rotate.
+This causes the `run`-logfile to rotate.
 
-In any case, the control script will continues after a certain amount of time with the next library version and repeat the steps, until all versions have been checked.
+In any case, the control script will continue after a certain amount of time with the next library version and repeat the steps, until all versions have been checked.
 
 To start the described testing setup, run
 
@@ -199,16 +198,16 @@ To start the described testing setup, run
 
 The artifacts (logs) are stored in a directory with the format `log-vanilla-test-DATE-TIME`:
 
-As the baseline test, the output of the test application `run-*.log` contains the results for the baseline measurment, the summarized results in `run-summary.txt` correspond to the middle part of Table 1.
+As the baseline test, the output of the test application `run-*.log` contains the results for the baseline measurement, the summarized results in `run-summary.txt` correspond to the middle part of Table 1.
 
 
 Backtesting Distribution Packages
 ---------------------------------
 
-The previously generated test application is dynamically linked against official *libexpat* packages in [Debian](https://www.debian.org/) ([Buster](https://www.debian.org/releases/buster/) & [Bullseye](https://www.debian.org/releases/bullseye/)) and [Ubuntu](https://ubuntu.com/) ([Focal](https://releases.ubuntu.com/focal/) & [Jammy](https://releases.ubuntu.com/jammy/)).
+The previously generated test application is dynamically linked against official *libexpat* packages in [Debian](https://www.debian.org/) ([Buster](https://www.debian.org/releases/buster/) & [Bullseye](https://www.debian.org/releases/bullseye/)), and [Ubuntu](https://ubuntu.com/) ([Focal](https://releases.ubuntu.com/focal/) & [Jammy](https://releases.ubuntu.com/jammy/)).
 
 For each release of a distribution, we test all published builds (during development phase and after stable release) by starting with the first build and replacing it with the subsequent builds after a certain time.
-If an update cannot be applied, the test application is restarted, dynamically linked against the build causing the incompatiblity and the replacement starts again.
+If an update cannot be applied, the test application is restarted, dynamically linked against the build causing the incompatibility and the replacement starts again.
 
 But before starting the test, we have to retrieve the all published builds from the official archives and extract them.
 
@@ -250,7 +249,7 @@ You can check the list of builds by [using metasnap](https://metasnap.debian.net
 
    ../tools/snapshot-dates.py -a debian debian-security -s "buster.*" -- libexpat1 | sed -e 's/^.* \([^ ]*\)$/\1/' | uniq
 
-however two builds (`2.2.5-1` and `2.2.5-2`) are not included in the output because they did not appear in the suite `buster` but only `sid`/`unstable` since they have been replaced shortly after by the subsequent version.
+However, two builds (`2.2.5-1` and `2.2.5-2`) are not included in the output because they did not appear in the suite `buster` but only `sid`/`unstable` since they have been replaced shortly after by the subsequent version.
 
 Download and extract the builds using
 
@@ -371,7 +370,7 @@ The results are saved in the same format as the previous reports.
 
 ### Summary
 
-By using the the files `link.log` and `status.log` in each log folder we can generate a summary as shown in Table 3:
+By using the files `link.log` and `status.log` in each log folder, we can generate a summary as shown in Table 3:
 
     ./summary-distribution-package.sh log-{vanilla-test,debian,ubuntu}-*
 

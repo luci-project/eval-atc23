@@ -10,6 +10,8 @@ PID=0
 ELFVARSD=0
 ELFVARSPORT=9001
 
+
+# local function for logging
 function testlog() {
 	if [[ -n "${TESTLOG:-}" ]] ; then
 		if [[ -f /.dockerenv ]]; then
@@ -35,6 +37,7 @@ function preload() {
 
 	echo "Testing $@"
 
+	# start DWARF hashing service (on host)
 	if [[ -z ${NODEBUG+exist} ]] ; then
 		echo "Preparing elfvars service by precalculating hashes" | testlog
 		bean-elfvarsd -c '.test-cache' CACHE $@
@@ -73,12 +76,14 @@ function prepare() {
 	export LD_DYNAMIC_UPDATE=1
 	export LD_DYNAMIC_DLUPDATE=1
 	export LD_RELOCATE_OUTDATED=0
-	# We could enable this, but this has to be a rather high value (>60s) to ensure all tests have finished.
+	# We could enable this, but this has to be a rather high value (>60s) to ensure even the long-running tests have finished.
 	export LD_DETECT_OUTDATED=0
 	export LD_DEPENDENCY_CHECK=1
 }
 
+# local function restarting the test application
 function restart() {
+	# Check status of app
 	if [[ $PID -ne 0 ]] ; then
 		if kill $PID ; then
 			echo "Killed test app with PID $PID" | testlog
@@ -86,6 +91,8 @@ function restart() {
 			echo "Test app with PID $PID seems to be crashed!" | testlog
 		fi
 	fi
+
+	# Append status info to permanent log
 	if [ -f "$LD_STATUS_INFO" ] ; then
 		cat "$LD_STATUS_INFO" >> "$STATUS_LOG"
 	fi
@@ -93,6 +100,7 @@ function restart() {
 	# let it settle
 	sleep 3
 
+	# (Re)start app
 	SUFFIX=$(date +%Y-%m-%d_%H-%M-%S)
 	TESTCASES=( $(find /builds/target/test/ -name "*.so") )
 	$TESTBIN -1 ${TESTCASES[@]} >/dev/null 2> "${TESTLOG:-/tmp}/run-$SUFFIX.err"  &
@@ -141,6 +149,8 @@ function cleanup() {
 		echo "Stopping elfvars service" | testlog
 		kill $ELFVARSD
 	fi
+
+	# Generate report
 	echo "**libxcrypt dynamic updates with Luci**" > $2/run-summary.txt
 	$1/summary-runs.py $2 >> $2/run-summary.txt | testlog
 	echo "Logs are stored in $2"

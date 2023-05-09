@@ -10,6 +10,8 @@ PID=0
 ELFVARSD=0
 ELFVARSPORT=9001
 
+
+# local function for logging
 function testlog() {
 	if [[ -n "${TESTLOG:-}" ]] ; then
 		if [[ -f /.dockerenv ]]; then
@@ -35,6 +37,7 @@ function preload() {
 
 	echo "Testing $@"
 
+	# start DWARF hashing service (on host)
 	if [[ -z ${NODEBUG+exist} ]] ; then
 		echo "Preparing elfvars service by precalculating hashes" | testlog
 		bean-elfvarsd -c '.test-cache' CACHE $@
@@ -73,11 +76,13 @@ function prepare() {
 	export LD_DYNAMIC_UPDATE=1
 	export LD_DYNAMIC_DLUPDATE=1
 	export LD_RELOCATE_OUTDATED=0
-	export LD_DETECT_OUTDATED=1
+	export LD_DETECT_OUTDATED=userfaultfd
+	export LD_DETECT_OUTDATED_DELAY=3
 	export LD_DEPENDENCY_CHECK=1
 }
 
 function restart() {
+	# Check status of app
 	if [[ $PID -ne 0 ]] ; then
 		if kill $PID ; then
 			echo "Killed test app with PID $PID" | testlog
@@ -85,9 +90,16 @@ function restart() {
 			echo "Test app with PID $PID seems to be crashed!" | testlog
 		fi
 	fi
+
+	# Append status info to permanent log
 	if [ -f "$LD_STATUS_INFO" ] ; then
 		cat "$LD_STATUS_INFO" >> "$STATUS_LOG"
 	fi
+
+	# Wait a few seconds (makes log data more clear)
+	sleep 2
+
+	# (Re)start app
 	SUFFIX=$(date +%Y-%m-%d_%H-%M-%S)
 	$TESTBIN > "${TESTLOG:-/tmp}/run-$SUFFIX.log" 2> "${TESTLOG:-/tmp}/run-$SUFFIX.err" &
 	PID=$!
@@ -135,6 +147,8 @@ function cleanup() {
 		echo "Stopping elfvars service" | testlog
 		kill $ELFVARSD
 	fi
+
+	# Generate report
 	echo "**Zlib dynamic updates with Luci**" > $2/run-summary.txt
 	if grep "/backtesting/" $2/link.log >/dev/null 2>&1 ; then
 		# Version output of zlib is not sufficient for backtesting - we need to translate it to the package number

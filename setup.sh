@@ -18,8 +18,7 @@ make -C "${DIR}/luci"
 make -C "${DIR}/luci" all
 
 # Build and install Bean utilities
-make -B
-if command -v pip3 &>/dev/null ; then echo foo 
+if command -v pip3 &>/dev/null ; then
 	pip3 install -r "${DIR}/luci/bean/requirements.txt"
 elif command -v pip &>/dev/null ; then
 	pip install -r "${DIR}/luci/bean/requirements.txt"

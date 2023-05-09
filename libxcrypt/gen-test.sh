@@ -26,7 +26,7 @@ function build() {
 	fi
 	TEST_DIR=$(readlink -f "$2/../test")
 	mkdir -p "$TEST_DIR"
-	cd "$2/../test-src/"
+	cd "$2/../src-test/"
 	make CRYPT_SOURCE_DIR=$1 BUILD_DIR=$TEST_DIR -B
 	chown -R "$3" "${TEST_DIR}" || true
 }
