@@ -1,3 +1,4 @@
+
 Expat Test
 ==========
 
@@ -33,6 +34,18 @@ The following documentation contains a detail description of the steps to reprod
 However, all steps described bellow can also be automatically executed with
 
     ./run.sh
+
+At the end, the results of all individual tests (baseline, vanilla and backtesting) are stored in a `result-DATE` directory.
+
+> **Please note:** The *failed test cases* in the `run-` output files do not refer to issues with *Luci* but to bugs in older libraries and, hence, are expected.
+> These *failed test cases* can be seen in the baseline as well and, when using dynamic updates via *Luci*. should reduce with increased library version.
+
+Files prefixed with `tableX` correspond to table *X* in the paper.
+However, a single table in the taber may be based on multiple such files (see detailed description for further information).
+
+
+> **Please note:** The summary files (`run-summary.txt`, `table*-run-*.txt`) are aggregated using the output of the test application and (in case of backtesting) other log files to match the package names (even when version numbers are identical).
+> However, it is possible that the script producing this file has bugs (especially in corner cases), therefore if in doubt please check the actual log files `run-*.out` (output of a single test application process), `link.log` (changes of library symlink by the observer script) and `status.log` (link status output of *Luci*).
 
 
 Vanilla Build
@@ -108,22 +121,22 @@ Since the Expat team maintains an [exemplary test suite](https://github.com/libe
 However, we had to perform certain adjustments:
  * we've extracted certain internal dependencies (`ascii.h`, `internal.h` and `siphash.h` from the library folder, fucntions `unsignedCharToPrintable` from `xmlparse.c` and `_INTERNAL_trim_to_complete_utf8_characters` from `xmltok.c` into `internal.c`)
  * since certain tests will cause serious issues like `segfault` on older releases, we query the library version (provided by the API) and only execute the following test cases if the the criteria is met:
-  - `test_set_foreign_dtd` if version >= 2.1.0 (newly introduced in API)
-  - `test_foreign_dtd_with_doctype` if version >= 2.1.0 (newly introduced in API)
-  - `test_invalid_tag_in_dtd` if version >= 2.2.1 (else endless loop)
-  - `test_hash_collision` if version >= 2.1.0 (newly introduced in API)
-  - `test_missing_encoding_conversion_fn` if version >= 2.2.3 (else segmentation fault)
-  - `test_misc_attribute_leak` if version >= 2.2.1 (else segmentation fault on subsequent runs) 
-  - `test_alloc_dtd_copy_default_atts` if version >= 2.2.1 (else double free)
-  - `test_alloc_external_entity` if version >= 2.2.1 (else double free)
-  - `test_alloc_reset_after_external_entity_parser_create_fail` if version >= 2.5.0 (else double free)
-  - `test_nsalloc_long_uri` if version >= 2.1.1 (else segmentation fault)
-  - `test_nsalloc_long_attr` if version >= 2.1.1 (else segmentation fault)
-  - `test_nsalloc_long_attr_prefix` if version >= 2.1.1 (else segmentation fault)
-  - `test_nsalloc_long_element` if version >= 2.1.1 (else segmentation fault)
-  - `test_nsalloc_long_context` if version >= 2.2.1 (else double free)
-  - `test_nsalloc_long_default_in_ext` if version >= 2.2.1 (else double free)
-  - `test_nsalloc_prefixed_element` if version >= 2.2.1 (else double free)
+   - `test_set_foreign_dtd` if version >= 2.1.0 (newly introduced in API)
+   - `test_foreign_dtd_with_doctype` if version >= 2.1.0 (newly introduced in API)
+   - `test_invalid_tag_in_dtd` if version >= 2.2.1 (else endless loop)
+   - `test_hash_collision` if version >= 2.1.0 (newly introduced in API)
+   - `test_missing_encoding_conversion_fn` if version >= 2.2.3 (else segmentation fault)
+   - `test_misc_attribute_leak` if version >= 2.2.1 (else segmentation fault on subsequent runs) 
+   - `test_alloc_dtd_copy_default_atts` if version >= 2.2.1 (else double free)
+   - `test_alloc_external_entity` if version >= 2.2.1 (else double free)
+   - `test_alloc_reset_after_external_entity_parser_create_fail` if version >= 2.5.0 (else double free)
+   - `test_nsalloc_long_uri` if version >= 2.1.1 (else segmentation fault)
+   - `test_nsalloc_long_attr` if version >= 2.1.1 (else segmentation fault)
+   - `test_nsalloc_long_attr_prefix` if version >= 2.1.1 (else segmentation fault)
+   - `test_nsalloc_long_element` if version >= 2.1.1 (else segmentation fault)
+   - `test_nsalloc_long_context` if version >= 2.2.1 (else double free)
+   - `test_nsalloc_long_default_in_ext` if version >= 2.2.1 (else double free)
+   - `test_nsalloc_prefixed_element` if version >= 2.2.1 (else double free)
  * excluding test `test_accounting_precision` since it relies on internal functions 
  * excluding test `test_misc_version` checking the version (which would always fail except with the library it was built with)
  * executing the original contents of the `main`-body in an endless loop (instead of a single execution) while measuring the runtime - so the effect of dynamic updates can become visible.
@@ -294,7 +307,7 @@ The summarized results of the test applications output in `run-summary.txt` corr
 
 ### Retrieving the packages in Ubuntu
 
-The all official revisions can be found on [Conaonical Launchpad](https://launchpad.net/).
+The all official revisions can be found on [Canonical Launchpad](https://launchpad.net/).
 
 #### Focal Fossa (20.04)
 
