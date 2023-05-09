@@ -21,8 +21,10 @@ title "Generating comparison tables"
 bean-compare -vv -l libz.so.1 -r -d -s release -o "${RESULTDIR}/misc-compatibility-vanilla-with-dwarf.htm"
 bean-compare -vv -l libz.so.1 -r -d -N release -o "${RESULTDIR}/misc-compatibility-vanilla-elf-only.htm"
 
-title "Building test binary"
-./gen-test.sh v1.2.0
+if [[ ! -x test/runtests ]] ; then
+	title "Building test binary"
+	./gen-test.sh v1.2.13
+fi
 
 title "Evaluating Vanilla Baseline"
 ./eval-vanilla.sh baseline v1.2.0 v1.2.13
@@ -41,7 +43,7 @@ title "Retrieving packages for Debian Buster"
 ../tools/snapshot-dates.py -a debian debian-security -s "buster.*" -- zlib1g | sed -e 's/^.* \([^ ]*\)$/\1/' | uniq
 ../tools/snapshot-fetch.py -d backtesting/debian/buster -x zlib1g 1:1.2.8.dfsg-5 1:1.2.11.dfsg-1 1:1.2.11.dfsg-1+deb10u1 1:1.2.11.dfsg-1+deb10u2
 title "Generating comparison table for Debian Buster"
-bean-compare -v -l zlib.so.1 -r -d -N backtesting/debian/buster/zlib1g  -o "${RESULTDIR}/misc-debian-buster-elf-section.htm"
+bean-compare -v -l libz.so.1 -r -d -N backtesting/debian/buster/zlib1g  -o "${RESULTDIR}/misc-debian-buster-elf-section.htm"
 title "Evaluating Debian Buster packages"
 ./eval-distribution-package.sh debian buster zlib1g
 test -d "log-debian-buster-${LOGDATE}" && ln -rs "log-debian-buster-${LOGDATE}" "${RESULTDIR}/log-debian-buster" || true
@@ -52,7 +54,7 @@ title "Retrieving packages for Debian Bullseye"
 ../tools/snapshot-dates.py -a debian debian-security -s "bullseye.*" -- zlib1g | sed -e 's/^.* \([^ ]*\)$/\1/' | uniq
 ../tools/snapshot-fetch.py -d backtesting/debian/bullseye -x zlib1g 1:1.2.11.dfsg-1 1:1.2.11.dfsg-1+b1 1:1.2.11.dfsg-1.2 1:1.2.11.dfsg-2 1:1.2.11.dfsg-2+deb11u1 1:1.2.11.dfsg-2+deb11u2
 title "Generating comparison table for Debian Bullseye"
-bean-compare -v -l zlib.so.1 -r -d -N backtesting/debian/bullseye/zlib1g  -o "${RESULTDIR}/misc-debian-bullseye-elf-section.htm"
+bean-compare -v -l libz.so.1 -r -d -N backtesting/debian/bullseye/zlib1g  -o "${RESULTDIR}/misc-debian-bullseye-elf-section.htm"
 title "Evaluating Debian Bullseye packages"
 ./eval-distribution-package.sh debian bullseye zlib1g
 test -d "log-debian-bullseye-${LOGDATE}" && ln -rs "log-debian-bullseye-${LOGDATE}" "${RESULTDIR}/log-debian-bullseye" || true
@@ -63,7 +65,7 @@ title "Retrieving packages for Ubuntu Focal"
 ../tools/launchpad-dates.py -s focal -- zlib1g
 ../tools/launchpad-fetch.sh -V focal -d backtesting/ubuntu/focal/zlib1g -x zlib1g
 title "Generating comparison table for Ubuntu Focal"
-bean-compare -v -l zlib.so.1 -r -d -N backtesting/ubuntu/focal/zlib1g  -o "${RESULTDIR}/misc-ubuntu-focal-elf-section.htm"
+bean-compare -v -l libz.so.1 -r -d -N backtesting/ubuntu/focal/zlib1g  -o "${RESULTDIR}/misc-ubuntu-focal-elf-section.htm"
 title "Evaluating Ubuntu Focal packages"
 ./eval-distribution-package.sh ubuntu focal zlib1g
 test -d "log-ubuntu-focal-${LOGDATE}" && ln -rs "log-ubuntu-focal-${LOGDATE}" "${RESULTDIR}/log-ubuntu-focal" || true
@@ -74,7 +76,7 @@ title "Retrieving packages for Ubuntu Jammy"
 ../tools/launchpad-dates.py -s jammy -- zlib1g
 ../tools/launchpad-fetch.sh -V jammy -d backtesting/ubuntu/jammy/zlib1g -x zlib1g
 title "Generating comparison table for Ubuntu Jammy"
-bean-compare -v -l zlib.so.1 -r -d -N backtesting/ubuntu/jammy/zlib1g  -o "${RESULTDIR}/misc-ubuntu-jammy-elf-section.htm"
+bean-compare -v -l libz.so.1 -r -d -N backtesting/ubuntu/jammy/zlib1g  -o "${RESULTDIR}/misc-ubuntu-jammy-elf-section.htm"
 title "Evaluating Ubuntu Jammy packages"
 ./eval-distribution-package.sh ubuntu jammy zlib1g
 test -d "log-ubuntu-jammy-${LOGDATE}" && ln -rs "log-ubuntu-jammy-${LOGDATE}" "${RESULTDIR}/log-ubuntu-jammy" || true
