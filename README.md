@@ -17,7 +17,7 @@ These Git repositories are hosted in a [public project](https://gitlab.cs.fau.de
 
 Further dependencies are the official repositories of
 
-  * [Capstone (on Github)](https://github.com/capstone-engine/capstone/)
+  * [Capstone (on Github)](https://github.com/capstone-engine/capstone.git)
   * [Expat (on GitHub)](https://github.com/libexpat/libexpat.git)
   * [libxcrypt (on GitHub)](https://github.com/besser82/libxcrypt)
   * [OpenSSL (at git.openssl.org)](git://git.openssl.org/openssl.git)

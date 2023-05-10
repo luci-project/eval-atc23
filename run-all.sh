@@ -29,8 +29,10 @@ sleep 10s
 
 cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null
 
-# Build and install
-./setup.sh
+# Build if required
+if [[ ! -x "${DIR}/luci/ld-luci-debian-bullseye-x64.so" ]] ; then
+	./setup.sh
+fi
 
 # Run example testcase
 ./luci/test/run.sh -u 2-example
