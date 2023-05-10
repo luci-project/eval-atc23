@@ -4,6 +4,7 @@
 import os
 import re
 import sys
+import natsort
 import argparse
 import statistics
 from dateutil.parser import parse
@@ -99,7 +100,7 @@ for path in run_files:
 				summary[version][test]['duration'].append(duration)
 
 
-	for version in summary:
+	for version in natsort.natsorted(summary.keys()):
 		print(f"{version} (used in {start}. start of test application)")
 		failed = 0
 		for test in sorted(summary[version].keys()):

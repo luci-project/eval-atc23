@@ -4,6 +4,7 @@
 import os
 import re
 import sys
+import natsort
 import argparse
 import statistics
 from dateutil.parser import parse
@@ -95,7 +96,7 @@ for path in run_files:
 				summary[version]['time'].append(time),
 				summary[version]['duration'].append(duration),
 
-	for version in summary:
+	for version in natsort.natsorted(summary.keys()):
 		print(f"{version} (used in {start}. start of test application)")
 		print(f"\ttest case runs: {len(summary[version]['time'])} ({summary[version]['time'][0]} - {summary[version]['time'][-1]})")
 		print(f"\tmax. number of failed test cases in a run: {summary[version]['failed']}")
