@@ -1,4 +1,3 @@
-
 Expat Test
 ==========
 
@@ -363,7 +362,7 @@ Download and extract the builds using
 
 Start the evaluation of the packages with
 
-    ./eval-distribution-package.sh ubuntu focal libexpat1
+    ./eval-distribution-package.sh ubuntu jammy libexpat1
 
 The results are saved in the same format as the previous reports.
 

@@ -53,7 +53,7 @@ test -f "log-debian-bullseye-${LOGDATE}/run-summary.txt" && ln -rs "log-debian-b
 
 
 title "Retrieving packages for Ubuntu Focal"
-../tools/launchpad-dates.py -s focal -- libcrypt1
+../tools/launchpad-dates.py -p release updates security proposed -s focal -- libcrypt1
 ../tools/launchpad-fetch.sh -V focal -d backtesting/ubuntu/focal/libcrypt1 -x libcrypt1
 # Structure should be the same for our scripts
 mv backtesting/ubuntu/focal/libcrypt1/1:4.4.10-10ubuntu4/lib backtesting/ubuntu/focal/libcrypt1/1:4.4.10-10ubuntu4/usr
@@ -67,7 +67,7 @@ test -f "log-ubuntu-focal-${LOGDATE}/run-summary.txt" && ln -rs "log-ubuntu-foca
 
 title "Retrieving packages for Ubuntu Jammy"
 # Must run on a platform with dpkg supporting zstd -- e.g. ubuntu focal
-../tools/launchpad-dates.py -s jammy -- libcrypt1
+../tools/launchpad-dates.py -p release updates security proposed -s jammy -- libcrypt1
 ../tools/launchpad-fetch.sh -V jammy -d backtesting/ubuntu/jammy/libcrypt1 -x libcrypt1
 title "Generating comparison table for Ubuntu Jammy"
 bean-compare -v -l libcrypt.so.1 -r -d -N backtesting/ubuntu/jammy/libcrypt1 -o "${RESULTDIR}/misc-ubuntu-jammy-elf-section.htm"

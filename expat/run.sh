@@ -63,7 +63,7 @@ test -f "log-debian-bullseye-${LOGDATE}/run-summary.txt" && ln -rs "log-debian-b
 
 
 title "Retrieving packages for Ubuntu Focal"
-../tools/launchpad-dates.py -s focal -- libexpat1
+../tools/launchpad-dates.py -p release updates security proposed -s focal -- libexpat1
 ../tools/launchpad-fetch.sh -V focal -d backtesting/ubuntu/focal/libexpat1 -x libexpat1
 title "Generating comparison table for Ubuntu Focal"
 bean-compare -v -l libexpat.so.1 -r -d -N backtesting/ubuntu/focal/libexpat1  -o "${RESULTDIR}/misc-ubuntu-focal-elf-section.htm"
@@ -74,7 +74,7 @@ test -f "log-ubuntu-focal-${LOGDATE}/run-summary.txt" && ln -rs "log-ubuntu-foca
 
 title "Retrieving packages for Ubuntu Jammy"
 # Must run on a platform with dpkg supporting zstd -- e.g. ubuntu focal
-../tools/launchpad-dates.py -s jammy -- libexpat1
+../tools/launchpad-dates.py -p release updates security proposed -s jammy -- libexpat1
 ../tools/launchpad-fetch.sh -V jammy -d backtesting/ubuntu/jammy/libexpat1 -x libexpat1
 title "Generating comparison table for Ubuntu Jammy"
 bean-compare -v -l libexpat.so.1 -r -d -N backtesting/ubuntu/jammy/libexpat1  -o "${RESULTDIR}/misc-ubuntu-jammy-elf-section.htm"

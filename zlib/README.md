@@ -1,12 +1,12 @@
 zlib Test
 =========
 
-The compression library [zlib](https://www.zlib.net/) was used in Evaluation since 
+The compression library [zlib](https://www.zlib.net/) was used in Evaluation due to the following attributes:
 
  * [popular](https://qa.debian.org/popcon.php?package=zlib) and very widely used: ranked #11 of [most installed debian packages](https://popcon.debian.org/by_inst)
  * [several releases](https://github.com/madler/zlib/tags) since 2011
- * including a few [vulnerabilities](https://www.cvedetails.com/product/111843/Zlib-Zlib.html?vendor_id=13265)
- * has a small [test example](https://github.com/madler/zlib/tree/master/test)
+ * some [vulnerabilities](https://www.cvedetails.com/product/111843/Zlib-Zlib.html?vendor_id=13265)
+ * decent [test example](https://github.com/madler/zlib/tree/master/test)
 
 We evaluate *Luci* with the test suite using custom (vanilla) library builds and the corresponding packages distributed by Debian and Ubuntu.
 
@@ -263,7 +263,7 @@ Download and extract the builds using
 
 Start the evaluation of the packages with
 
-    ./eval-distribution-package.sh ubuntu focal zlib1g
+    ./eval-distribution-package.sh ubuntu jammy zlib1g
 
 The summarized results of the test application are stored in `run-summary.txt`.
 
