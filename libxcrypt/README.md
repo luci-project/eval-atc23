@@ -1,17 +1,16 @@
-libxcrypt Test
-==============
-
+libxcrypt Experiment
+====================
 
 The one-way hashing library [libxcrypt](https://github.com/besser82/libxcrypt) was used in Evaluation due to the following attributes 
 
- * increasingly [popular](https://qa.debian.org/popcon.php?package=libxcrypt) alternative for glibc `libcrypt.so.1`
+ * increasingly [popular](https://qa.debian.org/popcon.php?package=libxcrypt) alternative for glibcs `libcrypt.so.1`
  * [many recent releases](https://github.com/besser82/libxcrypt/releases)
  * excellent [test suite](https://github.com/besser82/libxcrypt/tree/develop/test)
 
-We evaluate *Luci* with the test suite using custom (vanilla) library builds and the corresponding packages distributed by Debian and Ubuntu.
+We evaluate *Luci* with the test suite using custom (vanilla) library builds, and the corresponding packages distributed by Debian and Ubuntu.
 
 For this evaluation, multithreading (via `pthread`) is used to executed test cases in parallel.
-Therefore we recommend at least 4 physical cores and a solid amount of memory (8 GB).
+Therefore, we recommend at least 4 physical cores and a solid amount of memory (8 GB).
 
 While the overall design of the test case will stress the system a lot, it demonstrates the applicability of the DSU approach in multithreaded applications.
 
@@ -22,7 +21,7 @@ We strongly recommend using a standard installation of *Ubuntu Focal* (due to th
 
 [Docker Engine](https://docs.docker.com/engine/install/ubuntu/) is required for building and testing (using the [official Debian Bullseye Docker image](https://hub.docker.com/_/debian)).
 
-You have to setup the environment by building and installing *Luci* and its submodules:
+You have to set up the environment by building and installing *Luci* and its submodules:
 
     ../setup.sh
 
@@ -30,7 +29,7 @@ In case you have already performed evaluation runs and want to start over again,
 
     ./cleanup.sh
 
-The following documentation contains a detailed description of the steps to reproduce the zlib artifacts of the paper.
+The following documentation contains a detailed description of the steps to reproduce the libxcrypt artifacts of the paper.
 
 However, all steps described bellow can also be automatically executed with
 
@@ -57,9 +56,9 @@ The build process is performed in a fresh environment using the [official Debian
     apt-get install -y git gcc make perl autoconf libtool pkgconf
 
 Libraries are built from the official [repository](https://github.com/besser82/libxcrypt/).
-For `configure`, we only set the `--prefix` parameter (to adjust the install directory) and disable treating warnings as errors (with `--disable-werror`)
+For `configure`, we only set the `--prefix` parameter (to adjust the installation directory) and disable treating warnings as errors (with `--disable-werror`)
 
-To speed up build several releases, we can avoid restarting the container (retrieving the repository & installing build utils) by using a separate build directory, which gets deleted after finishing the build.
+To speed up build several releases, we can avoid restarting the container (retrieving the repository & installing build utilities) by using a separate build directory, which gets deleted after finishing the build.
 This prevents the build system from using artifacts of previous builds.
 
 The whole process is automated in `gen-lib.sh`, which takes the git tags of releases to build as parameter.
@@ -79,10 +78,10 @@ We have to exclude the tests `crypt-badargs`, `explicit-bzero` and `gensalt` sin
 
 For the automatically generated *known answer* tests, we employ all algorithms as the [original Makefile](https://github.com/besser82/libxcrypt/blob/v4.4.33/Makefile.am#L388) does, hence having a total of 42 different tests, with about 28 of them compatible with the external API.
 
-> **Please note:** Several tests (most notably `alg-*` tests) do not use the API but rely internal functions of the library - hence, they are not compatible to the shared object and won't execute. But they are not excluded, so the RTLD has to detect the unresolvable dependencies and abort loading.
+> **Please note:** Several tests (most notably `alg-*` tests) do not use the API but rely on internal functions of the library - hence, they are not compatible to the shared object and won't execute. But they are not excluded, so the RTLD has to detect the unresolvable dependencies and abort loading.
 
 The source of these tests is unmodified, but build with a slight change in the compiler flags:
-They are built as shared libraries themself by compiling with the additional flags `-fPIC -shared`.
+They are built as shared libraries themselves by compiling with the additional flags `-fPIC -shared`.
 
 Our test application will start a new thread for each library and open it using `dlopen` (which fails on libraries with unmet dependencies), resolving and executing its `main()` in an endless loop, measuring the runtime of each run.
 
@@ -102,7 +101,7 @@ Since several test cases are designed for single threaded execution and therefor
     }
     strong_alias(crypt_gensalt, xcrypt_gensalt);
 
-The source of the test application and build fileare located in the `src-test` directory.
+The source of the test application and build file are located in the `src-test` directory.
 
 The script `gen-test.sh` builds the test suite within a Debian Bullseye Docker image, using the official repository for includes and a previously build library to link against:
 
@@ -133,22 +132,22 @@ The interpreter of the test application is modified to start with *Luci* instead
 *Luci*'s configuration is stored in environmental variables:
  * dynamic updates are enabled
  * debug output stored to `luci.log`
- * status info with information about succesfull and rejected dynamic updates are stored in a `status,info` file
+ * status info with information about successful and rejected dynamic updates are stored in a `status,info` file
  * connection information for `bean-elfvarsd` service is set
  * detection of outdated code (using *userfaultfd*) is **disabled**
 
 Then the test application is executed.
 
 Most test cases fully utilize a CPU core -- and depending on the particular test, the execution time of a single test case will vary a lot: between 1us and 25s.
-It might even happen, that a long running test cases will not finish during the time between two updates (which is not a problem at all, but might be a bit confusing in the outputs).
+It might even happen, that a long-running test case will not finish during the time between two updates (which is not a problem at all, but might be a bit confusing in the outputs).
 
 When taking scheduling into account and depending on the system, the detection of outdated code would need to be adjusted to a rather high value to prevent false positives.
-In the interest of run time we have decided to disable userfault for this test case by default allowing us a shorter runtime per test case.
-However, you can change this behaviour and adjust the settings by modifing the environment variables in `run-test.sh`.
+In the interest of run time we have decided to disable userfaultfd for this test case by default allowing us a shorter runtime per test case.
+However, you can change this behavior and adjust the settings by modifying the environment variables in `run-test.sh`.
 
 After a certain time, the symbolic link is modified to point to the subsequent version of the library (and noted with timestamp in `link.log`).
 
-*Luci* should now detect the change (employing *inotify*), check the compatibility (including quering `bean-elfvarsd`), and then either perform the update to the new version or discard it and continue the test application with the previous version.
+*Luci* should now detect the change (employing *inotify*), check the compatibility (including querying `bean-elfvarsd`), and then either perform the update to the new version or discard it and continue the test application with the previous version.
 In either case, it writes to `status.info` (`SUCCESS` or `FAILED`).
 
 The control script `run-test.sh` will check this status file after a few seconds:
@@ -167,9 +166,9 @@ The artifacts (logs) are stored in a directory with the format `log-vanilla-test
 Backtesting Distribution Packages
 ---------------------------------
 
-The previously generated test application and the test cases (`.so`) are dynamically linked against official *zlib1g* packages in [Debian](https://www.debian.org/) ([Bullseye](https://www.debian.org/releases/bullseye/)), and [Ubuntu](https://ubuntu.com/) ([Focal](https://releases.ubuntu.com/focal/) & [Jammy](https://releases.ubuntu.com/jammy/)).
+The previously generated test application and the test cases (`.so`) are dynamically linked against official *libcrypt1* packages in [Debian](https://www.debian.org/) ([Bullseye](https://www.debian.org/releases/bullseye/)), and [Ubuntu](https://ubuntu.com/) ([Focal](https://releases.ubuntu.com/focal/) & [Jammy](https://releases.ubuntu.com/jammy/)).
 
-[Debian Buster](https://www.debian.org/releases/buster/) is omitted since it uses glibc libcrypt.
+[Debian Buster](https://www.debian.org/releases/buster/) is omitted since it uses glibcs libcrypt.
 
 For each release of a distribution, we test all published builds (during development phase and after stable release) by starting with the first build and replacing it with the subsequent builds after a certain time.
 If an update cannot be applied, the test application is restarted, dynamically linked against the build causing the incompatibility and the replacement starts again.
@@ -185,11 +184,11 @@ But before starting the test, we have to retrieve the all published builds from 
 
 With the help of the [metasnap.debian.net](https://metasnap.debian.net/) we are able to determine the date a certain version was published, and using this information in conjunction with the [snapshot.debian.org](https://snapshot.debian.org/) service, we are able to download old revisions of an official package.
 
-> **Please note:** The snapshot service has a [not so well-documented rate limit](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=977653) for its service. We therefore strongly recommend to download the packages only once. If you encounter a rate limit, please try again after a certain time.
+> **Please note:** The snapshot service has a [not so well-documented rate limit](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=977653) for its service. We therefore strongly recommend downloading the packages only once. If you encounter a rate limit, please try again after a certain time.
 
 #### Bullseye (11)
 
-Debian Bullseye has following builds for [`zlib1g`](https://packages.debian.org/bullseye/libcrypt1):
+Debian Bullseye has the following builds for [`libcrypt1`](https://packages.debian.org/bullseye/libcrypt1):
    1. Build `1:4.4.10-10`
    2. Build `1:4.4.15-1`
    3. Build `1:4.4.16-1`
@@ -201,9 +200,9 @@ Debian Bullseye has following builds for [`zlib1g`](https://packages.debian.org/
 
 You can check the list of builds by [using metasnap](https://metasnap.debian.net/cgi-bin/api?archive=debian&pkg=libcrypt1g&arch=amd64) with
 
-    ../tools/snapshot-dates.py -a debian debian-security -s "bullseye.*" -- zlib1g
+    ../tools/snapshot-dates.py -a debian debian-security -s "bullseye.*" -- libcrypt1
 
-(but the builds `1:4.4.18-1` amd `1:4.4.18-3` are missing in the list)
+(but the builds `1:4.4.18-1` and `1:4.4.18-3` are missing in the list)
 
 Download and extract the builds using
 
@@ -223,7 +222,7 @@ The all official revisions can be found on [Canonical Launchpad](https://launchp
 
 #### Focal Fossa (20.04)
 
-Ubuntu Focal has following builds for [`zlib1g`](https://packages.ubuntu.com/focal/libcrypt1):
+Ubuntu Focal has the following builds for [`libcrypt1`](https://packages.ubuntu.com/focal/libcrypt1):
    1. Build `libcrypt1 1:4.4.10-5`
    2. Build `libcrypt1 1:4.4.10-7`
    3. Build `libcrypt1 1:4.4.10-9`
@@ -251,7 +250,7 @@ The summarized results of the test application are stored in `run-summary.txt`.
 
 #### Jammy Jellyfish (22.04)
 
-Ubuntu Focal has following builds for [`zlib1g`](https://packages.ubuntu.com/jammy/libcrypt1):
+Ubuntu Focal has the following builds for [`libcrypt1`](https://packages.ubuntu.com/jammy/libcrypt1):
    1. Build `4.4.18-4ubuntu1`
    2. Build `4.4.18-4ubuntu2`
    3. Build `1:4.4.26-1`
@@ -260,7 +259,7 @@ Ubuntu Focal has following builds for [`zlib1g`](https://packages.ubuntu.com/jam
 
 You can check the list of builds on [Launchpad](https://launchpad.net/ubuntu/jammy/amd64/libcrypt1) or with
 
-    ../tools/launchpad-dates.py -p release updates security proposed -s jammy -- zlib1g
+    ../tools/launchpad-dates.py -p release updates security proposed -s jammy -- libcrypt1
 
 Download and extract the builds using
 
@@ -280,22 +279,19 @@ By using the files `link.log` and `status.log` in each log folder, we can genera
 
     ./summary-distribution-package.sh log-{vanilla-test,debian,ubuntu}-*
 
-To verify this table, the Docker output (`out-docker.log`) might be the most human readable way of the evaluation output.
+To verify this table, the Docker output (`out-docker.log`) might be the most human-readable way of the evaluation output.
 
-The script is not able to calculate the values for *unqiue* releases, this was done manually in Table 4 with the help of `bean-compare`:
+The script is not able to calculate the values for *unique* releases, this was done manually in Table 4 with the help of `bean-compare`:
 
     bean-compare -v -l libcrypt.so.1 -r -d -N backtesting/ubuntu/focal/libcrypt1
 
 would output
 
-                                                            usr/lib/x86_64-linux-gnu/libcrypt.so.1
-┏━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┓
-┃ 1:4.4.10-5 ┃ 1:4.4.10-7 ┃ 1:4.4.10-9 ┃ 1:4.4.10-10 ┃ 1:4.4.10-10ubuntu1 ┃ 1:4.4.10-10ubuntu2 ┃ 1:4.4.10-10ubuntu3 ┃ 1:4.4.10-10ubuntu4 ┃ 1:4.4.10-10ubuntu5 ┃
-┡━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━┩
-│ (update)   │ update     │ update     │ update      │ update             │ update             │ update             │ update             │ update             │
-│            │ .build-id  │            │             │ .build-id          │ .build-id          │                    │ .build-id          │                    │
-│            │            │            │             │                    │                    │                    │                    │                    │
-└────────────┴────────────┴────────────┴─────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┘
+| 1:4.4.10-5 | 1:4.4.10-7 | 1:4.4.10-9 | 1:4.4.10-10 | 1:4.4.10-10ubuntu1 | 1:4.4.10-10ubuntu2 | 1:4.4.10-10ubuntu3 | 1:4.4.10-10ubuntu4 | 1:4.4.10-10ubuntu5 |
+|------------|------------|------------|-------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| *(update)* | *update*   | *update*   | *update*    | *update*           | *update*           | *update*           | *update*           | *update*           |
+|            | .build-id  |            |             | .build-id          | .build-id          |                    | .build-id          |                    |
+
 
 which indicates, that Ubuntu Focal has no changes in relevant code or data sections. Sometimes even the Build ID does not change.
 Hence, we have no *unique* versions to test for updates in this distribution/version.

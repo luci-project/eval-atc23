@@ -1,5 +1,5 @@
-zlib Test
-=========
+zlib Experiment
+===============
 
 The compression library [zlib](https://www.zlib.net/) was used in Evaluation due to the following attributes:
 
@@ -8,7 +8,7 @@ The compression library [zlib](https://www.zlib.net/) was used in Evaluation due
  * some [vulnerabilities](https://www.cvedetails.com/product/111843/Zlib-Zlib.html?vendor_id=13265)
  * decent [test example](https://github.com/madler/zlib/tree/master/test)
 
-We evaluate *Luci* with the test suite using custom (vanilla) library builds and the corresponding packages distributed by Debian and Ubuntu.
+We evaluate *Luci* with the test suite using custom (vanilla) library builds, and the corresponding packages distributed by Debian and Ubuntu.
 
 
 Preparation
@@ -18,7 +18,7 @@ We strongly recommend using a standard installation of *Ubuntu Focal* (due to th
 
 [Docker Engine](https://docs.docker.com/engine/install/ubuntu/) is required for building and testing (using the [official Debian Bullseye Docker image](https://hub.docker.com/_/debian)).
 
-You have to setup the environment by building and installing *Luci* and its submodules:
+You have to set up the environment by building and installing *Luci* and its submodules:
 
     ../setup.sh
 
@@ -52,9 +52,9 @@ The build process is performed in a fresh environment using the [official Debian
     apt-get install -y git gcc cmake
 
 Libraries are built from the official [repository](https://github.com/madler/zlib).
-For `configure`, only the `--shared` (for shared library build) and `--prefix` parameter (to adjust the install directory) will be set.
+For `configure`, only the `--shared` (for shared library build) and `--prefix` parameter (to adjust the installation directory) will be set.
 
-To speed up build several releases, we can avoid restarting the container (retrieving the repository & installing build utils) by using a separate build directory, which gets deleted after finishing the build.
+To speed up build several releases, we can avoid restarting the container (retrieving the repository & installing build utilities) by using a separate build directory, which gets deleted after finishing the build.
 This prevents the build system from using artifacts of previous builds.
 
 The whole process is automated in `gen-lib.sh`, which takes the git tags of releases to build as parameter.
@@ -69,7 +69,7 @@ For convenience, the folder `release/` contains symbolic links with the git tag 
 
 The release 1.2.5.1 has an issue in the build system not building/installing the shared library.
 
-We have to perform the stap manually by executing
+We have to perform the step manually by executing
 
     make CFLAGS="-O3 -g -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN" SFLAGS="-O3 -g -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN" SHAREDLIB=libz.so SHAREDLIBV=libz.so.1.2.5.1 SHAREDLIBM=libz.so.1 shared
     gcc -O3 -g -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o libz.so.1.2.5.1 adler32.lo compress.lo crc32.lo deflate.lo gzclose.lo gzlib.lo gzread.lo gzwrite.lo infback.lo inffast.lo inflate.lo inftrees.lo trees.lo uncompr.lo zutil.lo -shared -lc
@@ -81,7 +81,7 @@ and copying `libz.so.1.2.5.1` to the target `/lib` folder and creating the symli
 
 Several tests are performed in the official [example](https://github.com/madler/zlib/blob/master/test/example.c).
 
-We have modified the source file to executed the tests in an endless loop, and instead of process termination (`exit()`) functions now return values signaling a failure.
+We have modified the source file to execute the tests in an endless loop, and instead of process termination (`exit()`) functions now return values signaling a failure.
 The revised version is located in the `src-test` directory.
 
 The script `gen-test.sh` builds the test suite within a Debian Bullseye Docker image, using the official repository for includes and a previously build library to link against:
@@ -116,13 +116,13 @@ The interpreter of the test application is modified to start with *Luci* instead
  * dynamic updates are enabled
  * detection of outdated code (using *userfaultfd*) is enabled
  * debug output stored to `luci.log`
- * status info with information about succesfull and rejected dynamic updates are stored in a `status,info` file
+ * status info with information about successful and rejected dynamic updates are stored in a `status,info` file
  * connection information for `bean-elfvarsd` service is set
 
 Then the test application is executed.
 After a certain time, the symbolic link is modified to point to the subsequent version of the library (and noted with timestamp in `link.log`).
 
-*Luci* should now detect the change (employing *inotify*), check the compatibility (including quering `bean-elfvarsd`), and then either perform the update to the new version or discard it and continue the test application with the previous version.
+*Luci* should now detect the change (employing *inotify*), check the compatibility (including querying `bean-elfvarsd`), and then either perform the update to the new version or discard it and continue the test application with the previous version.
 In either case, it writes to `status.info` (`SUCCESS` or `FAILED`).
 
 The control script `run-test.sh` will check this status file after a few seconds:
@@ -158,12 +158,12 @@ But before starting the test, we have to retrieve the all published builds from 
 
 With the help of the [metasnap.debian.net](https://metasnap.debian.net/) we are able to determine the date a certain version was published, and using this information in conjunction with the [snapshot.debian.org](https://snapshot.debian.org/) service, we are able to download old revisions of an official package.
 
-> **Please note:** The snapshot service has a [not so well-documented rate limit](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=977653) for its service. We therefore strongly recommend to download the packages only once. If you encounter a rate limit, please try again after a certain time.
+> **Please note:** The snapshot service has a [not so well-documented rate limit](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=977653) for its service. We therefore strongly recommend downloading the packages only once. If you encounter a rate limit, please try again after a certain time.
 
 
 #### Buster (10)
 
-Debian Buster has following builds for [`zlib1g`](https://packages.debian.org/buster/zlib1g):
+Debian Buster has the following builds for [`zlib1g`](https://packages.debian.org/buster/zlib1g):
    1. Build `1:1.2.8.dfsg-5`
    2. Build `1:1.2.11.dfsg-1`
    3. Build `1:1.2.11.dfsg-1+deb10u1`
@@ -187,7 +187,7 @@ The summarized results of the test application are stored in `run-summary.txt`.
 
 #### Bullseye (11)
 
-Debian Bullseye has following builds for [`zlib1g`](https://packages.debian.org/bullseye/zlib1g):
+Debian Bullseye has the following builds for [`zlib1g`](https://packages.debian.org/bullseye/zlib1g):
    1. Build `1:1.2.11.dfsg-1`
    2. Build `1:1.2.11.dfsg-1+b1`
    3. Build `1:1.2.11.dfsg-1.2`
@@ -217,7 +217,7 @@ The all official revisions can be found on [Canonical Launchpad](https://launchp
 
 #### Focal Fossa (20.04)
 
-Ubuntu Focal has following builds for [`zlib1g`](https://packages.ubuntu.com/focal/zlib1g):
+Ubuntu Focal has the following builds for [`zlib1g`](https://packages.ubuntu.com/focal/zlib1g):
    1. Build `1:1.2.11.dfsg-1.2ubuntu1`
    2. Build `1:1.2.11.dfsg-1ubuntu3`
    3. Build `1:1.2.11.dfsg-2ubuntu1`
@@ -244,7 +244,7 @@ The summarized results of the test application are stored in `run-summary.txt`.
 
 #### Jammy Jellyfish (22.04)
 
-Ubuntu Focal has following builds for [`zlib1g`](https://packages.ubuntu.com/jammy/zlib1g):
+Ubuntu Focal has the following builds for [`zlib1g`](https://packages.ubuntu.com/jammy/zlib1g):
    1. Build `1:1.2.11.dfsg-2ubuntu7`
    2. Build `1:1.2.11.dfsg-2ubuntu8`
    3. Build `1:1.2.11.dfsg-2ubuntu9`
@@ -274,25 +274,21 @@ By using the files `link.log` and `status.log` in each log folder, we can genera
 
     ./summary-distribution-package.sh log-{vanilla-test,debian,ubuntu}-*
 
-To verify this table, the Docker output (`out-docker.log`) might be the most human readable way of the evaluation output.
+To verify this table, the Docker output (`out-docker.log`) might be the most human-readable way of the evaluation output.
 
-The script is not able to calculate the values for *unqiue* releases, this was done manually in Table 5 with the help of `bean-compare`:
+The script is not able to calculate the values for *unique* releases, this was done manually in Table 5 with the help of `bean-compare`:
 
     bean-compare -v -l libz.so.1 -r -d -N backtesting/ubuntu/jammy/zlib1g
 
 would output
-
-                                                      lib/x86_64-linux-gnu/libz.so.1
-    ┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-    ┃ 1:1.2.11.dfsg-2ubuntu7 ┃ 1:1.2.11.dfsg-2ubuntu8 ┃ 1:1.2.11.dfsg-2ubuntu9 ┃ 1:1.2.11.dfsg-2ubuntu9.1 ┃ 1:1.2.11.dfsg-2ubuntu9.2 ┃
-    ┡━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━┩
-    │ (update)               │ update                 │ update                 │ update                   │ update                   │
-    │                        │ .build-id              │ .build-id              │ .build-id                │ .build-id                │
-    │                        │                        │ .text                  │                          │ .text                    │
-    │                        │                        │ .rodata                │                          │ .rodata                  │
-    │                        │                        │ .relro                 │                          │ .relro                   │
-    │                        │                        │                        │                          │                          │
-    └────────────────────────┴────────────────────────┴────────────────────────┴──────────────────────────┴──────────────────────────┘
+ 
+| 1:1.2.11.dfsg-2ubuntu7 | 1:1.2.11.dfsg-2ubuntu8 | 1:1.2.11.dfsg-2ubuntu9 | 1:1.2.11.dfsg-2ubuntu9.1 | 1:1.2.11.dfsg-2ubuntu9.2 |
+|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| *(update)*             | *update*               | *update*               | *update*                 | *update*                 |
+|                        | .build-id              | .build-id              | .build-id                | .build-id                |
+|                        |                        | .text                  |                          | .text                    |
+|                        |                        | .rodata                |                          | .rodata                  |
+|                        |                        | .relro                 |                          | .relro                   |
 
 which indicates, that `1:1.2.11.dfsg-2ubuntu8` and `1:1.2.11.dfsg-2ubuntu9.1` have a different Build ID, but all sections relevant for execution have not changed.
 Hence, we have only three *unique* versions with actual changes: `1:1.2.11.dfsg-2ubuntu7`, `1:1.2.11.dfsg-2ubuntu9` and `1:1.2.11.dfsg-2ubuntu9.2`.

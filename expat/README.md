@@ -1,5 +1,5 @@
-Expat Test
-==========
+Expat Experiment
+================
 
 The XML parser library [Expat](https://libexpat.github.io/) is the primary evaluation target since it meets several criteria:
 
@@ -8,7 +8,7 @@ The XML parser library [Expat](https://libexpat.github.io/) is the primary evalu
  * several [vulnerabilities](https://www.cvedetails.com/product/39003/Libexpat-Project-Libexpat.html?vendor_id=16735) emphasizing relevance for live-patching
  * extensive (official) [test suite](https://github.com/libexpat/libexpat/tree/master/expat/tests)
 
-We evaluate *Luci* with the test suite using custom (vanilla) library builds and the corresponding packages distributed by Debian and Ubuntu.
+We evaluate *Luci* with the test suite using custom (vanilla) library builds, and the corresponding packages distributed by Debian and Ubuntu.
 
 > **Please note:** Expat builds two shared libraries, which only differ in the encoding they support: `libexpat.so` for UTF-8 and `libexpatw.so` using `wchar_t` for UTF-16. Since they are rather identical when it comes to functionality, we only focus on the first version in the tests.
 
@@ -64,9 +64,9 @@ For more recent versions, this is encapsulated in the `buildconf.sh`, while olde
     autoheader
     autoconf
 
-For `configure`, only the `--prefix` parameter (to adjust the install directory) will be set.
+For `configure`, only the `--prefix` parameter (to adjust the installation directory) will be set.
 
-To speed up build several releases, we can avoid restarting the container (retrieving the repository & installing build utils) by using a separate build directory, which gets deleted after finishing the build.
+To speed up build several releases, we can avoid restarting the container (retrieving the repository & installing build utilities) by using a separate build directory, which gets deleted after finishing the build.
 This prevents the build system from using artifacts of previous builds.
 
 The whole process is automated in `gen-lib.sh`, which takes the git tags of releases to build as parameter.
@@ -89,7 +89,7 @@ The versions of the shared library are listed in ascending order, each version h
 Names in bold font correspond to sections in which changes cause incompatibilities and preventing an update (hence requiring a restart of the application).
 
 Since debug symbols are included in the shared libraries, the `.debug` section corresponds to `DWARF` in Table 1, with the hashes for
-  * `RW`: *writeable vars*
+  * `RW`: *writable vars*
   * `dt`: *internal types*
   * `fn`: *external API*
 
@@ -139,11 +139,11 @@ However, we had to perform certain adjustments:
  * excluding test `test_misc_version` checking the version (which would always fail except with the library it was built with)
  * executing the original contents of the `main`-body in an endless loop (instead of a single execution) while measuring the runtime - so the effect of dynamic updates can become visible.
 
-Hence the number of total test cases depend on the library version, ranging from 326 to 343.
+Hence, the number of total test cases depend on the library version, ranging from 326 to 343.
 
 The sources for the modified test suite are located in the `src-test` directory.
 
-The script `gen-test.sh` builds the test suite within a Debian Bullseye Docker image, using the official repository for includes and a previously build library (e.g., version 2.4.0) to link against:
+The script `gen-test.sh` builds the test suite within a Debian Bullseye Docker image, using the official repository for includes and a previously built library (e.g., version 2.4.0) to link against:
 
     ./gen-test.sh R_2_4_0
 
@@ -176,13 +176,13 @@ The interpreter of the test application is modified to start with *Luci* instead
  * dynamic updates are enabled
  * detection of outdated code (using *userfaultfd*) is enabled
  * debug output stored to `luci.log`
- * status info with information about succesfull and rejected dynamic updates are stored in a `status,info` file
+ * status info with information about successful and rejected dynamic updates are stored in a `status,info` file
  * connection information for `bean-elfvarsd` service is set
 
 Then the test application is executed.
 After a certain time, the symbolic link is modified to point to the subsequent version of the library (and noted with timestamp in `link.log`).
 
-*Luci* should now detect the change (employing *inotify*), check the compatibility (including quering `bean-elfvarsd`), and then either perform the update to the new version or discard it and continue the test application with the previous version.
+*Luci* should now detect the change (employing *inotify*), check the compatibility (including querying `bean-elfvarsd`), and then either perform the update to the new version or discard it and continue the test application with the previous version.
 In either case, it writes to `status.info` (`SUCCESS` or `FAILED`).
 
 The control script `run-test.sh` will check this status file after a few seconds:
@@ -219,11 +219,11 @@ But before starting the test, we have to retrieve the all published builds from 
 
 With the help of the [metasnap.debian.net](https://metasnap.debian.net/) we are able to determine the date a certain version was published, and using this information in conjunction with the [snapshot.debian.org](https://snapshot.debian.org/) service, we are able to download old revisions of an official package.
 
-> **Please note:** The snapshot service has a [not so well-documented rate limit](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=977653) for its service. We therefore strongly recommend to download the packages only once. If you encounter a rate limit, please try again after a certain time.
+> **Please note:** The snapshot service has a [not so well-documented rate limit](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=977653) for its service. We therefore strongly recommend downloading the packages only once. If you encounter a rate limit, please try again after a certain time.
 
 #### Buster (10)
 
-Debian Buster has following builds for [`libexpat1`](https://packages.debian.org/buster/libexpat1):
+Debian Buster has the following builds for [`libexpat1`](https://packages.debian.org/buster/libexpat1):
    1. Build `2.2.0-2`
    2. Build `2.2.1-1`
    3. Build `2.2.1-2`
@@ -269,7 +269,7 @@ The summarized results of the test applications output in `run-summary.txt` corr
 
 #### Bullseye (11)
 
-Debian Bullseye has following builds for [`libexpat1`](https://packages.debian.org/bullseye/libexpat1):
+Debian Bullseye has the following builds for [`libexpat1`](https://packages.debian.org/bullseye/libexpat1):
    1. Build `2.2.6-2` **(development start using Buster stable release)**
    2. Build `2.2.7-1`
    3. Build `2.2.7-2`
@@ -309,7 +309,7 @@ The all official revisions can be found on [Canonical Launchpad](https://launchp
 
 #### Focal Fossa (20.04)
 
-Ubuntu Focal has following builds for [`libexpat1`](https://packages.ubuntu.com/focal/libexpat1):
+Ubuntu Focal has the following builds for [`libexpat1`](https://packages.ubuntu.com/focal/libexpat1):
    1. Build `2.2.7-2`
    2. Build `2.2.9-1build1`
    3. Build `2.2.9-1`
@@ -335,7 +335,7 @@ The results are saved in the same format as the previous reports.
 
 #### Jammy Jellyfish (22.04)
 
-Ubuntu Focal has following builds for [`libexpat1`](https://packages.ubuntu.com/jammy/libexpat1):
+Ubuntu Focal has the following builds for [`libexpat1`](https://packages.ubuntu.com/jammy/libexpat1):
    1. Build `2.4.1-2`
    2. Build `2.4.1-3`
    3. Build `2.4.2-1`
@@ -373,6 +373,6 @@ By using the files `link.log` and `status.log` in each log folder, we can genera
 
     ./summary-distribution-package.sh log-{vanilla-test,debian,ubuntu}-*
 
-To verify this table, the Docker output (`out-docker.log`) might be the most human readable way of the evaluation output.
+To verify this table, the Docker output (`out-docker.log`) might be the most human-readable way of the evaluation output.
 
 (The script is not able to calculate the values for *stable* releases, this was done manually in Table 3)
