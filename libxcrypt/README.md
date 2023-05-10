@@ -1,16 +1,16 @@
 libxcrypt Experiment
 ====================
 
-The one-way hashing library [libxcrypt](https://github.com/besser82/libxcrypt) was used in Evaluation due to the following attributes 
+The one-way hashing library [libxcrypt](https://github.com/besser82/libxcrypt) was used in *Luci*'s evaluation due to the following attributes
 
  * increasingly [popular](https://qa.debian.org/popcon.php?package=libxcrypt) alternative for glibcs `libcrypt.so.1`
  * [many recent releases](https://github.com/besser82/libxcrypt/releases)
  * excellent [test suite](https://github.com/besser82/libxcrypt/tree/develop/test)
 
-We evaluate *Luci* with the test suite using custom (vanilla) library builds, and the corresponding packages distributed by Debian and Ubuntu.
+We evaluate *Luci* with the test suite using custom (vanilla) library builds and the corresponding packages distributed by Debian and Ubuntu.
 
 For this evaluation, multithreading (via `pthread`) is used to executed test cases in parallel.
-Therefore, we recommend at least 4 physical cores and a solid amount of memory (8 GB).
+Therefore, we recommend at least 4 physical cores and a solid amount of memory (8 GiB).
 
 While the overall design of the test case will stress the system a lot, it demonstrates the applicability of the DSU approach in multithreaded applications.
 
@@ -40,7 +40,7 @@ In the end, the results of all individual tests (baseline, vanilla, and backtest
 > **Please note:** The *failed test cases* in the `run-` output files do not refer to issues with *Luci* but to bugs in older libraries and, hence, are expected.
 > These *failed test cases* can be seen in the baseline as well and, when using dynamic updates via *Luci*. These failed tests reduce with increasing library version.
 
-The file prefixed with `table4` correspond to table 4 in the paper.
+The file prefixed with `table4` corresponds to table 4 in the paper.
 
 
 
@@ -139,10 +139,10 @@ The interpreter of the test application is modified to start with *Luci* instead
 Then the test application is executed.
 
 Most test cases fully utilize a CPU core -- and depending on the particular test, the execution time of a single test case will vary a lot: between 1us and 25s.
-It might even happen, that a long-running test case will not finish during the time between two updates (which is not a problem at all, but might be a bit confusing in the outputs).
+It might even happen that a long-running test case will not finish during the time between two updates (which is not a problem at all, but might be a bit confusing in the outputs).
 
 When taking scheduling into account and depending on the system, the detection of outdated code would need to be adjusted to a rather high value to prevent false positives.
-In the interest of run time we have decided to disable userfaultfd for this test case by default allowing us a shorter runtime per test case.
+In the interest of run time, we have decided to disable userfaultfd for this test case by default allowing us a shorter runtime per test case.
 However, you can change this behavior and adjust the settings by modifying the environment variables in `run-test.sh`.
 
 After a certain time, the symbolic link is modified to point to the subsequent version of the library (and noted with timestamp in `link.log`).
@@ -168,7 +168,7 @@ Backtesting Distribution Packages
 
 The previously generated test application and the test cases (`.so`) are dynamically linked against official *libcrypt1* packages in [Debian](https://www.debian.org/) ([Bullseye](https://www.debian.org/releases/bullseye/)), and [Ubuntu](https://ubuntu.com/) ([Focal](https://releases.ubuntu.com/focal/) & [Jammy](https://releases.ubuntu.com/jammy/)).
 
-[Debian Buster](https://www.debian.org/releases/buster/) is omitted since it uses glibcs libcrypt.
+[Debian Buster](https://www.debian.org/releases/buster/) is omitted since it uses glibc's libcrypt.
 
 For each release of a distribution, we test all published builds (during development phase and after stable release) by starting with the first build and replacing it with the subsequent builds after a certain time.
 If an update cannot be applied, the test application is restarted, dynamically linked against the build causing the incompatibility and the replacement starts again.

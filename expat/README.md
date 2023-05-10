@@ -8,7 +8,7 @@ The XML parser library [Expat](https://libexpat.github.io/) is the primary evalu
  * several [vulnerabilities](https://www.cvedetails.com/product/39003/Libexpat-Project-Libexpat.html?vendor_id=16735) emphasizing relevance for live-patching
  * extensive (official) [test suite](https://github.com/libexpat/libexpat/tree/master/expat/tests)
 
-We evaluate *Luci* with the test suite using custom (vanilla) library builds, and the corresponding packages distributed by Debian and Ubuntu.
+We evaluate *Luci* with the test suite using custom (vanilla) library builds and the corresponding packages distributed by Debian and Ubuntu.
 
 > **Please note:** Expat builds two shared libraries, which only differ in the encoding they support: `libexpat.so` for UTF-8 and `libexpatw.so` using `wchar_t` for UTF-16. Since they are rather identical when it comes to functionality, we only focus on the first version in the tests.
 

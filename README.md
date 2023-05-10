@@ -1,5 +1,5 @@
-Luci Artifacts
-==============
+*Luci* Artifacts
+================
 
 Preface
 -------
@@ -11,7 +11,7 @@ The dynamic linker/loader consists of the following parts:
   * [Bean](https://gitlab.cs.fau.de/luci-project/bean) — binary explorer/analyzer to compare shared libraries and detect changes
   * [Luci](https://gitlab.cs.fau.de/luci-project/luci), the actual dynamic linker/loader with DSU capabilities and *glibc* compatibility (`ld-linux-x86-64`), employing the before mentioned tools.
 
-This [artifact evaluation repository](https://gitlab.cs.fau.de/luci-project/eval-atc23) contains the *Luci* and scripts to perform the evaluation.
+This [artifact evaluation repository](https://gitlab.cs.fau.de/luci-project/eval-atc23) contains *Luci* and scripts to perform the evaluation.
 
 These Git repositories are hosted in a [public project](https://gitlab.cs.fau.de/luci-project) on a GitLab instance of [Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)](https://www.fau.eu/) with an automatic mirror on [GitHub](https://github.com/luci-project).
 
@@ -27,7 +27,7 @@ Further dependencies are the official repositories of
 For the evaluation, Packages for Debian and Ubuntu from [Canonical Launchpad](https://launchpad.net/), Debian [Snapshot](https://snapshot.debian.org/) and [Metasnap](https://metasnap.debian.net/) are used.
 Building and testing is performed inside a Docker container using [official Debian images](https://hub.docker.com/_/debian).
 
-We strongly recommend using a freshly installed *Ubuntu Focal Fossa (20.04)* for evaluation to circumvent side effects (due to certain customizations of the system configuration).
+We strongly recommend using a freshly installed *Ubuntu Focal Fossa (20.04)* for evaluation to circumvent unwanted effects, such as certain customizations of the system configuration.
 
 ### Local Install
 
@@ -92,7 +92,11 @@ The general approach for these steps is described below, while the `README.md` i
   * [libxcrypt](libxcrypt/README.md) (150 min)
   * [zlib](zlib/README.md) (45 min)
 
-The duration in brackets is the computing time for a fully automated evaluation (`run.sh`) in a VM on a standard desktop (Intel Core i5-8400 with four cores and 16 GiB of RAM using SSD).
+The duration in parentheses is the computing time for a fully automated evaluation (`run.sh`) in a VM on a standard desktop (Intel Core i5-8400 with four cores and 16 GiB of RAM using SSD).
+
+To run all experiments sequentially (unattended, takes about 5 hours), run
+
+    ./run-all.sh
 
 
 ### Vanilla

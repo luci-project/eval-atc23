@@ -1,7 +1,7 @@
 zlib Experiment
 ===============
 
-The compression library [zlib](https://www.zlib.net/) was used in Evaluation due to the following attributes:
+The compression library [zlib](https://www.zlib.net/) was used in *Luci*'s evaluation due to the following attributes:
 
  * [popular](https://qa.debian.org/popcon.php?package=zlib) and very widely used: ranked #11 of [most installed debian packages](https://popcon.debian.org/by_inst)
  * [several releases](https://github.com/madler/zlib/tags) since 2011
@@ -37,7 +37,7 @@ In the end, the results of all individual tests (baseline, vanilla, and backtest
 > **Please note:** The *failed test cases* in the `run-` output files do not refer to issues with *Luci* but to bugs in older libraries and, hence, are expected.
 > These *failed test cases* can be seen in the baseline as well and, when using dynamic updates via *Luci*. These failed tests reduce with increasing library version.
 
-The file prefixed with `table5` correspond to table 5 in the paper.
+The file prefixed with `table5` corresponds to table 5 in the paper.
 
 
 Vanilla Build
@@ -145,7 +145,7 @@ Backtesting Distribution Packages
 The previously generated test application is dynamically linked against official *zlib1g* packages in [Debian](https://www.debian.org/) ([Buster](https://www.debian.org/releases/buster/) & [Bullseye](https://www.debian.org/releases/bullseye/)), and [Ubuntu](https://ubuntu.com/) ([Focal](https://releases.ubuntu.com/focal/) & [Jammy](https://releases.ubuntu.com/jammy/)).
 
 For each release of a distribution, we test all published builds (during development phase and after stable release) by starting with the first build and replacing it with the subsequent builds after a certain time.
-If an update cannot be applied, the test application is restarted, dynamically linked against the build causing the incompatibility and the replacement starts again.
+If an update cannot be applied, the test application is restarted, dynamically linked against the build causing the incompatibility, and the replacement starts again.
 
 But before starting the test, we have to retrieve the all published builds from the official archives and extract them.
 
@@ -156,7 +156,8 @@ But before starting the test, we have to retrieve the all published builds from 
 
 ### Retrieving the packages in Debian
 
-With the help of the [metasnap.debian.net](https://metasnap.debian.net/) we are able to determine the date a certain version was published, and using this information in conjunction with the [snapshot.debian.org](https://snapshot.debian.org/) service, we are able to download old revisions of an official package.
+With the help of the [metasnap.debian.net](https://metasnap.debian.net/), we are able to determine the date a certain version was published.
+Using this date in conjunction with the [snapshot.debian.org](https://snapshot.debian.org/) service, we are, in turn, able to download old revisions of an official package.
 
 > **Please note:** The snapshot service has a [not so well-documented rate limit](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=977653) for its service. We therefore strongly recommend downloading the packages only once. If you encounter a rate limit, please try again after a certain time.
 
