@@ -51,7 +51,11 @@ This will create the directory `/opt/luci` (using `sudo`, changing ownership to 
 
 A preconfigured Ubuntu Focal VM image for [VirtualBox 7](https://www.virtualbox.org/) is available at <URL>:
 Its VM user is `user` and password `pass`, the required utilities for building and testing are installed.
-This repository is cloned to `/home/user/eval` (run `/home/user/eval/update.sh` to pull the `master` branch).
+This repository is cloned to `/home/user/eval`. Run
+
+	/home/user/eval/update.sh
+
+to update to the latest version (by pulling the remote `master` branch).
 
 
 Getting started

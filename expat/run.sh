@@ -88,3 +88,8 @@ test -f "log-ubuntu-jammy-${LOGDATE}/run-summary.txt" && ln -rs "log-ubuntu-jamm
 
 title "Done"
 echo "For results see ${RESULTDIR}"
+
+# Open result folder on desktop
+if [[ -n "${DISPLAY}" ]] ; then
+	xdg-open "${RESULTDIR}" >/dev/null 2>&1 &
+fi

@@ -42,6 +42,11 @@ elif [[ -n "$(docker ps -q)" ]] ; then
 	echo "please kill it using 'docker kill <ID>' before continuing!"
 fi
 
+if ! nc -zw1 github.com 443 ; then
+	echo -e "\n\e[31mWarning - Unable to connect to GitHub!\e[0m"
+	echo "Check your network connection, Experiments might need it..."
+fi
+
 echo
 echo "     (starting in 10 seconds)"
 echo
