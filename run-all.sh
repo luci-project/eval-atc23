@@ -13,12 +13,32 @@ if ! mkdir -p /opt/luci ; then
 	echo "besides entering your credentials to create '/opt/luci'"
 fi
 
-docker_ps=$(docker ps -q)
-if [[ -n "${docker_ps}" ]] ; then
+if ! uname -a | grep x86_64 ; then
+	echo -e "\n\e[31mWarning - seems like you are not using a x86_64 architecture!\e[0m"
+	echo "Luci will most likely not run..."
+fi
+if [[ "$(uname)" != "Linux"* ]] ; then
+	echo -e "\n\e[31mWarning - seems like you are not using GNU/Linux!\e[0m"
+	echo "Luci will probably not run..."
+elif [[ -f "/etc/os-release" ]] ; then
+	source /etc/os-release
+	if [[ "${ID,,}" != "debian" && "${ID_LIKE,,}" != "debian" ]] ; then
+		echo -e "\n\e[31mWarning - seems like you are not using a debianoid distribution!\e[0m"
+		echo "Experiments might not run as expected..."
+	elif [[ "${ID,,}" != "ubuntu" ]] ; then
+		echo -e "\n\e[33mWarning - seems like you are not using Ubuntu!\e[0m"
+		echo "Might not be able to extract Ubuntu Jammy packages..."
+	fi
+fi
+
+if [ ! -x "$(command -v docker)" ]; then
+	echo -e "\n\e[31mWarning - seems like Docker engine is not installed!\e[0m"
+	echo "Experiments will probably not run..."
+elif [[ -n "$(docker ps -q)" ]] ; then
 	echo -e "\n\e[31mWarning - Docker container running:\e[0m"
 	docker ps
 	echo
-	echo "If a container belongs to a previous Luci experiments,"
+	echo "If a container belongs to a previously started Luci experiments,"
 	echo "please kill it using 'docker kill <ID>' before continuing!"
 fi
 
@@ -30,7 +50,7 @@ sleep 10s
 cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null
 
 # Build if required
-if [[ ! -x "${DIR}/luci/ld-luci-debian-bullseye-x64.so" ]] ; then
+if [[ ! -x "./luci/ld-luci-debian-bullseye-x64.so" ]] ; then
 	./setup.sh
 fi
 
