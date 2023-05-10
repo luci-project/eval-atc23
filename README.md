@@ -21,7 +21,6 @@ Further dependencies are the official repositories of
   * [Expat (on GitHub)](https://github.com/libexpat/libexpat.git)
   * [libxcrypt (on GitHub)](https://github.com/besser82/libxcrypt)
   * [OpenSSL (at git.openssl.org)](git://git.openssl.org/openssl.git)
-  * [WolfSSL (on GitHub)](https://github.com/wolfSSL/wolfssl.git)
   * [Zlib (on GitHub)](https://github.com/madler/zlib.git)
 
 For the evaluation, Packages for Debian and Ubuntu from [Canonical Launchpad](https://launchpad.net/), Debian [Snapshot](https://snapshot.debian.org/) and [Metasnap](https://metasnap.debian.net/) are used.
@@ -34,10 +33,12 @@ We strongly recommend using a freshly installed *Ubuntu Focal Fossa (20.04)* for
 Make sure that you meet the requirements (e.g., [Docker engine](https://docs.docker.com/engine/install/) installed) — for a new *Ubuntu Focal* installation execute
 
     sudo apt-get update
-    sudo apt-get install -y apt-transport-https build-essential ca-certificates clang curl file fpc g++ gcc gccgo gfortran git gnat gnupg golang less libcap2-bin libstdc++-10-dev make rustc
+    sudo apt-get install -y apt-transport-https build-essential ca-certificates clang curl file fpc g++ gcc gccgo gfortran git gnat gnupg golang less libcap2-bin libc++-dev libstdc++-10-dev make python3 python3-pip python3-pyparsing rustc
     curl -fsSL https://get.docker.com | sudo sh
     sudo usermod -aG docker $USER
     sudo reboot
+
+Make sure, that the directory `$HOME/.local/bin` exists and is in your `$PATH` environment variable.
 
 Recursively clone this repository (the path must not contain spaces or special characters) and run the setup script.
 
@@ -49,11 +50,11 @@ This will create the directory `/opt/luci` (using `sudo`, changing ownership to 
 
 ### Virtual Machine
 
-A preconfigured Ubuntu Focal VM image for [VirtualBox 7](https://www.virtualbox.org/) is available at <URL>:
+A preconfigured Ubuntu Focal VM image for [VirtualBox 7](https://www.virtualbox.org/) is available at [sys.cs.fau.de/research/data/luci/atc23/ubuntu.ova](https://sys.cs.fau.de/research/data/luci/atc23/ubuntu.ova):
 Its VM user is `user` and password `pass`, the required utilities for building and testing are installed.
 This repository is cloned to `/home/user/eval`. Run
 
-	/home/user/eval/update.sh
+    /home/user/eval/update.sh
 
 to update to the latest version (by pulling the remote `master` branch).
 
@@ -92,9 +93,9 @@ For each library project, we test a range of recent versions with a test applica
 
 The general approach for these steps is described below, while the `README.md` in the libraries' experiment folder contains further details:
 
-  * [Expat](expat/README.md) (60 min)
-  * [libxcrypt](libxcrypt/README.md) (150 min)
-  * [zlib](zlib/README.md) (45 min)
+  * [Expat](https://gitlab.cs.fau.de/luci-project/eval-atc23/expat/README.md) (60 min)
+  * [libxcrypt](https://gitlab.cs.fau.de/luci-project/eval-atc23/libxcrypt/README.md) (150 min)
+  * [zlib](https://gitlab.cs.fau.de/luci-project/eval-atc23/zlib/README.md) (45 min)
 
 The duration in parentheses is the computing time for a fully automated evaluation (`run.sh`) in a VM on a standard desktop (Intel Core i5-8400 with four cores and 16 GiB of RAM using SSD).
 
