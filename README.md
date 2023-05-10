@@ -33,7 +33,9 @@ We strongly recommend using a freshly installed *Ubuntu Focal Fossa (20.04)* for
 Make sure that you meet the requirements (e.g., [Docker engine](https://docs.docker.com/engine/install/) installed) — for a new *Ubuntu Focal* installation execute
 
     sudo apt-get update
-    sudo apt-get install -y apt-transport-https build-essential ca-certificates clang curl file fpc g++ gcc gccgo gfortran git gnat gnupg golang less libcap2-bin libc++-dev libstdc++-10-dev make python3 python3-pip python3-pyparsing rustc
+    sudo apt-get install -y apt-transport-https build-essential ca-certificates clang curl file fpc \
+                            g++ gcc gccgo gfortran git gnat gnupg golang less libcap2-bin libc++-dev \
+                            libstdc++-10-dev make python3 python3-pip python3-pyparsing rustc
     curl -fsSL https://get.docker.com | sudo sh
     sudo usermod -aG docker $USER
     sudo reboot
@@ -50,7 +52,7 @@ This will create the directory `/opt/luci` (using `sudo`, changing ownership to 
 
 ### Virtual Machine
 
-A preconfigured Ubuntu Focal VM image for [VirtualBox 7](https://www.virtualbox.org/) is available at [sys.cs.fau.de/research/data/luci/atc23/ubuntu.ova](https://sys.cs.fau.de/research/data/luci/atc23/ubuntu.ova):
+A preconfigured Ubuntu Focal VM image for [VirtualBox 7](https://www.virtualbox.org/) is available at [sys.cs.fau.de/research/data/luci/atc23/ubuntu.ova](https://sys.cs.fau.de/research/data/luci/atc23/ubuntu.ova) (7 GiB):
 Its VM user is `user` and password `pass`, the required utilities for building and testing are installed.
 This repository is cloned to `/home/user/eval`. Run
 
@@ -107,28 +109,28 @@ To run all experiments sequentially (unattended, takes about 5 hours), run
 ### Vanilla
 
 1. Build multiple versions of the shared library (`gen-lib.sh`)
-  * In a clean environment (Docker with an official base image), installing only the required dependencies
-  * Retrieving the source from the official repository
-  * For each version of the shared library:
-    - Checkout of the corresponding commit
-    - Configuration using default flags
-    - In case that the version is known to be buggy or are not supported with current compilers, apply adjustments
-    - Build the shared library
-    - Install to a directory exclusive for this version (labeled with the commit hash and mounted from the host)
-    - Clean up -- a subsequent build must not use any artifacts from a previous build
-  * Update compatibility of the versions can be checked using `bean-compare`
+   * In a clean environment (Docker with an official base image), installing only the required dependencies
+   * Retrieving the source from the official repository
+   * For each version of the shared library:
+     - Checkout of the corresponding commit
+     - Configuration using default flags
+     - In case that the version is known to be buggy or are not supported with current compilers, apply adjustments
+     - Build the shared library
+     - Install to a directory exclusive for this version (labeled with the commit hash and mounted from the host)
+     - Clean up -- a subsequent build must not use any artifacts from a previous build
+   * Update compatibility of the versions can be checked using `bean-compare`
 2. Build test application (`gen-test.sh`)
-  * Based on unit test or similar from the official project
-  * But removing all tests which are not solely based on the shared library, use version dependent internals (structure sizes) or will cause serious issues on earlier releases (Segmentation faults or serious memory leaks)
-  * Linked against a recent version of the shared library created in the previous step
+   * Based on unit test or similar from the official project
+   * But removing all tests which are not solely based on the shared library, use version dependent internals (structure sizes) or will cause serious issues on earlier releases (Segmentation faults or serious memory leaks)
+   * Linked against a recent version of the shared library created in the previous step
 3. Testing baseline (`run-baseline.sh`)
-  * Control script is starts in a containerized environment (Docker with an official base image)
-  * For each version of the shared library:
-    - Generic shared library symlink points to the current version
-    - Start test application as background process
-    - Capture output in log files (see below)
-    - After several seconds, kill the background process
-  * Processing/summarizing output
+   * Control script is starts in a containerized environment (Docker with an official base image)
+   * For each version of the shared library:
+     - Generic shared library symlink points to the current version
+     - Start test application as background process
+     - Capture output in log files (see below)
+     - After several seconds, kill the background process
+   * Processing/summarizing output
 4. Testing dynamic updates (`run-test.sh`)
    * On the host, a service for hashing DWARF data (`bean-elfvarsd`) starts
    * Starting Control script in a containerized environment (Docker with an official base image)
@@ -138,7 +140,7 @@ To run all experiments sequentially (unattended, takes about 5 hours), run
    * For each version of the shared library:
      - After several seconds change symbolic link for the shared library to the next version, the symbolic link to the library is changed to the next version
      - Check the process, especially the status interface (`LD_STATUS_INFO`): if *Luci* was not able to perform the update, e.g., due to incompatibility (*Luci* notifies *FAILED* -- the application is still running with the old version), the test application gets stopped and restarted (hence now using the current version)
-  * Processing/summarizing output
+   * Processing/summarizing output
    * All logs are stored in a separate directory for each test (`log-vanilla` with a date/time suffix):
      - `elfvarsd.{log,err}` is the output of the DWARF hashing daemon
      - `link.log` lists the changes of the symbol links for the shared library
@@ -156,7 +158,7 @@ The last two steps are wrapped into `eval-vanilla.sh` resolving version tags to 
 
 1. Retrieve multiple releases of the official packages
    * For each release:
-     - Find and download via [Canonical Launchpad](https://launchpad.net/) (`launchpad-fetch.sh `) and Debian [Snapshot](https://snapshot.debian.org/) (`snapshot-fetch.py`)
+     - Find and download via [Canonical Launchpad](https://launchpad.net/) (`launchpad-fetch.sh`) and Debian [Snapshot](https://snapshot.debian.org/) (`snapshot-fetch.py`)
      - Extract package
      - Adjust directory structure (in case there were changes)
    * Update compatibility of the versions can be checked using `bean-compare`
@@ -185,7 +187,7 @@ Since the execution of the individual stages take a noticeable amount of time, e
 The results are then placed in `result-DATE` folder.
 If certain files are relevant for Tables provided in the paper, its filename is prefixed with `table`.
 
-Subsequent executions of `run.sh` will skip stages 1 & 2 in **vanilla** (building libraries and test application) and stages 1 in **backtesting** (downloading packages) and therefore speed up further evaluation runs.
+Subsequent executions of `run.sh` will skip stages 1 & 2 in **vanilla** (building libraries and test application) and stage 1 in **backtesting** (downloading packages) and therefore speed up further evaluation runs.
 In case a full re-run is desired, first run the script `cleanup.sh` to remove these files from the folder.
 
 In case just want to repeat a specific step, you can also manually execute it - please refer to the `README.md` in the corresponding folder for specific details.

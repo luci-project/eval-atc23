@@ -13,7 +13,7 @@ if ! mkdir -p /opt/luci ; then
 	echo "besides entering your credentials to create '/opt/luci'"
 fi
 
-if ! uname -a | grep x86_64 ; then
+if ! uname -a | grep x86_64 &>/dev/null ; then
 	echo -e "\n\e[31mWarning - seems like you are not using a x86_64 architecture!\e[0m"
 	echo "Luci will most likely not run..."
 fi
@@ -42,7 +42,7 @@ elif [[ -n "$(docker ps -q)" ]] ; then
 	echo "please kill it using 'docker kill <ID>' before continuing!"
 fi
 
-if ! nc -zw1 github.com 443 ; then
+if ! nc -zw1 github.com 443 &>/dev/null ; then
 	echo -e "\n\e[31mWarning - Unable to connect to GitHub!\e[0m"
 	echo "Check your network connection, Experiments might need it..."
 fi
