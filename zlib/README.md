@@ -32,6 +32,8 @@ However, all steps described bellow can also be automatically executed with
 
     ./run.sh
 
+The experiment will take approximately **45 minutes** to complete.
+
 In the end, the results of all individual tests (baseline, vanilla, and backtesting) are stored in a `result-DATE` directory.
 
 > **Please note:** The *failed test cases* in the `run-` output files do not refer to issues with *Luci* but to bugs in older libraries and, hence, are expected.

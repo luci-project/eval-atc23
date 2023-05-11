@@ -34,6 +34,8 @@ However, all steps described bellow can also be automatically executed with
 
     ./run.sh
 
+The experiment will take approximately **60 minutes** to complete.
+
 In the end, the results of all individual tests (baseline, vanilla, and backtesting) are stored in a `result-DATE` directory.
 
 > **Please note:** The *failed test cases* in the `run-` output files do not refer to issues with *Luci* but to bugs in older libraries and, hence, are expected.
@@ -44,6 +46,8 @@ However, a single table in the paper may be based on multiple such files (see de
 
 > **Please note:** The summary files (`run-summary.txt`, `table*-run-*.txt`) are aggregated using the output of the test application and (in case of backtesting) other log files to match the package names (even when version numbers are identical).
 > However, it is possible that the script producing this file has bugs (especially in corner cases), therefore if in doubt please check the actual log files `run-*.out` (output of a single test application process), `link.log` (changes of library symlink by the observer script), and `status.log` (link status output of *Luci*).
+
+> **Please note:** Depending on the system configuration, execution in a virtual machine can have a significant impact on the average *runtime* of test cases (factor 5). Therefore, the values should be compared relative to the baseline. We've used a non-virtualized environment for the paper.
 
 
 Vanilla Build
