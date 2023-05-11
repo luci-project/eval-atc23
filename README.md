@@ -95,9 +95,9 @@ For each library project, we test a range of recent versions with a test applica
 
 The general approach for these steps is described below, while the `README.md` in the libraries' experiment folder contains further details:
 
-  * [Expat](https://gitlab.cs.fau.de/luci-project/eval-atc23/expat/README.md) (60 min)
-  * [libxcrypt](https://gitlab.cs.fau.de/luci-project/eval-atc23/libxcrypt/README.md) (150 min)
-  * [zlib](https://gitlab.cs.fau.de/luci-project/eval-atc23/zlib/README.md) (45 min)
+  * [Expat](expat/README.md) (60 min)
+  * [libxcrypt](libxcrypt/README.md) (150 min)
+  * [zlib](zlib/README.md) (45 min)
 
 The duration in parentheses is the computing time for a fully automated evaluation (`run.sh`) in a VM on a standard desktop (Intel Core i5-8400 with four cores and 16 GiB of RAM using SSD).
 
