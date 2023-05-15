@@ -262,7 +262,7 @@ To analyze the differences between the builds (first top-half *Binary releases i
 
     bean-compare -v -r -d -N backtesting/debian/buster/libexpat1 -o table2-debian-buster-elf-section.htm
 
-(`debug *` refers to the symbol table only, since no debug symbols / DWARF data is available)
+(`debug *` refers to the dynamic symbol table only, since no debug symbols / DWARF data is available)
 
 Start the evaluation of the packages with
 

@@ -592,6 +592,7 @@ int main(argc, argv)
         gettimeofday(&now, NULL);
         unsigned long end =  now.tv_sec * 1000000UL + now.tv_usec;
         printf("[Duration: %lu ms]\n", (end - start + 500) / 1000);
+        fflush(stdout);
     }
 
     return 0;

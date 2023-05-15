@@ -14,37 +14,44 @@ if ! mkdir -p /opt/luci ; then
 fi
 
 if ! uname -a | grep x86_64 &>/dev/null ; then
-	echo -e "\n\e[31mWarning - seems like you are not using a x86_64 architecture!\e[0m"
+	echo -e "\n\e[31mWarning - seems like you are not using a x86_64 architecture\e[0m"
 	echo "Luci will most likely not run..."
 fi
 if [[ "$(uname)" != "Linux"* ]] ; then
-	echo -e "\n\e[31mWarning - seems like you are not using GNU/Linux!\e[0m"
+	echo -e "\n\e[31mWarning - seems like you are not using GNU/Linux\e[0m"
 	echo "Luci will probably not run..."
 elif [[ -f "/etc/os-release" ]] ; then
 	source /etc/os-release
 	if [[ "${ID,,}" != "debian" && "${ID_LIKE,,}" != "debian" ]] ; then
-		echo -e "\n\e[31mWarning - seems like you are not using a debianoid distribution!\e[0m"
+		echo -e "\n\e[31mWarning - seems like you are not using a debianoid distribution\e[0m"
 		echo "Experiments might not run as expected..."
 	elif [[ "${ID,,}" != "ubuntu" ]] ; then
-		echo -e "\n\e[33mWarning - seems like you are not using Ubuntu!\e[0m"
+		echo -e "\n\e[33mWarning - seems like you are not using Ubuntu\e[0m"
 		echo "Might not be able to extract Ubuntu Jammy packages..."
 	fi
 fi
 
 if [ ! -x "$(command -v docker)" ]; then
-	echo -e "\n\e[31mWarning - seems like Docker engine is not installed!\e[0m"
+	echo -e "\n\e[31mWarning - seems like Docker engine is not installed\e[0m"
 	echo "Experiments will probably not run..."
 elif [[ -n "$(docker ps -q)" ]] ; then
 	echo -e "\n\e[31mWarning - Docker container running:\e[0m"
 	docker ps
 	echo
 	echo "If a container belongs to a previously started Luci experiments,"
-	echo "please kill it using 'docker kill <ID>' before continuing!"
+	echo "please kill it using 'docker kill <ID>' before continuing."
 fi
 
 if ! nc -zw1 github.com 443 &>/dev/null ; then
-	echo -e "\n\e[31mWarning - Unable to connect to GitHub!\e[0m"
+	echo -e "\n\e[31mWarning - Unable to connect to GitHub\e[0m"
 	echo "Check your network connection, Experiments might need it..."
+fi
+
+if ! getcap ../luci/ld-luci-debian-bullseye-x64.so | grep "cap_sys_ptrace=eip" &>/dev/null ; then
+	if [[ "$(cat /proc/sys/vm/unprivileged_userfaultfd)" -ne 1 ]] ; then
+		echo -e "\n\e[31mWarning - unprivileged userfaultfd not enabled\e[0m"
+		echo "Change proc/sys/vm/unprivileged_userfaultfd to 1 for unpriv. userfaultfd."
+	fi
 fi
 
 echo
