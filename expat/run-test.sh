@@ -73,6 +73,7 @@ function prepare() {
 	if [[ -z ${NODEBUG+exist} ]] ; then
 		export LD_DEBUG_HASH="tcp:$(getent hosts host.docker.internal | cut -d' ' -f1):$ELFVARSPORT"
 	fi
+	export LD_SKIP_IDENTICAL=1
 	export LD_DYNAMIC_UPDATE=1
 	export LD_DYNAMIC_DLUPDATE=1
 	export LD_RELOCATE_OUTDATED=0
