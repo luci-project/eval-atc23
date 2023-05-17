@@ -34,7 +34,7 @@ fi
 if [ ! -x "$(command -v docker)" ]; then
 	echo -e "\n\e[31mWarning - seems like Docker engine is not installed\e[0m"
 	echo "Experiments will probably not run..."
-elif [[ -n "$(docker ps -q)" ]] ; then
+elif [[ -n "$(docker ps -q 2>/dev/null)" ]] ; then
 	echo -e "\n\e[31mWarning - Docker container running:\e[0m"
 	docker ps
 	echo
@@ -47,11 +47,9 @@ if ! nc -zw1 github.com 443 &>/dev/null ; then
 	echo "Check your network connection, Experiments might need it..."
 fi
 
-if ! getcap ../luci/ld-luci-debian-bullseye-x64.so | grep "cap_sys_ptrace=eip" &>/dev/null ; then
-	if [[ "$(cat /proc/sys/vm/unprivileged_userfaultfd)" -ne 1 ]] ; then
-		echo -e "\n\e[31mWarning - unprivileged userfaultfd not enabled\e[0m"
-		echo "Change proc/sys/vm/unprivileged_userfaultfd to 1 for unpriv. userfaultfd."
-	fi
+if [[ "$(getcap ../luci/ld-luci-debian-bullseye-x64.so 2>/dev/null)" != *"cap_sys_ptrace=eip"* && "$(cat /proc/sys/vm/unprivileged_userfaultfd)" -ne 1 ]] ; then
+	echo -e "\n\e[31mWarning - unprivileged userfaultfd not enabled\e[0m"
+	echo "Change proc/sys/vm/unprivileged_userfaultfd to 1 for unpriv. userfaultfd."
 fi
 
 echo
