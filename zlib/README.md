@@ -39,6 +39,10 @@ In the end, the results of all individual tests (baseline, vanilla, and backtest
 > **Please note:** The *failed test cases* in the `run-` output files do not refer to issues with *Luci* but to bugs in older libraries and, hence, are expected.
 > These *failed test cases* can be seen in the baseline as well and, when using dynamic updates via *Luci*. These failed tests reduce with increasing library version.
 
+> **Please note:** The default time limit before old library code is considered *obsolete* is set to 3 seconds after a new version is applied.
+> Depending on your system and the load during execution of the test application, this may cause false detections.
+> Please consider increasing the delay in `LD_DETECT_OUTDATED_DELAY` by editing `run-test.sh` if the problem persists on your system.
+
 The file prefixed with `table5` corresponds to table 5 in the paper.
 
 

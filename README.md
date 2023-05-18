@@ -200,5 +200,9 @@ On rare occasions, memory management issues and race conditions can happen (unre
 However, such errors should happen rather rarely:
 You should be able to successfully execute the full evaluation of all libraries most of the time.
 
+For reasonable runtime, we have set tight time limits before the old library code is considered *outdated*.
+However, if the test system is under heavy load, it is possible that the execution of the test application will be delayed, leading to the detection of outdated code, which in turn will trigger a restart.
+You can then try a new run after ensuring normal load, or (depending on your system) increase the delay in `LD_DETECT_OUTDATED_DELAY` by editing `run-test.sh`.
+
 Besides, it is not required to observe the evaluation permanently:
 Failures will be logged, and the control scripts will restart the test application and continue.
