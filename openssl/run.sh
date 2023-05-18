@@ -10,7 +10,7 @@ source ../tools/run-config.sh
 
 ## Vanilla
 
-if echo release/* | xargs -n1 test -e ; then
+if echo release/v1.1.1/* | xargs -n1 test -e ; then
 	echo "All libraries seem to exist -- cleanup for rebuild!"
 else
 	title "Building libraries"
