@@ -17,6 +17,11 @@ make -C "${DIR}/luci"
 # build versions for all distributions
 make -C "${DIR}/luci" all
 
+# set capabilities
+for f in luci/ld-luci*.so ; do
+	sudo setcap cap_sys_ptrace=eip $f
+done
+
 # Build and install Bean utilities
 if command -v pip3 &>/dev/null ; then
 	pip3 install -r "${DIR}/luci/bean/requirements.txt"
@@ -25,10 +30,10 @@ elif command -v pip &>/dev/null ; then
 else
 	echo "Python package manager (pip) not found - not installing requirements, Bean tools might not work as expacted!" >&2
 fi
-make -C "${DIR}/luci/bean" -B all
+make -C "${DIR}/luci/bean" -B
 make -C "${DIR}/luci/bean" install
 
 # Build and install elfo utilities
-make -C "${DIR}/luci/bean/elfo" -B all
+make -C "${DIR}/luci/bean/elfo" -B
 make -C "${DIR}/luci/bean/elfo" install
 

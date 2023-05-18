@@ -47,6 +47,10 @@ However, a single table in the paper may be based on multiple such files (see de
 > **Please note:** The summary files (`run-summary.txt`, `table*-run-*.txt`) are aggregated using the output of the test application and (in case of backtesting) other log files to match the package names (even when version numbers are identical).
 > However, it is possible that the script producing this file has bugs (especially in corner cases), therefore if in doubt please check the actual log files `run-*.out` (output of a single test application process), `link.log` (changes of library symlink by the observer script), and `status.log` (link status output of *Luci*).
 
+> **Please note:** The default time limit before old library code is considered *obsolete* is set to 3 seconds after a new version is applied.
+> Depending on your system and the load during execution of the test application, this may cause false detections.
+> Please consider increasing the delay in `LD_DETECT_OUTDATED_DELAY` by editing `run-test.sh` if the problem persists on your system.
+
 > **Please note:** Depending on the system configuration, execution in a virtual machine can have a significant impact on the average *runtime* of test cases (factor 5). Therefore, the values should be compared relative to the baseline. We've used a non-virtualized environment for the paper.
 
 
@@ -262,7 +266,7 @@ To analyze the differences between the builds (first top-half *Binary releases i
 
     bean-compare -v -r -d -N backtesting/debian/buster/libexpat1 -o table2-debian-buster-elf-section.htm
 
-(`debug *` refers to the symbol table only, since no debug symbols / DWARF data is available)
+(`debug *` refers to the dynamic symbol table only, since no debug symbols / DWARF data is available)
 
 Start the evaluation of the packages with
 
