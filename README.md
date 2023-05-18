@@ -52,7 +52,7 @@ This will create the directory `/opt/luci` (using `sudo`, changing ownership to 
 
 ### Virtual Machine
 
-A preconfigured Ubuntu Focal VM image for [VirtualBox 7](https://www.virtualbox.org/) is available at [sys.cs.fau.de/research/data/luci/atc23/ubuntu.ova](https://sys.cs.fau.de/research/data/luci/atc23/ubuntu.ova) (7 GiB):
+A preconfigured Ubuntu Focal VM image for [VirtualBox 7](https://www.virtualbox.org/) is available at [sys.cs.fau.de/research/data/luci/atc23/ubuntu.ova](https://sys.cs.fau.de/research/data/luci/atc23/ubuntu.ova) (5.5 GiB):
 Its VM user is `user` and password `pass`, the required utilities for building and testing are installed.
 This repository is cloned to `/home/user/eval`. Run
 
