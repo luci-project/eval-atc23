@@ -1,5 +1,5 @@
-*Luci* Artifacts
-================
+*Luci* Artifact
+===============
 
 Preface
 -------
@@ -206,3 +206,9 @@ You can then try a new run after ensuring normal load, or (depending on your sys
 
 Besides, it is not required to observe the evaluation permanently:
 Failures will be logged, and the control scripts will restart the test application and continue.
+
+
+### License
+
+The *Luci Artifact* was created by the [Department of Computer Science 4](https://sys.cs.fau.de/) at [Friedrich-Alexander-Universität Erlangen-Nürnberg](https://www.fau.eu/) and is available under the [GNU Affero General Public License, Version 3 (AGPL v3)](LICENSE.md).
+
