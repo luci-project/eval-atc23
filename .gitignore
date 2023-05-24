@@ -6,4 +6,6 @@
 */result-*
 !*/src-test
 */*-cache
+*/.test-cache.db
+zlib/foo.gz
 */[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]*/
