@@ -22,7 +22,7 @@ if [[ ! -d "$DIR" ]] ; then
 	exit 1
 fi
 
-releases=( "${TESTDIR}"/*/ )
+releases=( $("${DIR}/../tools/dir_version.py" "${TESTDIR}") )
 if [[ ${#releases[@]} -le 1 ]] ; then
 	echo "Not enough versions in $1 $2 to do serious testing" >&2
 else
