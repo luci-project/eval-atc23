@@ -1,0 +1,12 @@
+SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 376 at 2023-05-24T15:34:49.811648Z
+SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 376 at 2023-05-24T15:34:49.815510Z
+ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 376 at 2023-05-24T15:34:49.819366Z
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 381 at 2023-05-24T15:35:01.413386Z
+
+SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 424 at 2023-05-24T15:35:06.845978Z
+SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 424 at 2023-05-24T15:35:06.851911Z
+ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 424 at 2023-05-24T15:35:06.856029Z
+SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 429 at 2023-05-24T15:35:17.458384Z
+SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 429 at 2023-05-24T15:35:33.469336Z
+SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 429 at 2023-05-24T15:35:48.486378Z
+SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 429 at 2023-05-24T15:36:03.504646Z

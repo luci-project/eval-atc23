@@ -1,0 +1,12 @@
+[2023-05-24T14:44:39+00:00] Test environment (docker) started
+[2023-05-24T14:45:02+00:00] Started test app with PID 377
+[2023-05-24T14:52:44+00:00] Remaining luci status:
+[2023-05-24T14:52:44+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/usr/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 377 at 2023-05-24T14:45:02.591715Z
+[2023-05-24T14:52:44+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/usr/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 382 at 2023-05-24T14:45:44.421147Z
+[2023-05-24T14:52:44+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/usr/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 382 at 2023-05-24T14:46:44.771979Z
+[2023-05-24T14:52:44+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/usr/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 382 at 2023-05-24T14:47:45.205037Z
+[2023-05-24T14:52:44+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/usr/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 382 at 2023-05-24T14:48:45.588529Z
+[2023-05-24T14:52:44+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/usr/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 382 at 2023-05-24T14:49:44.927923Z
+[2023-05-24T14:52:44+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/usr/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 382 at 2023-05-24T14:50:46.395909Z
+[2023-05-24T14:52:44+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/usr/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 382 at 2023-05-24T14:51:46.806168Z
+[2023-05-24T14:52:44+00:00] Finished docker

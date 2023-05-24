@@ -1,0 +1,3264 @@
+[47;30;1m INFO  [0;40;37m      0 [2m711[22m    luci:src/build_info.cpp:66 ................[49m Luci eebf869 (built Tue, 23 May 2023 16:29:29 +0200)
+[0m[7;1m DEBUG [0;40m      0 [2m711[22m    luci:src/build_info.cpp:75 ................[49m  with glibc compatibility to debian bullseye on x64
+[0m[7;1m DEBUG [0;40m      0 [2m711[22m    luci:src/build_info.cpp:78 ................[49m Using Bean 1a26af3 and Elfo 1116a6a (built Tue, 23 May 2023 16:19:07 +0200)
+[0m[7;1m DEBUG [0;40m      0 [2m711[22m    luci:src/build_info.cpp:88 ................[49m Using Capstone 4.0.2
+[0m[7;1m DEBUG [0;40m      0 [2m711[22m    luci:src/build_info.cpp:94 ................[49m Using DirtyLittleHelper (DLH) 9e8afac (built Tue, 23 May 2023 16:19:05 +0200)
+[0m[7;1m DEBUG [0;40m      0 [2m711[22m    luci:src/main.cpp:134 .....................[49m Set log level to 6
+[0m[7;1m DEBUG [0;40m      0 [2m711[22m    luci:src/main.cpp:140 .....................[49m Log to file /builds/target//log-vanilla-test-2023-05-24_14-09/luci.log (appending output)
+[0mERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+ERROR:     7: mismatched tag (line 2, offset 2005)
+    reported from runtests.c, line 5073
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted
+ERROR: Stopping the parser did not work as expected
+ERROR: Stopping the parser did not work as expected
+ERROR: Parsing was expected to fail but succeeded.
+ERROR: Namespace separator handling is broken
+ERROR: enlarging buffer not failed
+FAIL case  7 (    at name start, 2-byte sequence, error code 0)
+FAIL case  7 (not at name start, 2-byte sequence, error code 0)
+FAIL case  8 (    at name start, 2-byte sequence, error code 0)
+FAIL case  8 (not at name start, 2-byte sequence, error code 0)
+FAIL case 11 (not at name start, 2-byte sequence, error code 0)
+FAIL case 12 (not at name start, 2-byte sequence, error code 0)
+FAIL case 15 (    at name start, 3-byte sequence, error code 0)
+FAIL case 15 (not at name start, 3-byte sequence, error code 0)
+FAIL case 16 (    at name start, 3-byte sequence, error code 0)
+FAIL case 16 (not at name start, 3-byte sequence, error code 0)
+FAIL case 17 (    at name start, 3-byte sequence, error code 0)
+FAIL case 17 (not at name start, 3-byte sequence, error code 0)
+FAIL case 18 (    at name start, 3-byte sequence, error code 0)
+FAIL case 18 (not at name start, 3-byte sequence, error code 0)
+FAIL case 21 (not at name start, 3-byte sequence, error code 0)
+FAIL case 22 (not at name start, 3-byte sequence, error code 0)
+FAIL case 23 (not at name start, 3-byte sequence, error code 0)
+FAIL case 24 (not at name start, 3-byte sequence, error code 0)
+ERROR: UTF-8 regression detected
+ERROR: Invalid UTF-8 in DOCTYPE not faulted
+ERROR: Default handler not run for public !DOCTYPE
+ERROR: Expected to error on abort
+ERROR: wrong number of data characters: got 12, expected 7
+ERROR: wrong number of data characters: got 31, expected 38
+ERROR: Pre-init XML_ParseBuffer not faulted

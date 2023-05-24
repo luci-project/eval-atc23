@@ -1,0 +1,832 @@
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8183 kB]
+Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [244 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [14.6 kB]
+Fetched 8649 kB in 1s (8484 kB/s)
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  make-doc
+The following NEW packages will be installed:
+  make
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 396 kB of archives.
+After this operation, 1630 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 make amd64 4.3-4.1 [396 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 396 kB in 0s (12.9 MB/s)
+Selecting previously unselected package make.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6664 files and directories currently installed.)
+Preparing to unpack .../make_4.3-4.1_amd64.deb ...
+Unpacking make (4.3-4.1) ...
+Setting up make (4.3-4.1) ...
+[2023-05-24T13:55:03+00:00] Installing luci
+make: Entering directory '/builds/luci'
+make: Leaving directory '/builds/luci'
+[2023-05-24T13:55:03+00:00] Preparing luci
+[2023-05-24T13:55:03+00:00] Test environment (docker) started
+Changing '/lib64/ld-linux-x86-64.so.2' to '/opt/luci/ld-luci.so'...
+Linking 215b32aa4e0b255c3356a96bd6d257661bad73ca
+[2023-05-24T13:55:03+00:00] Linking /builds/target/215b32aa4e0b255c3356a96bd6d257661bad73ca
+[2023-05-24T13:55:26+00:00] Started test app with PID 389
+Sleeping 40
+Linking 089479bb24acd168613757a6f12d63caa95416b4
+[2023-05-24T13:56:06+00:00] Linking /builds/target/089479bb24acd168613757a6f12d63caa95416b4
+Sleeping 40
+Linking 78ac11c63f1692ced09715aab9298dcdf93403fc
+[2023-05-24T13:57:06+00:00] Linking /builds/target/78ac11c63f1692ced09715aab9298dcdf93403fc
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 394 at 2023-05-24T13:57:08.824583Z
+[2023-05-24T13:57:26+00:00] Luci status has failed update:
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 389 at 2023-05-24T13:55:26.768423Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 389 at 2023-05-24T13:55:26.771964Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 389 at 2023-05-24T13:55:26.791330Z
+[2023-05-24T13:57:26+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 389 at 2023-05-24T13:55:26.794523Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 389 at 2023-05-24T13:55:26.801260Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 389 at 2023-05-24T13:55:26.805185Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 389 at 2023-05-24T13:55:26.810585Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 389 at 2023-05-24T13:55:26.816096Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 389 at 2023-05-24T13:55:26.820308Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 389 at 2023-05-24T13:55:26.824203Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 389 at 2023-05-24T13:55:26.828146Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 389 at 2023-05-24T13:55:26.832025Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 389 at 2023-05-24T13:55:26.836270Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 389 at 2023-05-24T13:55:26.840979Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 389 at 2023-05-24T13:55:26.846288Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 389 at 2023-05-24T13:55:26.851106Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 389 at 2023-05-24T13:55:26.855166Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 389 at 2023-05-24T13:55:26.860308Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 389 at 2023-05-24T13:55:26.865709Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 389 at 2023-05-24T13:55:26.871343Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 389 at 2023-05-24T13:55:26.875332Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 389 at 2023-05-24T13:55:26.879037Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 389 at 2023-05-24T13:55:26.883445Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 389 at 2023-05-24T13:55:26.888884Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 389 at 2023-05-24T13:55:26.892887Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 389 at 2023-05-24T13:55:26.897025Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 389 at 2023-05-24T13:55:26.902314Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 389 at 2023-05-24T13:55:26.906376Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 389 at 2023-05-24T13:55:26.911599Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 389 at 2023-05-24T13:55:26.915268Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 389 at 2023-05-24T13:55:26.919169Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 389 at 2023-05-24T13:55:26.923014Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 389 at 2023-05-24T13:55:26.926986Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 389 at 2023-05-24T13:55:26.931673Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 389 at 2023-05-24T13:55:26.937204Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 389 at 2023-05-24T13:55:26.941098Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 389 at 2023-05-24T13:55:26.944765Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 389 at 2023-05-24T13:55:26.949530Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 389 at 2023-05-24T13:55:26.953842Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 389 at 2023-05-24T13:55:26.957311Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 389 at 2023-05-24T13:55:26.961332Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 389 at 2023-05-24T13:55:26.966418Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 389 at 2023-05-24T13:55:26.970959Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 389 at 2023-05-24T13:55:26.976168Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 389 at 2023-05-24T13:55:26.979899Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 389 at 2023-05-24T13:55:26.985867Z
+[2023-05-24T13:57:26+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 394 at 2023-05-24T13:56:08.491873Z
+[2023-05-24T13:57:26+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 394 at 2023-05-24T13:57:08.824583Z
+[2023-05-24T13:57:26+00:00] Killed test app with PID 389
+[2023-05-24T13:57:30+00:00] Started test app with PID 519
+Sleeping 40
+Linking 21b455b68baad279e6a3936faced16c5e5634376
+[2023-05-24T13:58:10+00:00] Linking /builds/target/21b455b68baad279e6a3936faced16c5e5634376
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 524 at 2023-05-24T13:58:12.335149Z
+[2023-05-24T13:58:30+00:00] Luci status has failed update:
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 519 at 2023-05-24T13:57:30.441567Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 519 at 2023-05-24T13:57:30.445322Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 519 at 2023-05-24T13:57:30.464980Z
+[2023-05-24T13:58:30+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 519 at 2023-05-24T13:57:30.468454Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 519 at 2023-05-24T13:57:30.475300Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 519 at 2023-05-24T13:57:30.481162Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 519 at 2023-05-24T13:57:30.485589Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 519 at 2023-05-24T13:57:30.489773Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 519 at 2023-05-24T13:57:30.493880Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 519 at 2023-05-24T13:57:30.498025Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 519 at 2023-05-24T13:57:30.502550Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 519 at 2023-05-24T13:57:30.507798Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 519 at 2023-05-24T13:57:30.513514Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 519 at 2023-05-24T13:57:30.518664Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 519 at 2023-05-24T13:57:30.523069Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 519 at 2023-05-24T13:57:30.528801Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 519 at 2023-05-24T13:57:30.534541Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 519 at 2023-05-24T13:57:30.540518Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 519 at 2023-05-24T13:57:30.544923Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 519 at 2023-05-24T13:57:30.548856Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 519 at 2023-05-24T13:57:30.553301Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 519 at 2023-05-24T13:57:30.558567Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 519 at 2023-05-24T13:57:30.562588Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 519 at 2023-05-24T13:57:30.566615Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 519 at 2023-05-24T13:57:30.571870Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 519 at 2023-05-24T13:57:30.575863Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 519 at 2023-05-24T13:57:30.581294Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 519 at 2023-05-24T13:57:30.584904Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 519 at 2023-05-24T13:57:30.588831Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 519 at 2023-05-24T13:57:30.592780Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 519 at 2023-05-24T13:57:30.596797Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 519 at 2023-05-24T13:57:30.601576Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 519 at 2023-05-24T13:57:30.606845Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 519 at 2023-05-24T13:57:30.610821Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 519 at 2023-05-24T13:57:30.614551Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 519 at 2023-05-24T13:57:30.619646Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 519 at 2023-05-24T13:57:30.623976Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 519 at 2023-05-24T13:57:30.627524Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 519 at 2023-05-24T13:57:30.631573Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 519 at 2023-05-24T13:57:30.636605Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 519 at 2023-05-24T13:57:30.641145Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 519 at 2023-05-24T13:57:30.646406Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 519 at 2023-05-24T13:57:30.650141Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 519 at 2023-05-24T13:57:30.655179Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 519 at 2023-05-24T13:57:30.659022Z
+[2023-05-24T13:58:30+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 519 at 2023-05-24T13:57:30.664230Z
+[2023-05-24T13:58:30+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 524 at 2023-05-24T13:58:12.335149Z
+[2023-05-24T13:58:30+00:00] Killed test app with PID 519
+[2023-05-24T13:58:33+00:00] Started test app with PID 619
+Sleeping 40
+Linking fc2568f1e83fefc5873f4f2353209cfa2646aac9
+[2023-05-24T13:59:13+00:00] Linking /builds/target/fc2568f1e83fefc5873f4f2353209cfa2646aac9
+Sleeping 40
+Linking 246c7eca30b930fbe9382e2f09275170677c343b
+[2023-05-24T14:00:13+00:00] Linking /builds/target/246c7eca30b930fbe9382e2f09275170677c343b
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 624 at 2023-05-24T14:00:16.130072Z
+[2023-05-24T14:00:34+00:00] Luci status has failed update:
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 619 at 2023-05-24T13:58:33.901319Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 619 at 2023-05-24T13:58:33.905201Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 619 at 2023-05-24T13:58:33.924966Z
+[2023-05-24T14:00:34+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 619 at 2023-05-24T13:58:33.928642Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 619 at 2023-05-24T13:58:33.935508Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 619 at 2023-05-24T13:58:33.941407Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 619 at 2023-05-24T13:58:33.946044Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 619 at 2023-05-24T13:58:33.950096Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 619 at 2023-05-24T13:58:33.954109Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 619 at 2023-05-24T13:58:33.958284Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 619 at 2023-05-24T13:58:33.962779Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 619 at 2023-05-24T13:58:33.968002Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 619 at 2023-05-24T13:58:33.973878Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 619 at 2023-05-24T13:58:33.979079Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 619 at 2023-05-24T13:58:33.983548Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 619 at 2023-05-24T13:58:33.989333Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 619 at 2023-05-24T13:58:33.995155Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 619 at 2023-05-24T13:58:34.001011Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 619 at 2023-05-24T13:58:34.005307Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 619 at 2023-05-24T13:58:34.009476Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 619 at 2023-05-24T13:58:34.014030Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 619 at 2023-05-24T13:58:34.019323Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 619 at 2023-05-24T13:58:34.023415Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 619 at 2023-05-24T13:58:34.027590Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 619 at 2023-05-24T13:58:34.032688Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 619 at 2023-05-24T13:58:34.036603Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 619 at 2023-05-24T13:58:34.041881Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 619 at 2023-05-24T13:58:34.045327Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 619 at 2023-05-24T13:58:34.049134Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 619 at 2023-05-24T13:58:34.052902Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 619 at 2023-05-24T13:58:34.056773Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 619 at 2023-05-24T13:58:34.061470Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 619 at 2023-05-24T13:58:34.065477Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 619 at 2023-05-24T13:58:34.069230Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 619 at 2023-05-24T13:58:34.074121Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 619 at 2023-05-24T13:58:34.078505Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 619 at 2023-05-24T13:58:34.081994Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 619 at 2023-05-24T13:58:34.086069Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 619 at 2023-05-24T13:58:34.091102Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 619 at 2023-05-24T13:58:34.099658Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 619 at 2023-05-24T13:58:34.105151Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 619 at 2023-05-24T13:58:34.112791Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 619 at 2023-05-24T13:58:34.116613Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 619 at 2023-05-24T13:58:34.126114Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 619 at 2023-05-24T13:58:34.150102Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 619 at 2023-05-24T13:58:34.159425Z
+[2023-05-24T14:00:34+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 624 at 2023-05-24T13:59:15.875864Z
+[2023-05-24T14:00:34+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 624 at 2023-05-24T14:00:16.130072Z
+[2023-05-24T14:00:34+00:00] Killed test app with PID 619
+[2023-05-24T14:00:37+00:00] Started test app with PID 758
+Sleeping 40
+Linking 30b46748fdb35c75f1901e3d582acd2db5c9ed0e
+[2023-05-24T14:01:17+00:00] Linking /builds/target/30b46748fdb35c75f1901e3d582acd2db5c9ed0e
+Sleeping 40
+Linking 69c6e080f309f3f06fa1e1bd66479bd6fb9b2ca8
+[2023-05-24T14:02:17+00:00] Linking /builds/target/69c6e080f309f3f06fa1e1bd66479bd6fb9b2ca8
+Sleeping 40
+Linking 13006ec8e9bf2b059d5cdb758b16086db7be6408
+[2023-05-24T14:03:17+00:00] Linking /builds/target/13006ec8e9bf2b059d5cdb758b16086db7be6408
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 763 at 2023-05-24T14:03:19.957106Z
+[2023-05-24T14:03:37+00:00] Luci status has failed update:
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 758 at 2023-05-24T14:00:37.587084Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 758 at 2023-05-24T14:00:37.590822Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 758 at 2023-05-24T14:00:37.621520Z
+[2023-05-24T14:03:37+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 758 at 2023-05-24T14:00:37.625129Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 758 at 2023-05-24T14:00:37.632176Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 758 at 2023-05-24T14:00:37.637966Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 758 at 2023-05-24T14:00:37.643720Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 758 at 2023-05-24T14:00:37.648200Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 758 at 2023-05-24T14:00:37.651908Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 758 at 2023-05-24T14:00:37.655771Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 758 at 2023-05-24T14:00:37.659678Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 758 at 2023-05-24T14:00:37.664090Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 758 at 2023-05-24T14:00:37.668874Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 758 at 2023-05-24T14:00:37.674267Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 758 at 2023-05-24T14:00:37.679123Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 758 at 2023-05-24T14:00:37.683212Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 758 at 2023-05-24T14:00:37.688454Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 758 at 2023-05-24T14:00:37.693774Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 758 at 2023-05-24T14:00:37.699260Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 758 at 2023-05-24T14:00:37.703064Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 758 at 2023-05-24T14:00:37.706805Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 758 at 2023-05-24T14:00:37.711020Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 758 at 2023-05-24T14:00:37.716274Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 758 at 2023-05-24T14:00:37.720104Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 758 at 2023-05-24T14:00:37.723842Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 758 at 2023-05-24T14:00:37.728942Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 758 at 2023-05-24T14:00:37.738201Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 758 at 2023-05-24T14:00:37.743374Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 758 at 2023-05-24T14:00:37.749334Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 758 at 2023-05-24T14:00:37.753140Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 758 at 2023-05-24T14:00:37.756717Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 758 at 2023-05-24T14:00:37.760593Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 758 at 2023-05-24T14:00:37.765130Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 758 at 2023-05-24T14:00:37.777850Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 758 at 2023-05-24T14:00:37.781659Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 758 at 2023-05-24T14:00:37.785265Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 758 at 2023-05-24T14:00:37.790217Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 758 at 2023-05-24T14:00:37.796889Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 758 at 2023-05-24T14:00:37.807137Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 758 at 2023-05-24T14:00:37.811183Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 758 at 2023-05-24T14:00:37.816194Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 758 at 2023-05-24T14:00:37.820623Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 758 at 2023-05-24T14:00:37.825764Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 758 at 2023-05-24T14:00:37.829397Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 758 at 2023-05-24T14:00:37.834349Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 758 at 2023-05-24T14:00:37.838089Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 763 at 2023-05-24T14:01:19.415877Z
+[2023-05-24T14:03:37+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 763 at 2023-05-24T14:02:18.843888Z
+[2023-05-24T14:03:37+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 763 at 2023-05-24T14:03:19.957106Z
+[2023-05-24T14:03:37+00:00] Killed test app with PID 758
+[2023-05-24T14:03:41+00:00] Started test app with PID 935
+Sleeping 40
+Linking 29d2a3800a2226c6dd88e6e636aceb7ba1d876d8
+[2023-05-24T14:04:21+00:00] Linking /builds/target/29d2a3800a2226c6dd88e6e636aceb7ba1d876d8
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 940 at 2023-05-24T14:04:23.255178Z
+[2023-05-24T14:04:41+00:00] Luci status has failed update:
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 935 at 2023-05-24T14:03:41.442706Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 935 at 2023-05-24T14:03:41.446603Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 935 at 2023-05-24T14:03:41.478869Z
+[2023-05-24T14:04:41+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 935 at 2023-05-24T14:03:41.482637Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 935 at 2023-05-24T14:03:41.489411Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 935 at 2023-05-24T14:03:41.493840Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 935 at 2023-05-24T14:03:41.499678Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 935 at 2023-05-24T14:03:41.505363Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 935 at 2023-05-24T14:03:41.509851Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 935 at 2023-05-24T14:03:41.513583Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 935 at 2023-05-24T14:03:41.517720Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 935 at 2023-05-24T14:03:41.522184Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 935 at 2023-05-24T14:03:41.526741Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 935 at 2023-05-24T14:03:41.531696Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 935 at 2023-05-24T14:03:41.537640Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 935 at 2023-05-24T14:03:41.542779Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 935 at 2023-05-24T14:03:41.547193Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 935 at 2023-05-24T14:03:41.552422Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 935 at 2023-05-24T14:03:41.557642Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 935 at 2023-05-24T14:03:41.563244Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 935 at 2023-05-24T14:03:41.572492Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 935 at 2023-05-24T14:03:41.576165Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 935 at 2023-05-24T14:03:41.580466Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 935 at 2023-05-24T14:03:41.585683Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 935 at 2023-05-24T14:03:41.589498Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 935 at 2023-05-24T14:03:41.593342Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 935 at 2023-05-24T14:03:41.598343Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 935 at 2023-05-24T14:03:41.604243Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 935 at 2023-05-24T14:03:41.609435Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 935 at 2023-05-24T14:03:41.612799Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 935 at 2023-05-24T14:03:41.616697Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 935 at 2023-05-24T14:03:41.620292Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 935 at 2023-05-24T14:03:41.624811Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 935 at 2023-05-24T14:03:41.629985Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 935 at 2023-05-24T14:03:41.638046Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 935 at 2023-05-24T14:03:41.641650Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 935 at 2023-05-24T14:03:41.646594Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 935 at 2023-05-24T14:03:41.650756Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 935 at 2023-05-24T14:03:41.654394Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 935 at 2023-05-24T14:03:41.658363Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 935 at 2023-05-24T14:03:41.663369Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 935 at 2023-05-24T14:03:41.667901Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 935 at 2023-05-24T14:03:41.674137Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 935 at 2023-05-24T14:03:41.677712Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 935 at 2023-05-24T14:03:41.682653Z
+[2023-05-24T14:04:41+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 935 at 2023-05-24T14:03:41.700542Z
+[2023-05-24T14:04:41+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 940 at 2023-05-24T14:04:23.255178Z
+[2023-05-24T14:04:41+00:00] Killed test app with PID 935
+[2023-05-24T14:04:44+00:00] Started test app with PID 1041
+Sleeping 40
+Linking ede983cee56b95b684bdd88a172e0de1c3bcec1a
+[2023-05-24T14:05:24+00:00] Linking /builds/target/ede983cee56b95b684bdd88a172e0de1c3bcec1a
+Sleeping 40
+Linking 06e8d9f850789945e6645b281d63809c18cadc9a
+[2023-05-24T14:06:24+00:00] Linking /builds/target/06e8d9f850789945e6645b281d63809c18cadc9a
+Sleeping 40
+Linking 08acd7f9b4f652ed22f22aaf35e1f66b6fc9f14c
+[2023-05-24T14:07:25+00:00] Linking /builds/target/08acd7f9b4f652ed22f22aaf35e1f66b6fc9f14c
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1046 at 2023-05-24T14:07:26.763851Z
+[2023-05-24T14:07:45+00:00] Luci status has failed update:
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1041 at 2023-05-24T14:04:44.739943Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 1041 at 2023-05-24T14:04:44.743631Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1041 at 2023-05-24T14:04:44.776976Z
+[2023-05-24T14:07:45+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1041 at 2023-05-24T14:04:44.780601Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 1041 at 2023-05-24T14:04:44.787564Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 1041 at 2023-05-24T14:04:44.791882Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 1041 at 2023-05-24T14:04:44.797617Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 1041 at 2023-05-24T14:04:44.803264Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 1041 at 2023-05-24T14:04:44.807512Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 1041 at 2023-05-24T14:04:44.811294Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 1041 at 2023-05-24T14:04:44.815365Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 1041 at 2023-05-24T14:04:44.819613Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 1041 at 2023-05-24T14:04:44.824503Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 1041 at 2023-05-24T14:04:44.829922Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 1041 at 2023-05-24T14:04:44.834770Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 1041 at 2023-05-24T14:04:44.838882Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 1041 at 2023-05-24T14:04:44.844109Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 1041 at 2023-05-24T14:04:44.849441Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 1041 at 2023-05-24T14:04:44.854932Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 1041 at 2023-05-24T14:04:44.858731Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 1041 at 2023-05-24T14:04:44.862477Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 1041 at 2023-05-24T14:04:44.866694Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 1041 at 2023-05-24T14:04:44.871970Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 1041 at 2023-05-24T14:04:44.875769Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 1041 at 2023-05-24T14:04:44.879520Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 1041 at 2023-05-24T14:04:44.884619Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 1041 at 2023-05-24T14:04:44.888449Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 1041 at 2023-05-24T14:04:44.893615Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 1041 at 2023-05-24T14:04:44.904121Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 1041 at 2023-05-24T14:04:44.907982Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 1041 at 2023-05-24T14:04:44.911675Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 1041 at 2023-05-24T14:04:44.915636Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 1041 at 2023-05-24T14:04:44.920263Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 1041 at 2023-05-24T14:04:44.925765Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 1041 at 2023-05-24T14:04:44.936628Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 1041 at 2023-05-24T14:04:44.940125Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 1041 at 2023-05-24T14:04:44.944781Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 1041 at 2023-05-24T14:04:44.948939Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 1041 at 2023-05-24T14:04:44.952383Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 1041 at 2023-05-24T14:04:44.968723Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 1041 at 2023-05-24T14:04:44.973780Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 1041 at 2023-05-24T14:04:44.978211Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 1041 at 2023-05-24T14:04:44.984603Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 1041 at 2023-05-24T14:04:44.988287Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 1041 at 2023-05-24T14:04:44.993285Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 1041 at 2023-05-24T14:04:45.016373Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1046 at 2023-05-24T14:05:26.599880Z
+[2023-05-24T14:07:45+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1046 at 2023-05-24T14:06:27.335886Z
+[2023-05-24T14:07:45+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1046 at 2023-05-24T14:07:26.763851Z
+[2023-05-24T14:07:45+00:00] Killed test app with PID 1041
+[2023-05-24T14:07:48+00:00] Started test app with PID 1221
+Sleeping 40
+Linking 91e267c1e2599374d7f86897ae8b670d72d8474a
+[2023-05-24T14:08:28+00:00] Linking /builds/target/91e267c1e2599374d7f86897ae8b670d72d8474a
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1226 at 2023-05-24T14:08:31.270057Z
+[2023-05-24T14:08:49+00:00] Luci status has failed update:
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1221 at 2023-05-24T14:07:49.274768Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 1221 at 2023-05-24T14:07:49.278388Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1221 at 2023-05-24T14:07:49.311729Z
+[2023-05-24T14:08:49+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1221 at 2023-05-24T14:07:49.315003Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 1221 at 2023-05-24T14:07:49.321669Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 1221 at 2023-05-24T14:07:49.325751Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 1221 at 2023-05-24T14:07:49.331227Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 1221 at 2023-05-24T14:07:49.336707Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 1221 at 2023-05-24T14:07:49.340808Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 1221 at 2023-05-24T14:07:49.344665Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 1221 at 2023-05-24T14:07:49.348735Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 1221 at 2023-05-24T14:07:49.352868Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 1221 at 2023-05-24T14:07:49.357694Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 1221 at 2023-05-24T14:07:49.363092Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 1221 at 2023-05-24T14:07:49.367915Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 1221 at 2023-05-24T14:07:49.372047Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 1221 at 2023-05-24T14:07:49.377202Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 1221 at 2023-05-24T14:07:49.382524Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 1221 at 2023-05-24T14:07:49.388151Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 1221 at 2023-05-24T14:07:49.392500Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 1221 at 2023-05-24T14:07:49.403464Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 1221 at 2023-05-24T14:07:49.407775Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 1221 at 2023-05-24T14:07:49.412945Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 1221 at 2023-05-24T14:07:49.416821Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 1221 at 2023-05-24T14:07:49.420701Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 1221 at 2023-05-24T14:07:49.425712Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 1221 at 2023-05-24T14:07:49.435078Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 1221 at 2023-05-24T14:07:49.440269Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 1221 at 2023-05-24T14:07:49.443688Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 1221 at 2023-05-24T14:07:49.447500Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 1221 at 2023-05-24T14:07:49.451061Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 1221 at 2023-05-24T14:07:49.455022Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 1221 at 2023-05-24T14:07:49.459663Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 1221 at 2023-05-24T14:07:49.470206Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 1221 at 2023-05-24T14:07:49.474128Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 1221 at 2023-05-24T14:07:49.477617Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 1221 at 2023-05-24T14:07:49.482188Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 1221 at 2023-05-24T14:07:49.486478Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 1221 at 2023-05-24T14:07:49.489933Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 1221 at 2023-05-24T14:07:49.493978Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 1221 at 2023-05-24T14:07:49.499083Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 1221 at 2023-05-24T14:07:49.503512Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 1221 at 2023-05-24T14:07:49.509762Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 1221 at 2023-05-24T14:07:49.513378Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 1221 at 2023-05-24T14:07:49.518244Z
+[2023-05-24T14:08:49+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 1221 at 2023-05-24T14:07:49.528374Z
+[2023-05-24T14:08:49+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1226 at 2023-05-24T14:08:31.270057Z
+[2023-05-24T14:08:49+00:00] Killed test app with PID 1221
+[2023-05-24T14:08:52+00:00] Started test app with PID 1330
+Sleeping 40
+Linking 254abac67459a6cdb1827ccd6993942cd080997d
+[2023-05-24T14:09:32+00:00] Linking /builds/target/254abac67459a6cdb1827ccd6993942cd080997d
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1335 at 2023-05-24T14:09:34.027863Z
+[2023-05-24T14:09:53+00:00] Luci status has failed update:
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1330 at 2023-05-24T14:08:52.857769Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 1330 at 2023-05-24T14:08:52.861526Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1330 at 2023-05-24T14:08:52.895161Z
+[2023-05-24T14:09:53+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1330 at 2023-05-24T14:08:52.898765Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 1330 at 2023-05-24T14:08:52.905539Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 1330 at 2023-05-24T14:08:52.911152Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 1330 at 2023-05-24T14:08:52.915350Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 1330 at 2023-05-24T14:08:52.919240Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 1330 at 2023-05-24T14:08:52.923021Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 1330 at 2023-05-24T14:08:52.927312Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 1330 at 2023-05-24T14:08:52.932486Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 1330 at 2023-05-24T14:08:52.937958Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 1330 at 2023-05-24T14:08:52.942851Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 1330 at 2023-05-24T14:08:52.947303Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 1330 at 2023-05-24T14:08:52.952959Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 1330 at 2023-05-24T14:08:52.958695Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 1330 at 2023-05-24T14:08:52.964618Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 1330 at 2023-05-24T14:08:52.969080Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 1330 at 2023-05-24T14:08:52.973023Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 1330 at 2023-05-24T14:08:52.977215Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 1330 at 2023-05-24T14:08:52.982481Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 1330 at 2023-05-24T14:08:52.986498Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 1330 at 2023-05-24T14:08:52.990421Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 1330 at 2023-05-24T14:08:52.995730Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 1330 at 2023-05-24T14:08:52.999761Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 1330 at 2023-05-24T14:08:53.005205Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 1330 at 2023-05-24T14:08:53.008740Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 1330 at 2023-05-24T14:08:53.012652Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 1330 at 2023-05-24T14:08:53.016319Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 1330 at 2023-05-24T14:08:53.020284Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 1330 at 2023-05-24T14:08:53.025004Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 1330 at 2023-05-24T14:08:53.030296Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 1330 at 2023-05-24T14:08:53.034378Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 1330 at 2023-05-24T14:08:53.038072Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 1330 at 2023-05-24T14:08:53.043210Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 1330 at 2023-05-24T14:08:53.047595Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 1330 at 2023-05-24T14:08:53.051112Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 1330 at 2023-05-24T14:08:53.055230Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 1330 at 2023-05-24T14:08:53.060343Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 1330 at 2023-05-24T14:08:53.064767Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 1330 at 2023-05-24T14:08:53.070993Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 1330 at 2023-05-24T14:08:53.074621Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 1330 at 2023-05-24T14:08:53.079762Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 1330 at 2023-05-24T14:08:53.083557Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 1330 at 2023-05-24T14:08:53.088718Z
+[2023-05-24T14:09:53+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 1330 at 2023-05-24T14:08:53.100371Z
+[2023-05-24T14:09:53+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1335 at 2023-05-24T14:09:34.027863Z
+[2023-05-24T14:09:53+00:00] Killed test app with PID 1330
+[2023-05-24T14:09:56+00:00] Started test app with PID 1440
+Sleeping 40
+Linking b8714d4e9e37cf0d511917bd5eea0e51e4a397d5
+[2023-05-24T14:10:36+00:00] Linking /builds/target/b8714d4e9e37cf0d511917bd5eea0e51e4a397d5
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1445 at 2023-05-24T14:10:38.513103Z
+[2023-05-24T14:10:56+00:00] Luci status has failed update:
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1440 at 2023-05-24T14:09:56.622395Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 1440 at 2023-05-24T14:09:56.626376Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1440 at 2023-05-24T14:09:56.660183Z
+[2023-05-24T14:10:56+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1440 at 2023-05-24T14:09:56.663849Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 1440 at 2023-05-24T14:09:56.670833Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 1440 at 2023-05-24T14:09:56.675324Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 1440 at 2023-05-24T14:09:56.681245Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 1440 at 2023-05-24T14:09:56.685714Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 1440 at 2023-05-24T14:09:56.689866Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 1440 at 2023-05-24T14:09:56.694244Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 1440 at 2023-05-24T14:09:56.698624Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 1440 at 2023-05-24T14:09:56.703784Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 1440 at 2023-05-24T14:09:56.709642Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 1440 at 2023-05-24T14:09:56.714677Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 1440 at 2023-05-24T14:09:56.719041Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 1440 at 2023-05-24T14:09:56.724942Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 1440 at 2023-05-24T14:09:56.730642Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 1440 at 2023-05-24T14:09:56.736557Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 1440 at 2023-05-24T14:09:56.740682Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 1440 at 2023-05-24T14:09:56.744624Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 1440 at 2023-05-24T14:09:56.748914Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 1440 at 2023-05-24T14:09:56.754250Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 1440 at 2023-05-24T14:09:56.758273Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 1440 at 2023-05-24T14:09:56.762333Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 1440 at 2023-05-24T14:09:56.767578Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 1440 at 2023-05-24T14:09:56.771567Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 1440 at 2023-05-24T14:09:56.776990Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 1440 at 2023-05-24T14:09:56.780571Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 1440 at 2023-05-24T14:09:56.784458Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 1440 at 2023-05-24T14:09:56.788387Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 1440 at 2023-05-24T14:09:56.792311Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 1440 at 2023-05-24T14:09:56.797143Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 1440 at 2023-05-24T14:09:56.802446Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 1440 at 2023-05-24T14:09:56.806490Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 1440 at 2023-05-24T14:09:56.810265Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 1440 at 2023-05-24T14:09:56.815355Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 1440 at 2023-05-24T14:09:56.819715Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 1440 at 2023-05-24T14:09:56.823315Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 1440 at 2023-05-24T14:09:56.827338Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 1440 at 2023-05-24T14:09:56.832387Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 1440 at 2023-05-24T14:09:56.836851Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 1440 at 2023-05-24T14:09:56.842106Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 1440 at 2023-05-24T14:09:56.852398Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 1440 at 2023-05-24T14:09:56.857424Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 1440 at 2023-05-24T14:09:56.869803Z
+[2023-05-24T14:10:56+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 1440 at 2023-05-24T14:09:56.873369Z
+[2023-05-24T14:10:56+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1445 at 2023-05-24T14:10:38.513103Z
+[2023-05-24T14:10:56+00:00] Killed test app with PID 1440
+[2023-05-24T14:10:59+00:00] Started test app with PID 1550
+Sleeping 40
+Linking cf6abf18083566ec1612af27982a5160c9e0f137
+[2023-05-24T14:11:39+00:00] Linking /builds/target/cf6abf18083566ec1612af27982a5160c9e0f137
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1555 at 2023-05-24T14:11:41.887989Z
+[2023-05-24T14:11:59+00:00] Luci status has failed update:
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1550 at 2023-05-24T14:11:00.039366Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 1550 at 2023-05-24T14:11:00.042877Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1550 at 2023-05-24T14:11:00.076375Z
+[2023-05-24T14:11:59+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1550 at 2023-05-24T14:11:00.080024Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 1550 at 2023-05-24T14:11:00.086852Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 1550 at 2023-05-24T14:11:00.092860Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 1550 at 2023-05-24T14:11:00.098713Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 1550 at 2023-05-24T14:11:00.102986Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 1550 at 2023-05-24T14:11:00.106987Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 1550 at 2023-05-24T14:11:00.110936Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 1550 at 2023-05-24T14:11:00.115424Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 1550 at 2023-05-24T14:11:00.120457Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 1550 at 2023-05-24T14:11:00.125847Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 1550 at 2023-05-24T14:11:00.132039Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 1550 at 2023-05-24T14:11:00.137077Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 1550 at 2023-05-24T14:11:00.141703Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 1550 at 2023-05-24T14:11:00.147221Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 1550 at 2023-05-24T14:11:00.152827Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 1550 at 2023-05-24T14:11:00.158570Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 1550 at 2023-05-24T14:11:00.162713Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 1550 at 2023-05-24T14:11:00.172471Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 1550 at 2023-05-24T14:11:00.177188Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 1550 at 2023-05-24T14:11:00.182920Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 1550 at 2023-05-24T14:11:00.187263Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 1550 at 2023-05-24T14:11:00.191484Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 1550 at 2023-05-24T14:11:00.196953Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 1550 at 2023-05-24T14:11:00.201244Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 1550 at 2023-05-24T14:11:00.209861Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 1550 at 2023-05-24T14:11:00.220187Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 1550 at 2023-05-24T14:11:00.248254Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 1550 at 2023-05-24T14:11:00.260016Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 1550 at 2023-05-24T14:11:00.275559Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 1550 at 2023-05-24T14:11:00.297671Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 1550 at 2023-05-24T14:11:00.314850Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 1550 at 2023-05-24T14:11:00.328655Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 1550 at 2023-05-24T14:11:00.332575Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 1550 at 2023-05-24T14:11:00.337914Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 1550 at 2023-05-24T14:11:00.344966Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 1550 at 2023-05-24T14:11:00.348842Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 1550 at 2023-05-24T14:11:00.353161Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 1550 at 2023-05-24T14:11:00.358574Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 1550 at 2023-05-24T14:11:00.363413Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 1550 at 2023-05-24T14:11:00.369019Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 1550 at 2023-05-24T14:11:00.373043Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 1550 at 2023-05-24T14:11:00.378357Z
+[2023-05-24T14:11:59+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 1550 at 2023-05-24T14:11:00.382528Z
+[2023-05-24T14:11:59+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1555 at 2023-05-24T14:11:41.887989Z
+[2023-05-24T14:11:59+00:00] Killed test app with PID 1550
+[2023-05-24T14:12:02+00:00] Started test app with PID 1660
+Sleeping 40
+Linking 0919e33d0e12bf580ce389456e73ce3b88afd771
+[2023-05-24T14:12:42+00:00] Linking /builds/target/0919e33d0e12bf580ce389456e73ce3b88afd771
+Sleeping 40
+Linking 3b251d4e1af66aa7697c4ac96c689f996fa90c32
+[2023-05-24T14:13:43+00:00] Linking /builds/target/3b251d4e1af66aa7697c4ac96c689f996fa90c32
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1665 at 2023-05-24T14:13:45.344888Z
+[2023-05-24T14:14:03+00:00] Luci status has failed update:
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1660 at 2023-05-24T14:12:03.315720Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 1660 at 2023-05-24T14:12:03.319798Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1660 at 2023-05-24T14:12:03.354538Z
+[2023-05-24T14:14:03+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1660 at 2023-05-24T14:12:03.358433Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 1660 at 2023-05-24T14:12:03.365843Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 1660 at 2023-05-24T14:12:03.370705Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 1660 at 2023-05-24T14:12:03.377034Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 1660 at 2023-05-24T14:12:03.383092Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 1660 at 2023-05-24T14:12:03.387844Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 1660 at 2023-05-24T14:12:03.392267Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 1660 at 2023-05-24T14:12:03.396827Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 1660 at 2023-05-24T14:12:03.401696Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 1660 at 2023-05-24T14:12:03.406577Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 1660 at 2023-05-24T14:12:03.411888Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 1660 at 2023-05-24T14:12:03.417815Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 1660 at 2023-05-24T14:12:03.423309Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 1660 at 2023-05-24T14:12:03.427987Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 1660 at 2023-05-24T14:12:03.433543Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 1660 at 2023-05-24T14:12:03.439314Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 1660 at 2023-05-24T14:12:03.443477Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 1660 at 2023-05-24T14:12:03.447512Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 1660 at 2023-05-24T14:12:03.452022Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 1660 at 2023-05-24T14:12:03.457487Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 1660 at 2023-05-24T14:12:03.476671Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 1660 at 2023-05-24T14:12:03.480876Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 1660 at 2023-05-24T14:12:03.486448Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 1660 at 2023-05-24T14:12:03.490872Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 1660 at 2023-05-24T14:12:03.496510Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 1660 at 2023-05-24T14:12:03.504165Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 1660 at 2023-05-24T14:12:03.508504Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 1660 at 2023-05-24T14:12:03.512654Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 1660 at 2023-05-24T14:12:03.516945Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 1660 at 2023-05-24T14:12:03.521912Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 1660 at 2023-05-24T14:12:03.527631Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 1660 at 2023-05-24T14:12:03.544690Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 1660 at 2023-05-24T14:12:03.548816Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 1660 at 2023-05-24T14:12:03.564229Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 1660 at 2023-05-24T14:12:03.577580Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 1660 at 2023-05-24T14:12:03.587656Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 1660 at 2023-05-24T14:12:03.592023Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 1660 at 2023-05-24T14:12:03.597447Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 1660 at 2023-05-24T14:12:03.602334Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 1660 at 2023-05-24T14:12:03.607968Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 1660 at 2023-05-24T14:12:03.611980Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 1660 at 2023-05-24T14:12:03.625799Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 1660 at 2023-05-24T14:12:03.637783Z
+[2023-05-24T14:14:03+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1665 at 2023-05-24T14:12:45.216237Z
+[2023-05-24T14:14:03+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1665 at 2023-05-24T14:13:45.344888Z
+[2023-05-24T14:14:03+00:00] Killed test app with PID 1660
+[2023-05-24T14:14:06+00:00] Started test app with PID 1811
+Sleeping 40
+Linking b5e8dac0f821735cc946ea3589fdaf2435c76f70
+[2023-05-24T14:14:46+00:00] Linking /builds/target/b5e8dac0f821735cc946ea3589fdaf2435c76f70
+Sleeping 40
+Linking 398943774c5ff38baf1bc5ee088855fd8983bb05
+[2023-05-24T14:15:47+00:00] Linking /builds/target/398943774c5ff38baf1bc5ee088855fd8983bb05
+Sleeping 40
+Linking 66360ea0a9720951e45d41b9752aea69cdb1aefc
+[2023-05-24T14:16:47+00:00] Linking /builds/target/66360ea0a9720951e45d41b9752aea69cdb1aefc
+Sleeping 40
+Linking acd84997a5a8b2badd28b70a642abee11272fad2
+[2023-05-24T14:17:48+00:00] Linking /builds/target/acd84997a5a8b2badd28b70a642abee11272fad2
+Sleeping 40
+Linking b503e2fb3a0271986b6b2756404f0593467cf5d7
+[2023-05-24T14:18:48+00:00] Linking /builds/target/b503e2fb3a0271986b6b2756404f0593467cf5d7
+Sleeping 40
+Linking dcf7d7509a26a2fe83f115f5ee731c59749ae17e
+[2023-05-24T14:19:48+00:00] Linking /builds/target/dcf7d7509a26a2fe83f115f5ee731c59749ae17e
+Sleeping 40
+Linking e9d65103760ac2f8cd1f4ac8e900e12fcd521e3f
+[2023-05-24T14:20:49+00:00] Linking /builds/target/e9d65103760ac2f8cd1f4ac8e900e12fcd521e3f
+Sleeping 40
+Linking 21f93470aad8634fcf39f72db0b62642c7073a0c
+[2023-05-24T14:21:50+00:00] Linking /builds/target/21f93470aad8634fcf39f72db0b62642c7073a0c
+Sleeping 40
+Linking 1a1a687de66bf864598ecf7c36a27e1829816921
+[2023-05-24T14:22:50+00:00] Linking /builds/target/1a1a687de66bf864598ecf7c36a27e1829816921
+Sleeping 40
+Linking 5c43f7d56a31667bcdaa334bbb4edafb75672872
+[2023-05-24T14:23:51+00:00] Linking /builds/target/5c43f7d56a31667bcdaa334bbb4edafb75672872
+Sleeping 40
+Linking 823437d015cd4ab4d100ed205f218681b03ae45c
+[2023-05-24T14:24:51+00:00] Linking /builds/target/823437d015cd4ab4d100ed205f218681b03ae45c
+Sleeping 40
+Linking 4ffa4d38396c334a1e002427c22281b047a3d6a6
+[2023-05-24T14:25:52+00:00] Linking /builds/target/4ffa4d38396c334a1e002427c22281b047a3d6a6
+Sleeping 40
+Linking 6b110bcd4f4caa61fc39c7339d30adc20a7dd177
+[2023-05-24T14:26:52+00:00] Linking /builds/target/6b110bcd4f4caa61fc39c7339d30adc20a7dd177
+Sleeping 40
+Linking 94d84f92ca123d851586016c4678eb1f21c19029
+[2023-05-24T14:27:52+00:00] Linking /builds/target/94d84f92ca123d851586016c4678eb1f21c19029
+Sleeping 40
+Linking c79119414d7e30017d7b49566e7e4ea35112bdc8
+[2023-05-24T14:28:53+00:00] Linking /builds/target/c79119414d7e30017d7b49566e7e4ea35112bdc8
+Sleeping 40
+Linking e73ff0137de5152e69e8abb0bd260541804dfe5a
+[2023-05-24T14:29:53+00:00] Linking /builds/target/e73ff0137de5152e69e8abb0bd260541804dfe5a
+Sleeping 40
+Linking 10b7749cd7d521a85be8c306c96b6b69a5cff6a6
+[2023-05-24T14:30:54+00:00] Linking /builds/target/10b7749cd7d521a85be8c306c96b6b69a5cff6a6
+FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:30:57.267889Z
+[2023-05-24T14:31:15+00:00] Luci status has failed update:
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1811 at 2023-05-24T14:14:06.960685Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for libpthread.so.0 [/lib/x86_64-linux-gnu/libpthread.so.0] in PID 1811 at 2023-05-24T14:14:06.964500Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1811 at 2023-05-24T14:14:06.999062Z
+[2023-05-24T14:31:15+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1811 at 2023-05-24T14:14:07.002654Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_x.so [/builds/target/test/test-ka-bcrypt_x.so] in PID 1811 at 2023-05-24T14:14:07.009468Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-sha256crypt.so [/builds/target/test/test-ka-sha256crypt.so] in PID 1811 at 2023-05-24T14:14:07.015305Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-sha1crypt.so [/builds/target/test/test-ka-sha1crypt.so] in PID 1811 at 2023-05-24T14:14:07.021159Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-getrandom-fallbacks.so [/builds/target/test/test-getrandom-fallbacks.so] in PID 1811 at 2023-05-24T14:14:07.025594Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-short-outbuf.so [/builds/target/test/test-short-outbuf.so] in PID 1811 at 2023-05-24T14:14:07.029675Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-preferred-method.so [/builds/target/test/test-preferred-method.so] in PID 1811 at 2023-05-24T14:14:07.033808Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-md5.so [/builds/target/test/test-alg-md5.so] in PID 1811 at 2023-05-24T14:14:07.038032Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-badsetting.so [/builds/target/test/test-badsetting.so] in PID 1811 at 2023-05-24T14:14:07.042923Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-descrypt.so [/builds/target/test/test-ka-descrypt.so] in PID 1811 at 2023-05-24T14:14:07.048310Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-badsalt.so [/builds/target/test/test-badsalt.so] in PID 1811 at 2023-05-24T14:14:07.054058Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-sunmd5.so [/builds/target/test/test-ka-sunmd5.so] in PID 1811 at 2023-05-24T14:14:07.059118Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-byteorder.so [/builds/target/test/test-byteorder.so] in PID 1811 at 2023-05-24T14:14:07.063596Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_a.so [/builds/target/test/test-ka-bcrypt_a.so] in PID 1811 at 2023-05-24T14:14:07.069150Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-sha512crypt.so [/builds/target/test/test-ka-sha512crypt.so] in PID 1811 at 2023-05-24T14:14:07.074766Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-special-char-salt.so [/builds/target/test/test-special-char-salt.so] in PID 1811 at 2023-05-24T14:14:07.080515Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-checksalt.so [/builds/target/test/test-checksalt.so] in PID 1811 at 2023-05-24T14:14:07.084694Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-sha256.so [/builds/target/test/test-alg-sha256.so] in PID 1811 at 2023-05-24T14:14:07.088735Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-crypt-gost-yescrypt.so [/builds/target/test/test-crypt-gost-yescrypt.so] in PID 1811 at 2023-05-24T14:14:07.093295Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-scrypt.so [/builds/target/test/test-ka-scrypt.so] in PID 1811 at 2023-05-24T14:14:07.099030Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-sha512.so [/builds/target/test/test-alg-sha512.so] in PID 1811 at 2023-05-24T14:14:07.103233Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012.so [/builds/target/test/test-alg-gost3411-2012.so] in PID 1811 at 2023-05-24T14:14:07.107380Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-bsdicrypt.so [/builds/target/test/test-ka-bsdicrypt.so] in PID 1811 at 2023-05-24T14:14:07.117137Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-hmac-sha1.so [/builds/target/test/test-alg-hmac-sha1.so] in PID 1811 at 2023-05-24T14:14:07.121442Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-gost_yescrypt.so [/builds/target/test/test-ka-gost_yescrypt.so] in PID 1811 at 2023-05-24T14:14:07.127137Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-des-obsolete_r.so [/builds/target/test/test-des-obsolete_r.so] in PID 1811 at 2023-05-24T14:14:07.137087Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-des.so [/builds/target/test/test-alg-des.so] in PID 1811 at 2023-05-24T14:14:07.166040Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-pbkdf-hmac-sha256.so [/builds/target/test/test-alg-pbkdf-hmac-sha256.so] in PID 1811 at 2023-05-24T14:14:07.170368Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-bigcrypt.so [/builds/target/test/test-ka-bigcrypt.so] in PID 1811 at 2023-05-24T14:14:07.189686Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt_y.so [/builds/target/test/test-ka-bcrypt_y.so] in PID 1811 at 2023-05-24T14:14:07.198968Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-des-obsolete.so [/builds/target/test/test-des-obsolete.so] in PID 1811 at 2023-05-24T14:14:07.207869Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-gost3411-2012-hmac.so [/builds/target/test/test-alg-gost3411-2012-hmac.so] in PID 1811 at 2023-05-24T14:14:07.211994Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-md5crypt.so [/builds/target/test/test-ka-md5crypt.so] in PID 1811 at 2023-05-24T14:14:07.217358Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-gensalt-extradata.so [/builds/target/test/test-gensalt-extradata.so] in PID 1811 at 2023-05-24T14:14:07.242366Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-gensalt-nthash.so [/builds/target/test/test-gensalt-nthash.so] in PID 1811 at 2023-05-24T14:14:07.246256Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-getrandom-interface.so [/builds/target/test/test-getrandom-interface.so] in PID 1811 at 2023-05-24T14:14:07.251708Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-yescrypt.so [/builds/target/test/test-alg-yescrypt.so] in PID 1811 at 2023-05-24T14:14:07.261254Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-nt.so [/builds/target/test/test-ka-nt.so] in PID 1811 at 2023-05-24T14:14:07.266134Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-yescrypt.so [/builds/target/test/test-ka-yescrypt.so] in PID 1811 at 2023-05-24T14:14:07.271789Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-md4.so [/builds/target/test/test-alg-md4.so] in PID 1811 at 2023-05-24T14:14:07.283816Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-ka-bcrypt.so [/builds/target/test/test-ka-bcrypt.so] in PID 1811 at 2023-05-24T14:14:07.289177Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-alg-sha1.so [/builds/target/test/test-alg-sha1.so] in PID 1811 at 2023-05-24T14:14:07.308601Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (loaded initial version) for test-compile-strong-alias.so [/builds/target/test/test-compile-strong-alias.so] in PID 1811 at 2023-05-24T14:14:07.320202Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:14:48.176034Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:15:48.583896Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:16:50.030749Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:17:50.835910Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:18:49.992102Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:19:51.531902Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:20:52.139070Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:21:52.541238Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:22:52.983909Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:23:53.459844Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:24:54.071862Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:25:54.559911Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:26:54.064234Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:27:55.269250Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:28:55.871887Z
+[2023-05-24T14:31:15+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:29:55.591866Z
+[2023-05-24T14:31:15+00:00]     FAILED (new version is incompatible) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 1816 at 2023-05-24T14:30:57.267889Z
+[2023-05-24T14:31:15+00:00] Killed test app with PID 1811
+[2023-05-24T14:31:18+00:00] Started test app with PID 2577
+Sleeping 40
+Linking 3df9620d08db207367c0c5152148665b5ce422e1
+[2023-05-24T14:31:58+00:00] Linking /builds/target/3df9620d08db207367c0c5152148665b5ce422e1
+Sleeping 40
+Linking 5dcc36aeeb053654659e898fd3de7f365c1c4df5
+[2023-05-24T14:32:59+00:00] Linking /builds/target/5dcc36aeeb053654659e898fd3de7f365c1c4df5
+Sleeping 40
+Linking e120e553ebeabf01ffc5a2d6d9fa0dd58dfe0803
+[2023-05-24T14:33:59+00:00] Linking /builds/target/e120e553ebeabf01ffc5a2d6d9fa0dd58dfe0803
+Sleeping 40
+Linking b9116ef2245abb128a22a975d187b1272312a80c
+[2023-05-24T14:35:00+00:00] Linking /builds/target/b9116ef2245abb128a22a975d187b1272312a80c
+Sleeping 40
+Linking 8ff7a8c5019cbd50419f7d0a8cd691eb99d6b086
+[2023-05-24T14:36:00+00:00] Linking /builds/target/8ff7a8c5019cbd50419f7d0a8cd691eb99d6b086
+Sleeping 40
+Linking 814e715dd8580ff00344112d7d8383a6a5a5b83d
+[2023-05-24T14:37:00+00:00] Linking /builds/target/814e715dd8580ff00344112d7d8383a6a5a5b83d
+Sleeping 40
+Linking 50cf2b6dd4fdf04309445f2eec8de7051d953abf
+[2023-05-24T14:38:01+00:00] Linking /builds/target/50cf2b6dd4fdf04309445f2eec8de7051d953abf
+Sleeping 40
+Linking ebcd8afb0bab4d6fb01fd139f24bba077343a410
+[2023-05-24T14:39:02+00:00] Linking /builds/target/ebcd8afb0bab4d6fb01fd139f24bba077343a410
+Sleeping 40
+Linking fee2687bad66e351a3dcc963a34ae80125923ff8
+[2023-05-24T14:40:02+00:00] Linking /builds/target/fee2687bad66e351a3dcc963a34ae80125923ff8
+Sleeping 40
+Linking da2e23845440f9db9bb8fe04c3deebed461ce8a4
+[2023-05-24T14:41:03+00:00] Linking /builds/target/da2e23845440f9db9bb8fe04c3deebed461ce8a4
+Sleeping 40
+Linking b8225f78d5fbdea51e8671ae4da402194f2da819
+[2023-05-24T14:42:03+00:00] Linking /builds/target/b8225f78d5fbdea51e8671ae4da402194f2da819
+Sleeping 40
+Linking d7fe1ac04c326dba7e0440868889d1dccb41a175
+[2023-05-24T14:43:04+00:00] Linking /builds/target/d7fe1ac04c326dba7e0440868889d1dccb41a175
+Sleeping 40
+[2023-05-24T14:44:04+00:00] Remaining luci status:
+[2023-05-24T14:44:04+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2577 at 2023-05-24T14:31:18.871556Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:32:00.131999Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:33:01.737480Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:34:02.059889Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:35:02.235887Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:36:01.795906Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:37:03.547922Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:38:04.243952Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:39:04.463912Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:40:04.975871Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:41:05.622791Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:42:05.083895Z
+[2023-05-24T14:44:04+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/libcrypt.so.1] in PID 2582 at 2023-05-24T14:43:05.607858Z
+[2023-05-24T14:44:04+00:00] Finished docker
+[2023-05-24T14:44:04+00:00] Setting permissions for 21604:10430
+[2023-05-24T14:44:04+00:00] Finished

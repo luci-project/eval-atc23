@@ -1,0 +1,82 @@
+**Expat dynamic updates with Luci**
+[start]
+2.2.6-2 (used in 1. start of test application)
+	test case runs: 36 (2023-05-24 12:45:50+00:00 - 2023-05-24 12:46:11+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 11
+	mean / median run time: 613.4ms / 611.0ms
+	standard deviation of run time: 7.1ms
+
+2.2.7-1 (used in 1. start of test application)
+	test case runs: 49 (2023-05-24 12:46:12+00:00 - 2023-05-24 12:46:41+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 11
+	mean / median run time: 611.1ms / 611ms
+	standard deviation of run time: 13.6ms
+
+2.2.7-2 (used in 1. start of test application)
+	test case runs: 54 (2023-05-24 12:46:42+00:00 - 2023-05-24 12:47:10+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 10
+	mean / median run time: 528.6ms / 527.0ms
+	standard deviation of run time: 5.3ms
+
+2.2.9-1 (used in 1. start of test application)
+	test case runs: 60 (2023-05-24 12:47:11+00:00 - 2023-05-24 12:47:41+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 8
+	mean / median run time: 525.4ms / 523.0ms
+	standard deviation of run time: 7.2ms
+
+2.2.10-1 (used in 1. start of test application)
+	test case runs: 53 (2023-05-24 12:47:42+00:00 - 2023-05-24 12:48:11+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 8
+	mean / median run time: 564.6ms / 563ms
+	standard deviation of run time: 6.2ms
+
+2.2.10-2 (used in 1. start of test application)
+	test case runs: 53 (2023-05-24 12:48:12+00:00 - 2023-05-24 12:48:41+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 8
+	mean / median run time: 564.1ms / 562ms
+	standard deviation of run time: 5.6ms
+
+2.2.10-2+deb11u1 (used in 1. start of test application)
+	test case runs: 51 (2023-05-24 12:48:42+00:00 - 2023-05-24 12:49:10+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 7
+	mean / median run time: 563.8ms / 562ms
+	standard deviation of run time: 6.3ms
+
+2.2.10-2+deb11u2 (used in 1. start of test application)
+	test case runs: 59 (2023-05-24 12:49:11+00:00 - 2023-05-24 12:49:41+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 5
+	mean / median run time: 529.2ms / 529ms
+	standard deviation of run time: 2.1ms
+
+2.2.10-2+deb11u3 (used in 1. start of test application)
+	test case runs: 51 (2023-05-24 12:49:42+00:00 - 2023-05-24 12:50:11+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 4
+	mean / median run time: 585.2ms / 583ms
+	standard deviation of run time: 6.1ms
+
+2.2.10-2+deb11u4 (used in 1. start of test application)
+	test case runs: 55 (2023-05-24 12:50:12+00:00 - 2023-05-24 12:50:40+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 3
+	mean / median run time: 532.4ms / 530ms
+	standard deviation of run time: 6.0ms
+
+2.2.10-2+deb11u5 (used in 1. start of test application)
+	test case runs: 53 (2023-05-24 12:50:41+00:00 - 2023-05-24 12:51:09+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 3
+	mean / median run time: 532.6ms / 531ms
+	standard deviation of run time: 5.2ms
+
+
+**Summary**
+Updated 10 / 10 (100%) versions

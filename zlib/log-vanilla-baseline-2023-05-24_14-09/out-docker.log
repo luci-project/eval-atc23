@@ -1,0 +1,280 @@
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8183 kB]
+Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [244 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [14.6 kB]
+Fetched 8649 kB in 1s (7133 kB/s)
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  make-doc
+The following NEW packages will be installed:
+  make
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 396 kB of archives.
+After this operation, 1630 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 make amd64 4.3-4.1 [396 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 396 kB in 0s (11.7 MB/s)
+Selecting previously unselected package make.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6664 files and directories currently installed.)
+Preparing to unpack .../make_4.3-4.1_amd64.deb ...
+Unpacking make (4.3-4.1) ...
+Setting up make (4.3-4.1) ...
+[2023-05-24T15:07:35+00:00] Installing luci
+make: Entering directory '/builds/luci'
+make: Leaving directory '/builds/luci'
+[2023-05-24T15:07:35+00:00] Preparing luci
+Linking 7c2a874e50b871d04fbd19501f7b42cff55e5abc
+[2023-05-24T15:07:35+00:00] Linking /builds/target/7c2a874e50b871d04fbd19501f7b42cff55e5abc
+[2023-05-24T15:07:40+00:00] Started test app with PID 367
+Sleeping 10
+Linking 13a294f044ef0a89b2dcbfbb5d4d4c792673348e
+[2023-05-24T15:07:50+00:00] Linking /builds/target/13a294f044ef0a89b2dcbfbb5d4d4c792673348e
+[2023-05-24T15:07:55+00:00] Killed test app with PID 367
+[2023-05-24T15:07:55+00:00] Started test app with PID 399
+Sleeping 10
+Linking 8e34b3a8024c028dd9fd21d70525fc6d215efde5
+[2023-05-24T15:08:05+00:00] Linking /builds/target/8e34b3a8024c028dd9fd21d70525fc6d215efde5
+[2023-05-24T15:08:10+00:00] Killed test app with PID 399
+[2023-05-24T15:08:10+00:00] Started test app with PID 431
+Sleeping 10
+Linking 85e7d7d9ba71d95a9e6a64b98bae4fac09f06f1c
+[2023-05-24T15:08:20+00:00] Linking /builds/target/85e7d7d9ba71d95a9e6a64b98bae4fac09f06f1c
+[2023-05-24T15:08:25+00:00] Killed test app with PID 431
+[2023-05-24T15:08:25+00:00] Started test app with PID 463
+Sleeping 10
+Linking 086e982175da84b3db958191031380794315f95f
+[2023-05-24T15:08:35+00:00] Linking /builds/target/086e982175da84b3db958191031380794315f95f
+[2023-05-24T15:08:40+00:00] Killed test app with PID 463
+[2023-05-24T15:08:40+00:00] Started test app with PID 495
+Sleeping 10
+Linking 4b5a43a219d51066c01ff2ab86af18b967f2d0dd
+[2023-05-24T15:08:50+00:00] Linking /builds/target/4b5a43a219d51066c01ff2ab86af18b967f2d0dd
+[2023-05-24T15:08:55+00:00] Killed test app with PID 495
+[2023-05-24T15:08:55+00:00] Started test app with PID 528
+Sleeping 10
+Linking f81ba93d4a7e43fccf4730e5e7404ee765a76e3e
+[2023-05-24T15:09:05+00:00] Linking /builds/target/f81ba93d4a7e43fccf4730e5e7404ee765a76e3e
+[2023-05-24T15:09:10+00:00] Killed test app with PID 528
+[2023-05-24T15:09:10+00:00] Started test app with PID 561
+Sleeping 10
+Linking b97ec631c6f7dd9cff2e3caf3b38e70b006e1b2d
+[2023-05-24T15:09:20+00:00] Linking /builds/target/b97ec631c6f7dd9cff2e3caf3b38e70b006e1b2d
+[2023-05-24T15:09:25+00:00] Killed test app with PID 561
+[2023-05-24T15:09:25+00:00] Started test app with PID 594
+Sleeping 10
+Linking a2506218cd8c32416d0d15260834f3c23d910fc8
+[2023-05-24T15:09:35+00:00] Linking /builds/target/a2506218cd8c32416d0d15260834f3c23d910fc8
+[2023-05-24T15:09:40+00:00] Killed test app with PID 594
+[2023-05-24T15:09:40+00:00] Started test app with PID 627
+Sleeping 10
+Linking 7a33a861d1526894272a8a4b08527ce32316d750
+[2023-05-24T15:09:50+00:00] Linking /builds/target/7a33a861d1526894272a8a4b08527ce32316d750
+[2023-05-24T15:09:55+00:00] Killed test app with PID 627
+[2023-05-24T15:09:55+00:00] Started test app with PID 660
+Sleeping 10
+Linking f0e76a6634eb26e3ddc6dfc6f2489553eff8c8f4
+[2023-05-24T15:10:05+00:00] Linking /builds/target/f0e76a6634eb26e3ddc6dfc6f2489553eff8c8f4
+[2023-05-24T15:10:10+00:00] Killed test app with PID 660
+[2023-05-24T15:10:10+00:00] Started test app with PID 693
+Sleeping 10
+Linking 7a6955760ba950eb82f57929f8f6c9847c65f0af
+[2023-05-24T15:10:20+00:00] Linking /builds/target/7a6955760ba950eb82f57929f8f6c9847c65f0af
+[2023-05-24T15:10:25+00:00] Killed test app with PID 693
+[2023-05-24T15:10:25+00:00] Started test app with PID 726
+Sleeping 10
+Linking 79fbcdc939b5d515218187a0d5f2526fb632075a
+[2023-05-24T15:10:35+00:00] Linking /builds/target/79fbcdc939b5d515218187a0d5f2526fb632075a
+[2023-05-24T15:10:40+00:00] Killed test app with PID 726
+[2023-05-24T15:10:40+00:00] Started test app with PID 759
+Sleeping 10
+Linking 9811b53dd9e8f67015c7199fff12b5bfc6965330
+[2023-05-24T15:10:50+00:00] Linking /builds/target/9811b53dd9e8f67015c7199fff12b5bfc6965330
+[2023-05-24T15:10:55+00:00] Killed test app with PID 759
+[2023-05-24T15:10:55+00:00] Started test app with PID 792
+Sleeping 10
+Linking 0484693e1723bbab791c56f95597bd7dbe867d03
+[2023-05-24T15:11:05+00:00] Linking /builds/target/0484693e1723bbab791c56f95597bd7dbe867d03
+[2023-05-24T15:11:10+00:00] Killed test app with PID 792
+[2023-05-24T15:11:10+00:00] Started test app with PID 825
+Sleeping 10
+Linking 6b8233bfe00e79134cb1b84fc49d4f750a797f79
+[2023-05-24T15:11:20+00:00] Linking /builds/target/6b8233bfe00e79134cb1b84fc49d4f750a797f79
+[2023-05-24T15:11:25+00:00] Killed test app with PID 825
+[2023-05-24T15:11:25+00:00] Started test app with PID 858
+Sleeping 10
+Linking 9c3a5830218c4e7fff23b8fc4386269db77a03a9
+[2023-05-24T15:11:35+00:00] Linking /builds/target/9c3a5830218c4e7fff23b8fc4386269db77a03a9
+[2023-05-24T15:11:40+00:00] Killed test app with PID 858
+[2023-05-24T15:11:40+00:00] Started test app with PID 891
+Sleeping 10
+Linking abf180a067223611620dd97dd5681df7c7fa7c9b
+[2023-05-24T15:11:50+00:00] Linking /builds/target/abf180a067223611620dd97dd5681df7c7fa7c9b
+[2023-05-24T15:11:55+00:00] Killed test app with PID 891
+[2023-05-24T15:11:55+00:00] Started test app with PID 924
+Sleeping 10
+Linking b1c19ca6d82c98a8be6cd9cad7a9c5fa5e8e634e
+[2023-05-24T15:12:05+00:00] Linking /builds/target/b1c19ca6d82c98a8be6cd9cad7a9c5fa5e8e634e
+[2023-05-24T15:12:10+00:00] Killed test app with PID 924
+[2023-05-24T15:12:10+00:00] Started test app with PID 959
+Sleeping 10
+Linking d6231142d2b883a8c3b253fa34992b5cdb4ac2fe
+[2023-05-24T15:12:20+00:00] Linking /builds/target/d6231142d2b883a8c3b253fa34992b5cdb4ac2fe
+[2023-05-24T15:12:25+00:00] Killed test app with PID 959
+[2023-05-24T15:12:25+00:00] Started test app with PID 996
+Sleeping 10
+Linking 639be997883d9016baaf46017a2802b2ce1698bd
+[2023-05-24T15:12:35+00:00] Linking /builds/target/639be997883d9016baaf46017a2802b2ce1698bd
+[2023-05-24T15:12:40+00:00] Killed test app with PID 996
+[2023-05-24T15:12:40+00:00] Started test app with PID 1033
+Sleeping 10
+Linking f6194ef39af5864f792412460c354cc339dde7d1
+[2023-05-24T15:12:50+00:00] Linking /builds/target/f6194ef39af5864f792412460c354cc339dde7d1
+[2023-05-24T15:12:55+00:00] Killed test app with PID 1033
+[2023-05-24T15:12:55+00:00] Started test app with PID 1070
+Sleeping 10
+Linking d004b047838a7e803818b4973a2e39e0ff8c1fa2
+[2023-05-24T15:13:05+00:00] Linking /builds/target/d004b047838a7e803818b4973a2e39e0ff8c1fa2
+[2023-05-24T15:13:10+00:00] Killed test app with PID 1070
+[2023-05-24T15:13:10+00:00] Started test app with PID 1107
+Sleeping 10
+Linking dc5a43ebfadb6b775f6e64bfeb5a461c66acb394
+[2023-05-24T15:13:20+00:00] Linking /builds/target/dc5a43ebfadb6b775f6e64bfeb5a461c66acb394
+[2023-05-24T15:13:25+00:00] Killed test app with PID 1107
+[2023-05-24T15:13:25+00:00] Started test app with PID 1144
+Sleeping 10
+Linking 7df877eccdd826e94df53215f65dee639428e83f
+[2023-05-24T15:13:35+00:00] Linking /builds/target/7df877eccdd826e94df53215f65dee639428e83f
+[2023-05-24T15:13:40+00:00] Killed test app with PID 1144
+[2023-05-24T15:13:40+00:00] Started test app with PID 1181
+Sleeping 10
+Linking e0ff940e1adb68d3575705ebf1546d9f07ad3b4a
+[2023-05-24T15:13:50+00:00] Linking /builds/target/e0ff940e1adb68d3575705ebf1546d9f07ad3b4a
+[2023-05-24T15:13:55+00:00] Killed test app with PID 1181
+[2023-05-24T15:13:55+00:00] Started test app with PID 1217
+Sleeping 10
+Linking 7751bd4c715ea8478113e34b49b5a794a4642e8e
+[2023-05-24T15:14:05+00:00] Linking /builds/target/7751bd4c715ea8478113e34b49b5a794a4642e8e
+[2023-05-24T15:14:10+00:00] Killed test app with PID 1217
+[2023-05-24T15:14:10+00:00] Started test app with PID 1253
+Sleeping 10
+Linking a1141160bcf563f1a269be68a21f1651f687bb69
+[2023-05-24T15:14:20+00:00] Linking /builds/target/a1141160bcf563f1a269be68a21f1651f687bb69
+[2023-05-24T15:14:25+00:00] Killed test app with PID 1253
+[2023-05-24T15:14:25+00:00] Started test app with PID 1289
+Sleeping 10
+Linking 05d47d2627a68a15ba23fb10b17fbc73551aeec1
+[2023-05-24T15:14:35+00:00] Linking /builds/target/05d47d2627a68a15ba23fb10b17fbc73551aeec1
+[2023-05-24T15:14:40+00:00] Killed test app with PID 1289
+[2023-05-24T15:14:40+00:00] Started test app with PID 1325
+Sleeping 10
+Linking 7147f24cd7b27dd95f6e841851a111cb311a9c07
+[2023-05-24T15:14:50+00:00] Linking /builds/target/7147f24cd7b27dd95f6e841851a111cb311a9c07
+[2023-05-24T15:14:55+00:00] Killed test app with PID 1325
+[2023-05-24T15:14:55+00:00] Started test app with PID 1361
+Sleeping 10
+Linking f4498bea2865325dce71189af47a047529229f22
+[2023-05-24T15:15:05+00:00] Linking /builds/target/f4498bea2865325dce71189af47a047529229f22
+[2023-05-24T15:15:10+00:00] Killed test app with PID 1361
+[2023-05-24T15:15:10+00:00] Started test app with PID 1397
+Sleeping 10
+Linking a7d70663cf4a7d4013ff7d285da01a164ed9b207
+[2023-05-24T15:15:20+00:00] Linking /builds/target/a7d70663cf4a7d4013ff7d285da01a164ed9b207
+[2023-05-24T15:15:25+00:00] Killed test app with PID 1397
+[2023-05-24T15:15:25+00:00] Started test app with PID 1433
+Sleeping 10
+Linking 73014202489f913dbffc91d22089ea8a8920c054
+[2023-05-24T15:15:35+00:00] Linking /builds/target/73014202489f913dbffc91d22089ea8a8920c054
+[2023-05-24T15:15:40+00:00] Killed test app with PID 1433
+[2023-05-24T15:15:40+00:00] Started test app with PID 1469
+Sleeping 10
+Linking 9712272c78b9d9c93746d9c8e156a3728c65ca72
+[2023-05-24T15:15:50+00:00] Linking /builds/target/9712272c78b9d9c93746d9c8e156a3728c65ca72
+[2023-05-24T15:15:55+00:00] Killed test app with PID 1469
+[2023-05-24T15:15:55+00:00] Started test app with PID 1505
+Sleeping 10
+Linking 10daf0d4d7815447799d555d04d30325836e1d44
+[2023-05-24T15:16:05+00:00] Linking /builds/target/10daf0d4d7815447799d555d04d30325836e1d44
+[2023-05-24T15:16:10+00:00] Killed test app with PID 1505
+[2023-05-24T15:16:10+00:00] Started test app with PID 1539
+Sleeping 10
+Linking fe61dfb8a27754137c2f6a1ff59b1e55d615210e
+[2023-05-24T15:16:20+00:00] Linking /builds/target/fe61dfb8a27754137c2f6a1ff59b1e55d615210e
+[2023-05-24T15:16:25+00:00] Killed test app with PID 1539
+[2023-05-24T15:16:25+00:00] Started test app with PID 1575
+Sleeping 10
+Linking defd366a41f061dc9dc2bb7ab88876909bd5934c
+[2023-05-24T15:16:35+00:00] Linking /builds/target/defd366a41f061dc9dc2bb7ab88876909bd5934c
+[2023-05-24T15:16:41+00:00] Killed test app with PID 1575
+[2023-05-24T15:16:41+00:00] Started test app with PID 1611
+Sleeping 10
+Linking e75de023b6cd7177c8e44ef1c72b74f5efde5418
+[2023-05-24T15:16:51+00:00] Linking /builds/target/e75de023b6cd7177c8e44ef1c72b74f5efde5418
+[2023-05-24T15:16:56+00:00] Killed test app with PID 1611
+[2023-05-24T15:16:56+00:00] Started test app with PID 1647
+Sleeping 10
+Linking 94acb3c1a0fbd14482224d6af3699ddb9e163510
+[2023-05-24T15:17:06+00:00] Linking /builds/target/94acb3c1a0fbd14482224d6af3699ddb9e163510
+[2023-05-24T15:17:11+00:00] Killed test app with PID 1647
+[2023-05-24T15:17:11+00:00] Started test app with PID 1683
+Sleeping 10
+Linking 30a1c7065dc1dc2c2ed68ed403792b660bfdd805
+[2023-05-24T15:17:21+00:00] Linking /builds/target/30a1c7065dc1dc2c2ed68ed403792b660bfdd805
+[2023-05-24T15:17:26+00:00] Killed test app with PID 1683
+[2023-05-24T15:17:26+00:00] Started test app with PID 1719
+Sleeping 10
+Linking 0b166094092efa2b92200cbb67f390e86c181ab4
+[2023-05-24T15:17:36+00:00] Linking /builds/target/0b166094092efa2b92200cbb67f390e86c181ab4
+[2023-05-24T15:17:41+00:00] Killed test app with PID 1719
+[2023-05-24T15:17:41+00:00] Started test app with PID 1755
+Sleeping 10
+Linking 139c67fc879b0836dcc1285947f0d353efe42e2d
+[2023-05-24T15:17:51+00:00] Linking /builds/target/139c67fc879b0836dcc1285947f0d353efe42e2d
+[2023-05-24T15:17:56+00:00] Killed test app with PID 1755
+[2023-05-24T15:17:56+00:00] Started test app with PID 1791
+Sleeping 10
+Linking b7bc38845416febaba0d3736fec890750ad9fb28
+[2023-05-24T15:18:06+00:00] Linking /builds/target/b7bc38845416febaba0d3736fec890750ad9fb28
+[2023-05-24T15:18:11+00:00] Killed test app with PID 1791
+[2023-05-24T15:18:11+00:00] Started test app with PID 1827
+Sleeping 10
+Linking 50893291621658f355bc5b4d450a8d06a563053d
+[2023-05-24T15:18:21+00:00] Linking /builds/target/50893291621658f355bc5b4d450a8d06a563053d
+[2023-05-24T15:18:26+00:00] Killed test app with PID 1827
+[2023-05-24T15:18:26+00:00] Started test app with PID 1863
+Sleeping 10
+Linking 2fa463bacfff79181df1a5270fb67cc679a53e71
+[2023-05-24T15:18:36+00:00] Linking /builds/target/2fa463bacfff79181df1a5270fb67cc679a53e71
+[2023-05-24T15:18:41+00:00] Killed test app with PID 1863
+[2023-05-24T15:18:41+00:00] Started test app with PID 1899
+Sleeping 10
+Linking 4a090adef8c773087ec8916ad3c2236ef560df27
+[2023-05-24T15:18:51+00:00] Linking /builds/target/4a090adef8c773087ec8916ad3c2236ef560df27
+[2023-05-24T15:18:56+00:00] Killed test app with PID 1899
+[2023-05-24T15:18:56+00:00] Started test app with PID 1935
+Sleeping 10
+Linking cacf7f1d4e3d44d871b605da3b647f07d718623f
+[2023-05-24T15:19:06+00:00] Linking /builds/target/cacf7f1d4e3d44d871b605da3b647f07d718623f
+[2023-05-24T15:19:11+00:00] Killed test app with PID 1935
+[2023-05-24T15:19:11+00:00] Started test app with PID 1971
+Sleeping 10
+Linking 21767c654d31d2dccdde4330529775c6c5fd5389
+[2023-05-24T15:19:21+00:00] Linking /builds/target/21767c654d31d2dccdde4330529775c6c5fd5389
+[2023-05-24T15:19:26+00:00] Killed test app with PID 1971
+[2023-05-24T15:19:26+00:00] Started test app with PID 2007
+Sleeping 10
+Linking 04f42ceca40f73e2978b50e93806c2a18c1281fc
+[2023-05-24T15:19:36+00:00] Linking /builds/target/04f42ceca40f73e2978b50e93806c2a18c1281fc
+[2023-05-24T15:19:41+00:00] Killed test app with PID 2007
+[2023-05-24T15:19:41+00:00] Started test app with PID 2043
+Sleeping 10
+[2023-05-24T15:19:51+00:00] Finished docker
+[2023-05-24T15:19:51+00:00] Setting permissions for 21604:10430
+[2023-05-24T15:19:51+00:00] Finished

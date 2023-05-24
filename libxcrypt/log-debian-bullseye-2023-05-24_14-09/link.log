@@ -1,0 +1,12 @@
+[2023-05-24T14:44:38+00:00] Installing luci
+[2023-05-24T14:44:39+00:00] Preparing luci
+[2023-05-24T14:44:39+00:00] Linking /builds/target/backtesting/debian/bullseye/libcrypt1/1:4.4.10-10
+[2023-05-24T14:45:42+00:00] Linking /builds/target/backtesting/debian/bullseye/libcrypt1/1:4.4.15-1
+[2023-05-24T14:46:42+00:00] Linking /builds/target/backtesting/debian/bullseye/libcrypt1/1:4.4.16-1
+[2023-05-24T14:47:42+00:00] Linking /builds/target/backtesting/debian/bullseye/libcrypt1/1:4.4.17-1
+[2023-05-24T14:48:43+00:00] Linking /builds/target/backtesting/debian/bullseye/libcrypt1/1:4.4.18-1
+[2023-05-24T14:49:43+00:00] Linking /builds/target/backtesting/debian/bullseye/libcrypt1/1:4.4.18-2
+[2023-05-24T14:50:43+00:00] Linking /builds/target/backtesting/debian/bullseye/libcrypt1/1:4.4.18-3
+[2023-05-24T14:51:44+00:00] Linking /builds/target/backtesting/debian/bullseye/libcrypt1/1:4.4.18-4
+[2023-05-24T14:52:44+00:00] Setting permissions for 21604:10430
+[2023-05-24T14:52:44+00:00] Finished

@@ -1,0 +1,382 @@
+6	0	380	src/main.cpp	206	Detecting outdated access via userfaultfd
+6	0	380	src/main.cpp	226	Delay for detecting outdated access is 3s
+4	0	380	src/loader.cpp	729	Created (file modification) handler thread
+6	0	380	src/loader.cpp	167	Loading linux-vdso.so.1 from memory at 7fff2e7f2000...
+6	0	380	src/object/identity.cpp	94	Loading linux-vdso.so.1...
+6	0	380	src/object/dynamic.cpp	53	Set Base of linux-vdso.so.1 to 7fff2e7f2000
+4	0	380	src/object/identity.cpp	459	Successfully loaded linux-vdso.so.1 v0 with base 7fff2e7f2000
+6	0	380	src/loader.cpp	167	Loading /opt/luci/ from memory at 6ffff0000000...
+6	0	380	src/object/identity.cpp	94	Loading ...
+6	0	380	src/object/identity.cpp	336	Executable ld-luci.so (/opt/luci/) has dynamic section
+6	0	380	src/object/executable.cpp	29	Relocation read-only at 6ffff01c1278 with 32136 bytes
+4	0	380	src/object/identity.cpp	459	Successfully loaded /opt/luci/ v0 with base 0
+4	0	380	src/loader.cpp	70	Base of /opt/luci/ is 0
+6	0	380	src/loader.cpp	81	Preserving FPU using XSAVE
+4	0	380	src/main.cpp	240	Dynamic updates are enabled!
+4	0	380	src/main.cpp	245	Recursively comparing function dependencies on updates!
+6	0	380	src/main.cpp	272	Writing status info to /builds/target//log-ubuntu-focal-2023-05-24_14-09/status.info
+6	0	380	src/main.cpp	291	Add '/builds/tmproot/lib;/builds/tmproot/lib/x86_64-linux-gnu;/builds/tmproot/lib64;/builds/tmproot/usr/lib;/builds/tmproot/usr/lib/x86_64-linux-gnu' (from LD_LIBRARY_PATH) to library search path...
+6	0	380	src/main.cpp	297	Adding contents of '/opt/luci/libpath.conf' to library search path...
+5	0	380	src/file.cpp	183	Mapped '/opt/luci/libpath.conf' (139 bytes)
+6	0	380	src/main.cpp	309	Library config has 6 search path entries!
+6	0	380	src/loader.cpp	167	Loading /builds/test/run from memory at 5570339f7000...
+6	0	380	src/object/identity.cpp	94	Loading run...
+6	0	380	src/object/dynamic.cpp	53	Set Base of /builds/test/run to 5570339f7000
+6	0	380	src/object/executable.cpp	29	Relocation read-only at 4adb0 with 592 bytes
+6	0	380	src/loader.cpp	167	Loading /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1...
+6	0	380	src/object/identity.cpp	266	Library /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 is a symbolic link (hence we do not expect changes to the binary itself)
+6	0	380	src/object/identity.cpp	94	Loading libexpat.so.1...
+6	0	380	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 to 600000000000
+4	0	380	src/object/identity.cpp	390	Calculate Binary hash of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+6	0	380	src/object/executable.cpp	29	Relocation read-only at 2b1f0 with 7696 bytes
+6	0	380	src/loader.cpp	167	Loading /lib/x86_64-linux-gnu/libc.so.6...
+6	0	380	src/object/identity.cpp	266	Library /lib/x86_64-linux-gnu/libc.so.6 is a symbolic link (hence we do not expect changes to the binary itself)
+6	0	380	src/object/identity.cpp	94	Loading libc.so.6...
+6	0	380	src/object/dynamic.cpp	53	Set Base of /lib/x86_64-linux-gnu/libc.so.6 to 60000002e000
+4	0	380	src/object/identity.cpp	390	Calculate Binary hash of [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	380	src/object/executable.cpp	29	Relocation read-only at 1ca768 with 14488 bytes
+3	0	380	src/object/dynamic.cpp	200	Library 'ld-linux-x86-64.so.2' will be skipped (exclude list)
+6	0	380	src/memory_segment.cpp	84	Mapping 139264 Bytes (fd 8) at 60000002e000...
+6	0	380	src/memory_segment.cpp	84	Mapping 1413120 Bytes (fd 8) at 600000050000...
+6	0	380	src/memory_segment.cpp	84	Mapping 323584 Bytes (fd 8) at 6000001a9000...
+6	0	380	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd -1) at 6000001f8000...
+6	0	380	src/memory_segment.cpp	96	Copy 14488 Bytes from 1c9768 to 6000001f8768
+6	0	380	src/memory_segment.cpp	64	Created shared memory at fd 9
+6	0	380	src/memory_segment.cpp	84	Mapping 24576 Bytes (fd 9) at 6000001fc000...
+6	0	380	src/memory_segment.cpp	96	Copy 6048 Bytes from 1cd000 to 6000001fc000
+6	0	380	src/comp/glibc/patch.cpp	58	Patched '_dl_addr' (843 bytes) @ 134aa0 with 6ffff001432b in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	380	src/comp/glibc/patch.cpp	58	Patched '__libc_dlopen_mode' (128 bytes) @ 135030 with 6ffff0012289 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	380	src/comp/glibc/patch.cpp	58	Patched '__libc_dlclose' (45 bytes) @ 1352c0 with 6ffff0011f97 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	380	src/comp/glibc/patch.cpp	58	Patched '__libc_dlsym' (161 bytes) @ 1350b0 with 6ffff00126c8 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	380	src/comp/glibc/patch.cpp	58	Patched '__libc_dlvsym' (345 bytes) @ 135160 with 6ffff0012782 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	380	src/comp/glibc/patch.cpp	58	Patched '__libc_fork' (458 bytes) @ c79b0 with 6ffff000f610 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	0	380	src/object/dynamic.cpp	221	Applied GLIBC patches at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	0	380	src/object/identity.cpp	459	Successfully loaded /lib/x86_64-linux-gnu/libc.so.6 v0 (Build ID e15ec78d51a522023f9cfc58dc284f379d81860b) with base 60000002e000
+6	0	380	src/object/identity.cpp	194	Watching for modifications at /lib/x86_64-linux-gnu/libc.so.6
+6	0	380	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd 7) at 600000000000...
+6	0	380	src/memory_segment.cpp	84	Mapping 114688 Bytes (fd 7) at 600000004000...
+6	0	380	src/memory_segment.cpp	84	Mapping 40960 Bytes (fd 7) at 600000020000...
+6	0	380	src/memory_segment.cpp	84	Mapping 8192 Bytes (fd -1) at 60000002b000...
+6	0	380	src/memory_segment.cpp	96	Copy 7696 Bytes from 2a1f0 to 60000002b1f0
+6	0	380	src/memory_segment.cpp	64	Created shared memory at fd 10
+6	0	380	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 60000002d000...
+6	0	380	src/memory_segment.cpp	96	Copy 152 Bytes from 2c000 to 60000002d000
+4	0	380	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 v0 (Build ID 0a962a7a4106635a4cb3158767419cb772b060d1) with base 600000000000
+6	0	380	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	0	380	src/object/identity.cpp	459	Successfully loaded /builds/test/run v0 with base 5570339f7000
+6	0	380	src/main.cpp	496	Library search order:
+ - linux-vdso.so.1 (linux-vdso.so.1)
+ - ld-luci.so (/opt/luci/)
+ - run (/builds/test/run)
+ - libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1)
+ - libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6)
+6	0	380	src/loader.cpp	269	Using VDSO clock_gettime at 7fff2e7f2900
+6	0	380	src/loader.cpp	273	Using VDSO clock_getres at 7fff2e7f2b70
+6	0	380	src/loader.cpp	277	Using VDSO getcpu at 7fff2e7f2bd0
+6	0	380	src/loader.cpp	281	Using VDSO time at 7fff2e7f28d0
+4	0	380	src/tls.cpp	142	Allocate Thread 700000572880 with 144B (+ 1664B) TLS starting at 700000572160
+4	0	380	src/tls.cpp	151	Changed %fs of ThreadID 380 to 700000572880
+6	0	380	src/object/identity.cpp	483	Preparing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	0	380	src/object/dynamic.cpp	233	Prepare [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0] with 1ce000
+6	0	380	src/object/dynamic.cpp	353	Unable to resolve weak symbol __libpthread_freeres [invalid version] (libc.so.6)...
+6	0	380	src/object/identity.cpp	483	Preparing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+4	0	380	src/object/dynamic.cpp	233	Prepare [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0] with 2d000
+6	0	380	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libexpat.so.1)...
+6	0	380	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libexpat.so.1)...
+6	0	380	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libexpat.so.1)...
+6	0	380	src/object/identity.cpp	483	Preparing [Object run (/builds/test/run) v0]
+4	0	380	src/object/dynamic.cpp	233	Prepare [Object run (/builds/test/run) v0] with 4b000
+6	0	380	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (run)...
+6	0	380	src/object/dynamic.cpp	353	Unable to resolve weak symbol XML_SetBillionLaughsAttackProtectionMaximumAmplification [invalid version] (run)...
+6	0	380	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (run)...
+6	0	380	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (run)...
+6	0	380	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	380	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+6	0	380	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	0	380	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	0	380	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+6	0	380	src/loader.cpp	298	Stack Guard: 9347a05555e04a00
+6	0	380	src/loader.cpp	299	Pointer Guard: 518dbdf7cb9d213c
+4	0	380	src/tls.cpp	122	Copy 16 bytes from 6000001f8768 to 7000005727f0 (144 bytes)
+4	0	380	src/comp/gdb.cpp	36	GDB debug structure in ld-luci.so (/opt/luci/) at *6ffff01c8f10 = 6ffff01f00c0
+4	0	380	src/comp/gdb.cpp	36	GDB debug structure in run (/builds/test/run) at *557033a41e98 = 6ffff01f00c0
+6	0	380	src/object/dynamic.cpp	445	Preinitialize [Object run (/builds/test/run) v0]
+6	0	380	src/object/identity.cpp	533	Initializing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	380	src/object/dynamic.cpp	448	Initialize [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	380	src/object/identity.cpp	533	Initializing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+6	0	380	src/object/dynamic.cpp	448	Initialize [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+4	0	380	src/loader.cpp	456	Arguments for 5570339fa5a0 (with stackpointer 7fff2e7e46c0):
+	1. "/builds/test/run"
+
+4	0	380	src/process.cpp	124	Handing over to process at 5570339fa5a0
+6	20	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	20	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	20	385	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	22	385	src/loader_helper.cpp	79	Loading libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1)
+6	22	385	src/object/identity.cpp	94	Loading libexpat.so.1...
+6	22	385	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 to 600000202000
+4	22	385	src/object/identity.cpp	390	Calculate Binary hash of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1]
+4	22	385	src/object/dynamic.cpp	370	Checking if libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) can patch previous version...
+6	22	385	src/object/dynamic.cpp	376	Found 170 differences in libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) (compared to the current version)
+6	22	385	src/object/executable.cpp	29	Relocation read-only at 2b1f0 with 7696 bytes
+6	22	385	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd 11) at 600000202000...
+6	22	385	src/memory_segment.cpp	84	Mapping 114688 Bytes (fd 11) at 600000206000...
+6	22	385	src/memory_segment.cpp	84	Mapping 40960 Bytes (fd 11) at 600000222000...
+6	22	385	src/memory_segment.cpp	84	Mapping 8192 Bytes (fd -1) at 60000022d000...
+6	22	385	src/memory_segment.cpp	96	Copy 7696 Bytes from 2a1f0 to 60000022d1f0
+6	22	385	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 60000022f000...
+4	22	385	src/object/identity.cpp	446	Prepare new version of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	22	385	src/object/dynamic.cpp	233	Prepare [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1] with 2d000
+6	22	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libexpat.so.1)...
+6	22	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libexpat.so.1)...
+6	22	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libexpat.so.1)...
+4	22	385	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 v1 (Build ID d1419bcf17e9e4400eeec495ac1f0a221f3465d5) with base 600000202000
+6	22	385	src/object/identity.cpp	504	Updating relocations at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	22	385	src/object/identity.cpp	504	Updating relocations at [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1]
+6	22	385	src/object/identity.cpp	504	Updating relocations at [Object ld-luci.so (/opt/luci/) v0]
+6	22	385	src/object/identity.cpp	504	Updating relocations at [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	22	385	src/object/identity.cpp	504	Updating relocations at [Object run (/builds/test/run) v0]
+6	22	385	src/memory_segment.cpp	124	Created compose back buffer at 157033a41000 for 557033a41000 (4096 Bytes)
+6	22	385	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	22	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1]
+6	22	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+6	22	385	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	22	385	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	22	385	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+4	22	385	src/memory_segment.cpp	150	Updated 557033a41000 (4096 Bytes) of [Object run (/builds/test/run) v0] with composite back buffer (private mapping)
+4	25	385	src/loader_helper.cpp	105	Protecting [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+6	25	385	src/memory_segment.cpp	124	Created compose back buffer at 200000004000 for 600000004000 (114688 Bytes)
+4	25	385	src/memory_segment.cpp	150	Updated 600000004000 (114688 Bytes) of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0] with composite back buffer (private mapping)
+6	25	385	src/memory_segment.cpp	214	Registered Userfault for memory segment 600000004000 (114688 Bytes)!
+6	25	385	src/memory_segment.cpp	225	Memory segment 600000004000 (114688 Bytes) disabled, contents moved to 200000004000
+6	50	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	50	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	50	385	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	52	385	src/loader_helper.cpp	79	Loading libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1)
+6	52	385	src/object/identity.cpp	94	Loading libexpat.so.1...
+6	52	385	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 to 600000230000
+4	52	385	src/object/identity.cpp	390	Calculate Binary hash of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v2]
+4	52	385	src/object/dynamic.cpp	370	Checking if libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) can patch previous version...
+6	52	385	src/object/dynamic.cpp	376	Found 1 differences in libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) (compared to the current version)
+6	52	385	src/object/executable.cpp	29	Relocation read-only at 2b1f0 with 7696 bytes
+6	52	385	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd 12) at 600000230000...
+6	52	385	src/memory_segment.cpp	84	Mapping 114688 Bytes (fd 12) at 600000234000...
+6	52	385	src/memory_segment.cpp	84	Mapping 40960 Bytes (fd 12) at 600000250000...
+6	52	385	src/memory_segment.cpp	84	Mapping 8192 Bytes (fd -1) at 60000025b000...
+6	52	385	src/memory_segment.cpp	96	Copy 7696 Bytes from 2a1f0 to 60000025b1f0
+6	52	385	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 60000025d000...
+4	52	385	src/object/identity.cpp	446	Prepare new version of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	52	385	src/object/dynamic.cpp	233	Prepare [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v2] with 2d000
+6	52	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libexpat.so.1)...
+6	52	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libexpat.so.1)...
+6	52	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libexpat.so.1)...
+4	52	385	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 v2 (Build ID 36b1be4f5c0055da27ffb2ccaeda6e97d27ebab7) with base 600000230000
+6	52	385	src/object/identity.cpp	504	Updating relocations at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	52	385	src/object/identity.cpp	504	Updating relocations at [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v2]
+6	52	385	src/object/identity.cpp	504	Updating relocations at [Object ld-luci.so (/opt/luci/) v0]
+6	52	385	src/object/identity.cpp	504	Updating relocations at [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	52	385	src/object/identity.cpp	504	Updating relocations at [Object run (/builds/test/run) v0]
+6	52	385	src/memory_segment.cpp	124	Created compose back buffer at 157033a41000 for 557033a41000 (4096 Bytes)
+6	52	385	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	52	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v2]
+6	52	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1]
+6	52	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+3	52	385	src/memory_segment.cpp	134	Memory segment 600000004000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	52	385	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	52	385	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	52	385	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+4	52	385	src/memory_segment.cpp	150	Updated 557033a41000 (4096 Bytes) of [Object run (/builds/test/run) v0] with composite back buffer (private mapping)
+4	55	385	src/loader_helper.cpp	105	Protecting [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1]
+6	55	385	src/memory_segment.cpp	124	Created compose back buffer at 200000206000 for 600000206000 (114688 Bytes)
+4	55	385	src/memory_segment.cpp	150	Updated 600000206000 (114688 Bytes) of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1] with composite back buffer (private mapping)
+6	55	385	src/memory_segment.cpp	214	Registered Userfault for memory segment 600000206000 (114688 Bytes)!
+6	55	385	src/memory_segment.cpp	225	Memory segment 600000206000 (114688 Bytes) disabled, contents moved to 200000206000
+6	80	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	80	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	80	385	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	82	385	src/loader_helper.cpp	79	Loading libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1)
+6	82	385	src/object/identity.cpp	94	Loading libexpat.so.1...
+6	82	385	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 to 60000025e000
+4	82	385	src/object/identity.cpp	390	Calculate Binary hash of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v3]
+4	82	385	src/object/dynamic.cpp	370	Checking if libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) can patch previous version...
+6	82	385	src/object/dynamic.cpp	376	Found 182 differences in libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) (compared to the current version)
+6	82	385	src/object/executable.cpp	29	Relocation read-only at 2b1f0 with 7696 bytes
+6	82	385	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd 13) at 60000025e000...
+6	82	385	src/memory_segment.cpp	84	Mapping 114688 Bytes (fd 13) at 600000262000...
+6	82	385	src/memory_segment.cpp	84	Mapping 40960 Bytes (fd 13) at 60000027e000...
+6	82	385	src/memory_segment.cpp	84	Mapping 8192 Bytes (fd -1) at 600000289000...
+6	82	385	src/memory_segment.cpp	96	Copy 7696 Bytes from 2a1f0 to 6000002891f0
+6	82	385	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 60000028b000...
+4	82	385	src/object/identity.cpp	446	Prepare new version of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	82	385	src/object/dynamic.cpp	233	Prepare [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v3] with 2d000
+6	82	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libexpat.so.1)...
+6	82	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libexpat.so.1)...
+6	82	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libexpat.so.1)...
+4	82	385	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 v3 (Build ID 8dfd388a2c23e1a5f2c6abec1a6c1ae273b640b2) with base 60000025e000
+6	82	385	src/object/identity.cpp	504	Updating relocations at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	82	385	src/object/identity.cpp	504	Updating relocations at [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v3]
+6	82	385	src/object/identity.cpp	504	Updating relocations at [Object ld-luci.so (/opt/luci/) v0]
+6	82	385	src/object/identity.cpp	504	Updating relocations at [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	82	385	src/object/identity.cpp	504	Updating relocations at [Object run (/builds/test/run) v0]
+6	82	385	src/memory_segment.cpp	124	Created compose back buffer at 157033a41000 for 557033a41000 (4096 Bytes)
+6	82	385	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	82	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v3]
+6	82	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v2]
+6	82	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1]
+3	82	385	src/memory_segment.cpp	134	Memory segment 600000206000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	82	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+3	82	385	src/memory_segment.cpp	134	Memory segment 600000004000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	82	385	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	82	385	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	82	385	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+4	82	385	src/memory_segment.cpp	150	Updated 557033a41000 (4096 Bytes) of [Object run (/builds/test/run) v0] with composite back buffer (private mapping)
+4	85	385	src/loader_helper.cpp	105	Protecting [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v2]
+6	85	385	src/memory_segment.cpp	124	Created compose back buffer at 200000234000 for 600000234000 (114688 Bytes)
+4	85	385	src/memory_segment.cpp	150	Updated 600000234000 (114688 Bytes) of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v2] with composite back buffer (private mapping)
+6	85	385	src/memory_segment.cpp	214	Registered Userfault for memory segment 600000234000 (114688 Bytes)!
+6	85	385	src/memory_segment.cpp	225	Memory segment 600000234000 (114688 Bytes) disabled, contents moved to 200000234000
+6	110	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	110	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	110	385	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	112	385	src/loader_helper.cpp	79	Loading libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1)
+6	112	385	src/object/identity.cpp	94	Loading libexpat.so.1...
+6	112	385	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 to 60000028c000
+4	112	385	src/object/identity.cpp	390	Calculate Binary hash of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v4]
+4	112	385	src/object/dynamic.cpp	370	Checking if libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) can patch previous version...
+6	112	385	src/object/dynamic.cpp	376	Found 168 differences in libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) (compared to the current version)
+6	112	385	src/object/executable.cpp	29	Relocation read-only at 2b1f0 with 7696 bytes
+6	112	385	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd 14) at 60000028c000...
+6	112	385	src/memory_segment.cpp	84	Mapping 114688 Bytes (fd 14) at 600000290000...
+6	112	385	src/memory_segment.cpp	84	Mapping 40960 Bytes (fd 14) at 6000002ac000...
+6	112	385	src/memory_segment.cpp	84	Mapping 8192 Bytes (fd -1) at 6000002b7000...
+6	112	385	src/memory_segment.cpp	96	Copy 7696 Bytes from 2a1f0 to 6000002b71f0
+6	112	385	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 6000002b9000...
+4	112	385	src/object/identity.cpp	446	Prepare new version of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	112	385	src/object/dynamic.cpp	233	Prepare [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v4] with 2d000
+6	112	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libexpat.so.1)...
+6	112	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libexpat.so.1)...
+6	112	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libexpat.so.1)...
+4	112	385	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 v4 (Build ID 46d0a32eda0d23544ca39b3d61402a973d9770da) with base 60000028c000
+6	112	385	src/object/identity.cpp	504	Updating relocations at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	112	385	src/object/identity.cpp	504	Updating relocations at [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v4]
+6	112	385	src/object/identity.cpp	504	Updating relocations at [Object ld-luci.so (/opt/luci/) v0]
+6	112	385	src/object/identity.cpp	504	Updating relocations at [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	112	385	src/object/identity.cpp	504	Updating relocations at [Object run (/builds/test/run) v0]
+6	112	385	src/memory_segment.cpp	124	Created compose back buffer at 157033a41000 for 557033a41000 (4096 Bytes)
+6	112	385	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	112	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v4]
+6	112	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v3]
+6	112	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v2]
+3	112	385	src/memory_segment.cpp	134	Memory segment 600000234000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	112	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1]
+3	112	385	src/memory_segment.cpp	134	Memory segment 600000206000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	112	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+3	112	385	src/memory_segment.cpp	134	Memory segment 600000004000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	112	385	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	112	385	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	112	385	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+4	112	385	src/memory_segment.cpp	150	Updated 557033a41000 (4096 Bytes) of [Object run (/builds/test/run) v0] with composite back buffer (private mapping)
+4	115	385	src/loader_helper.cpp	105	Protecting [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v3]
+6	115	385	src/memory_segment.cpp	124	Created compose back buffer at 200000262000 for 600000262000 (114688 Bytes)
+4	115	385	src/memory_segment.cpp	150	Updated 600000262000 (114688 Bytes) of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v3] with composite back buffer (private mapping)
+6	115	385	src/memory_segment.cpp	214	Registered Userfault for memory segment 600000262000 (114688 Bytes)!
+6	115	385	src/memory_segment.cpp	225	Memory segment 600000262000 (114688 Bytes) disabled, contents moved to 200000262000
+6	140	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	140	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	140	385	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	142	385	src/loader_helper.cpp	79	Loading libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1)
+6	142	385	src/object/identity.cpp	94	Loading libexpat.so.1...
+6	142	385	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 to 6000002ba000
+4	142	385	src/object/identity.cpp	390	Calculate Binary hash of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v5]
+4	142	385	src/object/dynamic.cpp	370	Checking if libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) can patch previous version...
+6	142	385	src/object/dynamic.cpp	376	Found 167 differences in libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) (compared to the current version)
+6	142	385	src/object/executable.cpp	29	Relocation read-only at 2b1f0 with 7696 bytes
+6	142	385	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd 15) at 6000002ba000...
+6	142	385	src/memory_segment.cpp	84	Mapping 114688 Bytes (fd 15) at 6000002be000...
+6	142	385	src/memory_segment.cpp	84	Mapping 40960 Bytes (fd 15) at 6000002da000...
+6	142	385	src/memory_segment.cpp	84	Mapping 8192 Bytes (fd -1) at 6000002e5000...
+6	142	385	src/memory_segment.cpp	96	Copy 7696 Bytes from 2a1f0 to 6000002e51f0
+6	142	385	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 6000002e7000...
+4	142	385	src/object/identity.cpp	446	Prepare new version of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	142	385	src/object/dynamic.cpp	233	Prepare [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v5] with 2d000
+6	142	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libexpat.so.1)...
+6	142	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libexpat.so.1)...
+6	142	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libexpat.so.1)...
+4	142	385	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 v5 (Build ID a26904c60079317d247d26c07a66e582cb0c1338) with base 6000002ba000
+6	142	385	src/object/identity.cpp	504	Updating relocations at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	142	385	src/object/identity.cpp	504	Updating relocations at [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v5]
+6	142	385	src/object/identity.cpp	504	Updating relocations at [Object ld-luci.so (/opt/luci/) v0]
+6	142	385	src/object/identity.cpp	504	Updating relocations at [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	142	385	src/object/identity.cpp	504	Updating relocations at [Object run (/builds/test/run) v0]
+6	142	385	src/memory_segment.cpp	124	Created compose back buffer at 157033a41000 for 557033a41000 (4096 Bytes)
+6	142	385	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	142	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v5]
+6	142	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v4]
+6	142	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v3]
+3	142	385	src/memory_segment.cpp	134	Memory segment 600000262000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	142	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v2]
+3	142	385	src/memory_segment.cpp	134	Memory segment 600000234000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	142	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1]
+3	142	385	src/memory_segment.cpp	134	Memory segment 600000206000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	142	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+3	142	385	src/memory_segment.cpp	134	Memory segment 600000004000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	142	385	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	142	385	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	142	385	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+4	142	385	src/memory_segment.cpp	150	Updated 557033a41000 (4096 Bytes) of [Object run (/builds/test/run) v0] with composite back buffer (private mapping)
+4	145	385	src/loader_helper.cpp	105	Protecting [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v4]
+6	145	385	src/memory_segment.cpp	124	Created compose back buffer at 200000290000 for 600000290000 (114688 Bytes)
+4	145	385	src/memory_segment.cpp	150	Updated 600000290000 (114688 Bytes) of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v4] with composite back buffer (private mapping)
+6	145	385	src/memory_segment.cpp	214	Registered Userfault for memory segment 600000290000 (114688 Bytes)!
+6	145	385	src/memory_segment.cpp	225	Memory segment 600000290000 (114688 Bytes) disabled, contents moved to 200000290000
+6	170	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	170	385	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+6	170	385	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	171	385	src/loader_helper.cpp	79	Loading libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1)
+6	171	385	src/object/identity.cpp	94	Loading libexpat.so.1...
+6	171	385	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 to 6000002e8000
+4	171	385	src/object/identity.cpp	390	Calculate Binary hash of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v6]
+4	171	385	src/object/dynamic.cpp	370	Checking if libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) can patch previous version...
+6	171	385	src/object/dynamic.cpp	376	Found 167 differences in libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) (compared to the current version)
+6	171	385	src/object/executable.cpp	29	Relocation read-only at 2b1f0 with 7696 bytes
+6	171	385	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd 16) at 6000002e8000...
+6	171	385	src/memory_segment.cpp	84	Mapping 114688 Bytes (fd 16) at 6000002ec000...
+6	171	385	src/memory_segment.cpp	84	Mapping 40960 Bytes (fd 16) at 600000308000...
+6	171	385	src/memory_segment.cpp	84	Mapping 8192 Bytes (fd -1) at 600000313000...
+6	171	385	src/memory_segment.cpp	96	Copy 7696 Bytes from 2a1f0 to 6000003131f0
+6	171	385	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 600000315000...
+4	171	385	src/object/identity.cpp	446	Prepare new version of /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1
+4	171	385	src/object/dynamic.cpp	233	Prepare [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v6] with 2d000
+6	171	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libexpat.so.1)...
+6	171	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libexpat.so.1)...
+6	171	385	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libexpat.so.1)...
+4	171	385	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1 v6 (Build ID 3457aa3d99d1fe8638cb54d2b36c1c2b019fc05c) with base 6000002e8000
+6	171	385	src/object/identity.cpp	504	Updating relocations at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	171	385	src/object/identity.cpp	504	Updating relocations at [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v6]
+6	171	385	src/object/identity.cpp	504	Updating relocations at [Object ld-luci.so (/opt/luci/) v0]
+6	171	385	src/object/identity.cpp	504	Updating relocations at [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	171	385	src/object/identity.cpp	504	Updating relocations at [Object run (/builds/test/run) v0]
+6	171	385	src/memory_segment.cpp	124	Created compose back buffer at 157033a41000 for 557033a41000 (4096 Bytes)
+6	171	385	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	171	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v6]
+6	171	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v5]
+6	171	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v4]
+3	171	385	src/memory_segment.cpp	134	Memory segment 600000290000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	171	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v3]
+3	171	385	src/memory_segment.cpp	134	Memory segment 600000262000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	171	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v2]
+3	171	385	src/memory_segment.cpp	134	Memory segment 600000234000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	171	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v1]
+3	171	385	src/memory_segment.cpp	134	Memory segment 600000206000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	171	385	src/object/identity.cpp	516	Finalizing [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v0]
+3	171	385	src/memory_segment.cpp	134	Memory segment 600000004000 (114688 Bytes) is currently disabled, hence ignoring finalize request
+6	171	385	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	171	385	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	171	385	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+4	171	385	src/memory_segment.cpp	150	Updated 557033a41000 (4096 Bytes) of [Object run (/builds/test/run) v0] with composite back buffer (private mapping)
+4	174	385	src/loader_helper.cpp	105	Protecting [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v5]
+6	174	385	src/memory_segment.cpp	124	Created compose back buffer at 2000002be000 for 6000002be000 (114688 Bytes)
+4	174	385	src/memory_segment.cpp	150	Updated 6000002be000 (114688 Bytes) of [Object libexpat.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1) v5] with composite back buffer (private mapping)
+6	174	385	src/memory_segment.cpp	214	Registered Userfault for memory segment 6000002be000 (114688 Bytes)!
+6	174	385	src/memory_segment.cpp	225	Memory segment 6000002be000 (114688 Bytes) disabled, contents moved to 2000002be000
+4	200	385	src/loader_helper.cpp	16	helper loop handler ends (Signal 15)

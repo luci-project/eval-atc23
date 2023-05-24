@@ -1,0 +1,42 @@
+[47;30;1m INFO  [0;40;37m      0 [2m1796[22m   luci:src/build_info.cpp:66 ................[49m Luci eebf869 (built Tue, 23 May 2023 16:29:29 +0200)
+[0m[7;1m DEBUG [0;40m      0 [2m1796[22m   luci:src/build_info.cpp:75 ................[49m  with glibc compatibility to debian bullseye on x64
+[0m[7;1m DEBUG [0;40m      0 [2m1796[22m   luci:src/build_info.cpp:78 ................[49m Using Bean 1a26af3 and Elfo 1116a6a (built Tue, 23 May 2023 16:19:07 +0200)
+[0m[7;1m DEBUG [0;40m      0 [2m1796[22m   luci:src/build_info.cpp:88 ................[49m Using Capstone 4.0.2
+[0m[7;1m DEBUG [0;40m      0 [2m1796[22m   luci:src/build_info.cpp:94 ................[49m Using DirtyLittleHelper (DLH) 9e8afac (built Tue, 23 May 2023 16:19:05 +0200)
+[0m[7;1m DEBUG [0;40m      0 [2m1796[22m   luci:src/main.cpp:134 .....................[49m Set log level to 6
+[0m[7;1m DEBUG [0;40m      0 [2m1796[22m   luci:src/main.cpp:140 .....................[49m Log to file /builds/target//log-vanilla-test-2023-05-24_14-09/luci.log (appending output)
+[0minflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END
+inflate should report Z_STREAM_END

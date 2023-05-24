@@ -1,0 +1,15 @@
+# log-vanilla-test-2023-05-24_14-09
+Custom (vanilla): 24 / 48 (50%)
+
+# log-debian-buster-2023-05-24_14-09
+Debian Buster (zlib1g 1:1.2.8.dfsg - 1:1.2.11.dfsg): 1 / 3 (33%)
+
+# log-debian-bullseye-2023-05-24_14-09
+Debian Bullseye (zlib1g 1:1.2.11.dfsg - 1:1.2.11.dfsg): 4 / 5 (80%)
+
+# log-ubuntu-focal-2023-05-24_14-09
+Ubuntu Focal (zlib1g 1:1.2.11.dfsg - 1:1.2.11.dfsg): 5 / 7 (71%)
+
+# log-ubuntu-jammy-2023-05-24_14-09
+Ubuntu Jammy (zlib1g 1:1.2.11.dfsg - 1:1.2.11.dfsg): 4 / 4 (100%)
+

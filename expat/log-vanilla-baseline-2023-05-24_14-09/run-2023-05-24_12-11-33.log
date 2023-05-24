@@ -1,0 +1,838 @@
+
+Run 1 (at 2023-05-24 12:11:33):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 12
+[Duration: 524 ms]
+
+Run 2 (at 2023-05-24 12:11:33):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 3 (at 2023-05-24 12:11:34):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 12
+[Duration: 521 ms]
+
+Run 4 (at 2023-05-24 12:11:34):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 520 ms]
+
+Run 5 (at 2023-05-24 12:11:35):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 6 (at 2023-05-24 12:11:35):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 520 ms]
+
+Run 7 (at 2023-05-24 12:11:36):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 8 (at 2023-05-24 12:11:36):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 12
+[Duration: 520 ms]
+
+Run 9 (at 2023-05-24 12:11:37):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 520 ms]
+
+Run 10 (at 2023-05-24 12:11:38):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 11 (at 2023-05-24 12:11:38):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 12 (at 2023-05-24 12:11:39):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 12
+[Duration: 525 ms]
+
+Run 13 (at 2023-05-24 12:11:39):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 14 (at 2023-05-24 12:11:40):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 15 (at 2023-05-24 12:11:40):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 16 (at 2023-05-24 12:11:41):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 17 (at 2023-05-24 12:11:41):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 520 ms]
+
+Run 18 (at 2023-05-24 12:11:42):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 19 (at 2023-05-24 12:11:42):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 12
+[Duration: 520 ms]
+
+Run 20 (at 2023-05-24 12:11:43):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 523 ms]
+
+Run 21 (at 2023-05-24 12:11:43):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 553 ms]
+
+Run 22 (at 2023-05-24 12:11:44):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 546 ms]
+
+Run 23 (at 2023-05-24 12:11:44):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 522 ms]
+
+Run 24 (at 2023-05-24 12:11:45):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 25 (at 2023-05-24 12:11:45):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 520 ms]
+
+Run 26 (at 2023-05-24 12:11:46):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 522 ms]
+
+Run 27 (at 2023-05-24 12:11:46):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 28 (at 2023-05-24 12:11:47):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 29 (at 2023-05-24 12:11:47):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 30 (at 2023-05-24 12:11:48):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 31 (at 2023-05-24 12:11:49):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 520 ms]
+
+Run 32 (at 2023-05-24 12:11:49):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 522 ms]
+
+Run 33 (at 2023-05-24 12:11:50):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 34 (at 2023-05-24 12:11:50):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 35 (at 2023-05-24 12:11:51):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 36 (at 2023-05-24 12:11:51):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 520 ms]
+
+Run 37 (at 2023-05-24 12:11:52):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 12
+[Duration: 522 ms]
+
+Run 38 (at 2023-05-24 12:11:52):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 39 (at 2023-05-24 12:11:53):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 525 ms]
+
+Run 40 (at 2023-05-24 12:11:53):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 12
+[Duration: 519 ms]
+
+Run 41 (at 2023-05-24 12:11:54):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 12
+[Duration: 523 ms]
+
+Run 42 (at 2023-05-24 12:11:54):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 540 ms]
+
+Run 43 (at 2023-05-24 12:11:55):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 44 (at 2023-05-24 12:11:55):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 45 (at 2023-05-24 12:11:56):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]
+
+Run 46 (at 2023-05-24 12:11:56):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 520 ms]
+
+Run 47 (at 2023-05-24 12:11:57):
+Expat version: expat_2.1.1
+FAIL: test_nsalloc_parse_buffer (during actual test at runtests.c:10333)
+FAIL: test_misc_stop_during_end_handler_issue_240_1 (during actual test at runtests.c:7903)
+FAIL: test_misc_stop_during_end_handler_issue_240_2 (during actual test at runtests.c:7924)
+FAIL: test_misc_deny_internal_entity_closing_doctype_issue_317 (during actual test at runtests.c:7969)
+FAIL: test_ns_separator_in_uri (during actual test at runtests.c:7616)
+FAIL: test_get_buffer_3_overflow (during actual test at runtests.c:3955)
+FAIL: test_suspend_resume_internal_entity_issue_629 (during actual test at runtests.c:5073)
+FAIL: test_utf8_in_start_tags (during actual test at runtests.c:6256)
+FAIL: test_bad_doctype_utf8 (during actual test at runtests.c:6441)
+FAIL: test_default_doctype_handler (during actual test at runtests.c:6737)
+FAIL: test_empty_element_abort (during actual test at runtests.c:6747)
+FAIL: test_pool_integrity_with_unfinished_attr (during actual test at chardata.c:93)
+FAIL: test_nested_entity_suspend (during actual test at chardata.c:93)
+96%: Checks: 333, Failed: 13
+[Duration: 521 ms]

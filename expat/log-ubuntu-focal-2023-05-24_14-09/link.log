@@ -1,0 +1,11 @@
+[2023-05-24T12:51:19+00:00] Installing luci
+[2023-05-24T12:51:19+00:00] Preparing luci
+[2023-05-24T12:51:19+00:00] Linking /builds/target/backtesting/ubuntu/focal/libexpat1/2.2.7-2
+[2023-05-24T12:51:51+00:00] Linking /builds/target/backtesting/ubuntu/focal/libexpat1/2.2.9-1
+[2023-05-24T12:52:21+00:00] Linking /builds/target/backtesting/ubuntu/focal/libexpat1/2.2.9-1build1
+[2023-05-24T12:52:51+00:00] Linking /builds/target/backtesting/ubuntu/focal/libexpat1/2.2.9-1ubuntu0.2
+[2023-05-24T12:53:21+00:00] Linking /builds/target/backtesting/ubuntu/focal/libexpat1/2.2.9-1ubuntu0.4
+[2023-05-24T12:53:51+00:00] Linking /builds/target/backtesting/ubuntu/focal/libexpat1/2.2.9-1ubuntu0.5
+[2023-05-24T12:54:21+00:00] Linking /builds/target/backtesting/ubuntu/focal/libexpat1/2.2.9-1ubuntu0.6
+[2023-05-24T12:54:51+00:00] Setting permissions for 21604:10430
+[2023-05-24T12:54:51+00:00] Finished

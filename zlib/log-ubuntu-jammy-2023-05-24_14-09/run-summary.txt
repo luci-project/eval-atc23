@@ -1,0 +1,35 @@
+**Zlib dynamic updates with Luci**
+[start]
+1:1.2.11.dfsg-2ubuntu7 (used in 1. start of test application)
+	test case runs: 32 (2023-05-24 15:38:45+00:00 - 2023-05-24 15:38:55+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 338.8ms / 339.0ms
+	standard deviation of run time: 1.3ms
+
+1:1.2.11.dfsg-2ubuntu8 (used in 1. start of test application)
+	test case runs: 44 (2023-05-24 15:38:56+00:00 - 2023-05-24 15:39:10+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 340.2ms / 339.0ms
+	standard deviation of run time: 5.0ms
+
+1:1.2.11.dfsg-2ubuntu9 (used in 1. start of test application)
+	test case runs: 44 (2023-05-24 15:39:11+00:00 - 2023-05-24 15:39:25+00:00)
+	max. number of failed test cases in a run: 2
+	mean / median run time: 339.9ms / 339.5ms
+	standard deviation of run time: 1.5ms
+
+1:1.2.11.dfsg-2ubuntu9.1 (used in 1. start of test application)
+	test case runs: 47 (2023-05-24 15:39:26+00:00 - 2023-05-24 15:39:41+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 341.6ms / 340ms
+	standard deviation of run time: 5.6ms
+
+1:1.2.11.dfsg-2ubuntu9.2 (used in 1. start of test application)
+	test case runs: 37 (2023-05-24 15:39:42+00:00 - 2023-05-24 15:39:54+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 339.8ms / 340ms
+	standard deviation of run time: 1.6ms
+
+
+**Summary**
+Updated 4 / 4 (100%) versions

@@ -1,0 +1,15 @@
+[2023-05-24T12:45:37+00:00] Test environment (docker) started
+[2023-05-24T12:45:49+00:00] Started test app with PID 381
+[2023-05-24T12:51:10+00:00] Remaining luci status:
+[2023-05-24T12:51:10+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 381 at 2023-05-24T12:45:50.449025Z
+[2023-05-24T12:51:10+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 386 at 2023-05-24T12:46:12.050417Z
+[2023-05-24T12:51:10+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 386 at 2023-05-24T12:46:42.065512Z
+[2023-05-24T12:51:10+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 386 at 2023-05-24T12:47:11.084970Z
+[2023-05-24T12:51:10+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 386 at 2023-05-24T12:47:42.110179Z
+[2023-05-24T12:51:10+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 386 at 2023-05-24T12:48:12.132647Z
+[2023-05-24T12:51:10+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 386 at 2023-05-24T12:48:42.153781Z
+[2023-05-24T12:51:10+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 386 at 2023-05-24T12:49:11.174541Z
+[2023-05-24T12:51:10+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 386 at 2023-05-24T12:49:42.197354Z
+[2023-05-24T12:51:10+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 386 at 2023-05-24T12:50:12.218618Z
+[2023-05-24T12:51:10+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 386 at 2023-05-24T12:50:41.238926Z
+[2023-05-24T12:51:10+00:00] Finished docker

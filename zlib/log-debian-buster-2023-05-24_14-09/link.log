@@ -1,0 +1,8 @@
+[2023-05-24T15:33:28+00:00] Installing luci
+[2023-05-24T15:33:28+00:00] Preparing luci
+[2023-05-24T15:33:28+00:00] Linking /builds/target/backtesting/debian/buster/zlib1g/1:1.2.8.dfsg-5
+[2023-05-24T15:33:45+00:00] Linking /builds/target/backtesting/debian/buster/zlib1g/1:1.2.11.dfsg-1
+[2023-05-24T15:34:02+00:00] Linking /builds/target/backtesting/debian/buster/zlib1g/1:1.2.11.dfsg-1+deb10u1
+[2023-05-24T15:34:20+00:00] Linking /builds/target/backtesting/debian/buster/zlib1g/1:1.2.11.dfsg-1+deb10u2
+[2023-05-24T15:34:35+00:00] Setting permissions for 21604:10430
+[2023-05-24T15:34:35+00:00] Finished

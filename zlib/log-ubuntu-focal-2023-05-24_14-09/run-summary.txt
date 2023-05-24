@@ -1,0 +1,55 @@
+**Zlib dynamic updates with Luci**
+[start]
+1:1.2.11.dfsg-1.2ubuntu1 (used in 1. start of test application)
+	test case runs: 42 (2023-05-24 15:36:33+00:00 - 2023-05-24 15:36:47+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 343.4ms / 342.0ms
+	standard deviation of run time: 3.4ms
+
+[restart]
+1:1.2.11.dfsg-1ubuntu3 (used in 2. start of test application)
+	test case runs: 42 (2023-05-24 15:36:50+00:00 - 2023-05-24 15:37:04+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 344.2ms / 342.5ms
+	standard deviation of run time: 5.5ms
+
+[restart]
+1:1.2.11.dfsg-2ubuntu1 (used in 3. start of test application)
+	test case runs: 31 (2023-05-24 15:37:07+00:00 - 2023-05-24 15:37:17+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 344.0ms / 343ms
+	standard deviation of run time: 6.4ms
+
+1:1.2.11.dfsg-2ubuntu1.1 (used in 3. start of test application)
+	test case runs: 41 (2023-05-24 15:37:18+00:00 - 2023-05-24 15:37:31+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 345.4ms / 343ms
+	standard deviation of run time: 10.8ms
+
+1:1.2.11.dfsg-2ubuntu1.2 (used in 3. start of test application)
+	test case runs: 46 (2023-05-24 15:37:32+00:00 - 2023-05-24 15:37:47+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 343.4ms / 343.0ms
+	standard deviation of run time: 3.1ms
+
+1:1.2.11.dfsg-2ubuntu1.3 (used in 3. start of test application)
+	test case runs: 46 (2023-05-24 15:37:48+00:00 - 2023-05-24 15:38:03+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 348ms / 345.5ms
+	standard deviation of run time: 9.8ms
+
+1:1.2.11.dfsg-2ubuntu1.4 (used in 3. start of test application)
+	test case runs: 44 (2023-05-24 15:38:04+00:00 - 2023-05-24 15:38:18+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 346.7ms / 346.0ms
+	standard deviation of run time: 2.5ms
+
+1:1.2.11.dfsg-2ubuntu1.5 (used in 3. start of test application)
+	test case runs: 36 (2023-05-24 15:38:19+00:00 - 2023-05-24 15:38:31+00:00)
+	max. number of failed test cases in a run: 1
+	mean / median run time: 349.1ms / 346.0ms
+	standard deviation of run time: 10.8ms
+
+
+**Summary**
+Updated 5 / 7 (71%) versions

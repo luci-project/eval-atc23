@@ -1,0 +1,792 @@
+
+Run 1 (at 2023-05-24 15:20:43):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 2 (at 2023-05-24 15:20:43):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 3 (at 2023-05-24 15:20:44):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 4 (at 2023-05-24 15:20:44):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 5 (at 2023-05-24 15:20:44):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 6 (at 2023-05-24 15:20:45):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 7 (at 2023-05-24 15:20:45):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 8 (at 2023-05-24 15:20:46):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 407 ms]
+
+Run 9 (at 2023-05-24 15:20:46):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 10 (at 2023-05-24 15:20:46):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 11 (at 2023-05-24 15:20:47):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 408 ms]
+
+Run 12 (at 2023-05-24 15:20:47):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 408 ms]
+
+Run 13 (at 2023-05-24 15:20:48):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 14 (at 2023-05-24 15:20:48):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 15 (at 2023-05-24 15:20:49):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 16 (at 2023-05-24 15:20:49):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 408 ms]
+
+Run 17 (at 2023-05-24 15:20:49):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 18 (at 2023-05-24 15:20:50):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 409 ms]
+
+Run 19 (at 2023-05-24 15:20:50):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 20 (at 2023-05-24 15:20:51):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 408 ms]
+
+Run 21 (at 2023-05-24 15:20:51):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 409 ms]
+
+Run 22 (at 2023-05-24 15:20:51):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 407 ms]
+
+Run 23 (at 2023-05-24 15:20:52):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 408 ms]
+
+Run 24 (at 2023-05-24 15:20:52):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 408 ms]
+
+Run 25 (at 2023-05-24 15:20:53):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 26 (at 2023-05-24 15:20:53):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 407 ms]
+
+Run 27 (at 2023-05-24 15:20:53):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 28 (at 2023-05-24 15:20:54):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 418 ms]
+
+Run 29 (at 2023-05-24 15:20:54):
+zlib version: 1.2.0.2
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 421 ms]
+
+Run 30 (at 2023-05-24 15:20:55):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 420 ms]
+
+Run 31 (at 2023-05-24 15:20:55):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 32 (at 2023-05-24 15:20:55):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 33 (at 2023-05-24 15:20:56):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 34 (at 2023-05-24 15:20:56):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 35 (at 2023-05-24 15:20:57):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 36 (at 2023-05-24 15:20:57):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 37 (at 2023-05-24 15:20:57):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 409 ms]
+
+Run 38 (at 2023-05-24 15:20:58):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 39 (at 2023-05-24 15:20:58):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 40 (at 2023-05-24 15:20:59):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 407 ms]
+
+Run 41 (at 2023-05-24 15:20:59):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 407 ms]
+
+Run 42 (at 2023-05-24 15:21:00):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 43 (at 2023-05-24 15:21:00):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 44 (at 2023-05-24 15:21:00):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 45 (at 2023-05-24 15:21:01):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 46 (at 2023-05-24 15:21:01):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 47 (at 2023-05-24 15:21:02):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 48 (at 2023-05-24 15:21:02):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 49 (at 2023-05-24 15:21:02):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 50 (at 2023-05-24 15:21:03):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 51 (at 2023-05-24 15:21:03):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 52 (at 2023-05-24 15:21:04):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 53 (at 2023-05-24 15:21:04):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 408 ms]
+
+Run 54 (at 2023-05-24 15:21:04):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 55 (at 2023-05-24 15:21:05):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 418 ms]
+
+Run 56 (at 2023-05-24 15:21:05):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 57 (at 2023-05-24 15:21:06):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 408 ms]
+
+Run 58 (at 2023-05-24 15:21:06):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 59 (at 2023-05-24 15:21:06):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 407 ms]
+
+Run 60 (at 2023-05-24 15:21:07):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 407 ms]
+
+Run 61 (at 2023-05-24 15:21:07):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 410 ms]
+
+Run 62 (at 2023-05-24 15:21:08):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 407 ms]
+
+Run 63 (at 2023-05-24 15:21:08):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 64 (at 2023-05-24 15:21:08):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]
+
+Run 65 (at 2023-05-24 15:21:09):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 66 (at 2023-05-24 15:21:09):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 408 ms]
+
+Run 67 (at 2023-05-24 15:21:10):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 407 ms]
+
+Run 68 (at 2023-05-24 15:21:10):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 69 (at 2023-05-24 15:21:10):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 406 ms]
+
+Run 70 (at 2023-05-24 15:21:11):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 407 ms]
+
+Run 71 (at 2023-05-24 15:21:11):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 409 ms]
+
+Run 72 (at 2023-05-24 15:21:12):
+zlib version: 1.2.0.3
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+inflate with dictionary: hello, hello!
+Failed: 1
+[Duration: 405 ms]

@@ -1,0 +1,220 @@
+**Expat Vanilla Baseline**
+[start]
+expat_2.0.0 (used in 1. start of test application)
+	test case runs: 65 (2023-05-24 12:10:18+00:00 - 2023-05-24 12:10:42+00:00)
+	number of test cases per run: 326
+	max. number of failed test cases in a run: 14
+	mean / median run time: 382.1ms / 381ms
+	standard deviation of run time: 4.5ms
+
+[restart]
+expat_2.0.1 (used in 2. start of test application)
+	test case runs: 75 (2023-05-24 12:10:43+00:00 - 2023-05-24 12:11:07+00:00)
+	number of test cases per run: 326
+	max. number of failed test cases in a run: 14
+	mean / median run time: 329.8ms / 329ms
+	standard deviation of run time: 2.0ms
+
+[restart]
+expat_2.1.0 (used in 3. start of test application)
+	test case runs: 68 (2023-05-24 12:11:08+00:00 - 2023-05-24 12:11:32+00:00)
+	number of test cases per run: 329
+	max. number of failed test cases in a run: 14
+	mean / median run time: 364.8ms / 363.0ms
+	standard deviation of run time: 8.3ms
+
+[restart]
+expat_2.1.1 (used in 4. start of test application)
+	test case runs: 47 (2023-05-24 12:11:33+00:00 - 2023-05-24 12:11:57+00:00)
+	number of test cases per run: 333
+	max. number of failed test cases in a run: 13
+	mean / median run time: 522.8ms / 521ms
+	standard deviation of run time: 6.5ms
+
+[restart]
+expat_2.2.0 (used in 5. start of test application)
+	test case runs: 51 (2023-05-24 12:11:58+00:00 - 2023-05-24 12:12:22+00:00)
+	number of test cases per run: 333
+	max. number of failed test cases in a run: 13
+	mean / median run time: 489.2ms / 488ms
+	standard deviation of run time: 5.5ms
+
+[restart]
+expat_2.2.1 (used in 6. start of test application)
+	test case runs: 44 (2023-05-24 12:12:23+00:00 - 2023-05-24 12:12:47+00:00)
+	number of test cases per run: 340
+	max. number of failed test cases in a run: 13
+	mean / median run time: 567.8ms / 566.0ms
+	standard deviation of run time: 6.0ms
+
+[restart]
+expat_2.2.2 (used in 7. start of test application)
+	test case runs: 44 (2023-05-24 12:12:48+00:00 - 2023-05-24 12:13:12+00:00)
+	number of test cases per run: 340
+	max. number of failed test cases in a run: 13
+	mean / median run time: 566.2ms / 565.0ms
+	standard deviation of run time: 3.1ms
+
+[restart]
+expat_2.2.3 (used in 8. start of test application)
+	test case runs: 44 (2023-05-24 12:13:13+00:00 - 2023-05-24 12:13:37+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 13
+	mean / median run time: 567.4ms / 565.0ms
+	standard deviation of run time: 7.3ms
+
+[restart]
+expat_2.2.4 (used in 9. start of test application)
+	test case runs: 44 (2023-05-24 12:13:38+00:00 - 2023-05-24 12:14:02+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 13
+	mean / median run time: 566.9ms / 565.0ms
+	standard deviation of run time: 7.5ms
+
+[restart]
+expat_2.2.5 (used in 10. start of test application)
+	test case runs: 47 (2023-05-24 12:14:03+00:00 - 2023-05-24 12:14:27+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 12
+	mean / median run time: 522.7ms / 521ms
+	standard deviation of run time: 5.6ms
+
+[restart]
+expat_2.2.6 (used in 11. start of test application)
+	test case runs: 49 (2023-05-24 12:14:28+00:00 - 2023-05-24 12:14:52+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 11
+	mean / median run time: 509.6ms / 508ms
+	standard deviation of run time: 5.8ms
+
+[restart]
+expat_2.2.7 (used in 12. start of test application)
+	test case runs: 47 (2023-05-24 12:14:53+00:00 - 2023-05-24 12:15:17+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 11
+	mean / median run time: 524.1ms / 524ms
+	standard deviation of run time: 2.4ms
+
+[restart]
+expat_2.2.8 (used in 13. start of test application)
+	test case runs: 47 (2023-05-24 12:15:18+00:00 - 2023-05-24 12:15:42+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 8
+	mean / median run time: 523.7ms / 521ms
+	standard deviation of run time: 11.5ms
+
+[restart]
+expat_2.2.9 (used in 14. start of test application)
+	test case runs: 47 (2023-05-24 12:15:43+00:00 - 2023-05-24 12:16:07+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 8
+	mean / median run time: 523.0ms / 521ms
+	standard deviation of run time: 6.0ms
+
+[restart]
+expat_2.2.10 (used in 15. start of test application)
+	test case runs: 47 (2023-05-24 12:16:08+00:00 - 2023-05-24 12:16:32+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 8
+	mean / median run time: 523.9ms / 522ms
+	standard deviation of run time: 6.6ms
+
+[restart]
+expat_2.3.0 (used in 16. start of test application)
+	test case runs: 48 (2023-05-24 12:16:33+00:00 - 2023-05-24 12:16:58+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 7
+	mean / median run time: 520.1ms / 519.0ms
+	standard deviation of run time: 5.9ms
+
+[restart]
+expat_2.4.0 (used in 17. start of test application)
+	test case runs: 47 (2023-05-24 12:16:58+00:00 - 2023-05-24 12:17:22+00:00)
+	number of test cases per run: 342
+	max. number of failed test cases in a run: 7
+	mean / median run time: 521.6ms / 519ms
+	standard deviation of run time: 6.6ms
+
+[restart]
+expat_2.4.1 (used in 18. start of test application)
+	test case runs: 48 (2023-05-24 12:17:23+00:00 - 2023-05-24 12:17:48+00:00)
+	number of test cases per run: 342
+	max. number of failed test cases in a run: 7
+	mean / median run time: 520ms / 519.0ms
+	standard deviation of run time: 2.7ms
+
+[restart]
+expat_2.4.2 (used in 19. start of test application)
+	test case runs: 48 (2023-05-24 12:17:48+00:00 - 2023-05-24 12:18:13+00:00)
+	number of test cases per run: 342
+	max. number of failed test cases in a run: 7
+	mean / median run time: 521.5ms / 519.0ms
+	standard deviation of run time: 6.9ms
+
+[restart]
+expat_2.4.3 (used in 20. start of test application)
+	test case runs: 44 (2023-05-24 12:18:13+00:00 - 2023-05-24 12:18:38+00:00)
+	number of test cases per run: 342
+	max. number of failed test cases in a run: 7
+	mean / median run time: 567.2ms / 567.0ms
+	standard deviation of run time: 1.5ms
+
+[restart]
+expat_2.4.4 (used in 21. start of test application)
+	test case runs: 43 (2023-05-24 12:18:38+00:00 - 2023-05-24 12:19:02+00:00)
+	number of test cases per run: 342
+	max. number of failed test cases in a run: 6
+	mean / median run time: 570.1ms / 567ms
+	standard deviation of run time: 12.1ms
+
+[restart]
+expat_2.4.5 (used in 22. start of test application)
+	test case runs: 48 (2023-05-24 12:19:03+00:00 - 2023-05-24 12:19:27+00:00)
+	number of test cases per run: 342
+	max. number of failed test cases in a run: 5
+	mean / median run time: 512.8ms / 511.0ms
+	standard deviation of run time: 5.7ms
+
+[restart]
+expat_2.4.6 (used in 23. start of test application)
+	test case runs: 48 (2023-05-24 12:19:28+00:00 - 2023-05-24 12:19:52+00:00)
+	number of test cases per run: 342
+	max. number of failed test cases in a run: 4
+	mean / median run time: 512.2ms / 511.0ms
+	standard deviation of run time: 5.5ms
+
+[restart]
+expat_2.4.7 (used in 24. start of test application)
+	test case runs: 38 (2023-05-24 12:19:53+00:00 - 2023-05-24 12:20:17+00:00)
+	number of test cases per run: 342
+	max. number of failed test cases in a run: 3
+	mean / median run time: 648.7ms / 647.0ms
+	standard deviation of run time: 6.8ms
+
+[restart]
+expat_2.4.8 (used in 25. start of test application)
+	test case runs: 38 (2023-05-24 12:20:19+00:00 - 2023-05-24 12:20:42+00:00)
+	number of test cases per run: 342
+	max. number of failed test cases in a run: 3
+	mean / median run time: 647.6ms / 647.0ms
+	standard deviation of run time: 3.4ms
+
+[restart]
+expat_2.4.9 (used in 26. start of test application)
+	test case runs: 47 (2023-05-24 12:20:44+00:00 - 2023-05-24 12:21:08+00:00)
+	number of test cases per run: 342
+	max. number of failed test cases in a run: 2
+	mean / median run time: 532.3ms / 531ms
+	standard deviation of run time: 5.5ms
+
+[restart]
+expat_2.5.0 (used in 27. start of test application)
+	test case runs: 19 (2023-05-24 12:21:09+00:00 - 2023-05-24 12:21:27+00:00)
+	number of test cases per run: 343
+	max. number of failed test cases in a run: 0
+	mean / median run time: 513.1ms / 511ms
+	standard deviation of run time: 6.3ms
+
+
+**Summary**
+Updated 0 / 26 (0%) versions

@@ -1,0 +1,60 @@
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8183 kB]
+Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [244 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [14.6 kB]
+Fetched 8649 kB in 1s (6982 kB/s)
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  make-doc
+The following NEW packages will be installed:
+  make
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 396 kB of archives.
+After this operation, 1630 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 make amd64 4.3-4.1 [396 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 396 kB in 0s (12.1 MB/s)
+Selecting previously unselected package make.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6664 files and directories currently installed.)
+Preparing to unpack .../make_4.3-4.1_amd64.deb ...
+Unpacking make (4.3-4.1) ...
+Setting up make (4.3-4.1) ...
+[2023-05-24T15:02:13+00:00] Installing luci
+make: Entering directory '/builds/luci'
+make: Leaving directory '/builds/luci'
+[2023-05-24T15:02:13+00:00] Preparing luci
+[2023-05-24T15:02:13+00:00] Test environment (docker) started
+Changing '/lib64/ld-linux-x86-64.so.2' to '/opt/luci/ld-luci.so'...
+Linking backtesting/ubuntu/jammy/libcrypt1/1:4.4.18-4ubuntu1
+[2023-05-24T15:02:13+00:00] Linking /builds/target/backtesting/ubuntu/jammy/libcrypt1/1:4.4.18-4ubuntu1
+[2023-05-24T15:02:36+00:00] Started test app with PID 376
+Sleeping 40
+Linking backtesting/ubuntu/jammy/libcrypt1/1:4.4.18-4ubuntu2
+[2023-05-24T15:03:16+00:00] Linking /builds/target/backtesting/ubuntu/jammy/libcrypt1/1:4.4.18-4ubuntu2
+Sleeping 40
+Linking backtesting/ubuntu/jammy/libcrypt1/1:4.4.26-1
+[2023-05-24T15:04:16+00:00] Linking /builds/target/backtesting/ubuntu/jammy/libcrypt1/1:4.4.26-1
+Sleeping 40
+Linking backtesting/ubuntu/jammy/libcrypt1/1:4.4.27-1
+[2023-05-24T15:05:17+00:00] Linking /builds/target/backtesting/ubuntu/jammy/libcrypt1/1:4.4.27-1
+Sleeping 40
+Linking backtesting/ubuntu/jammy/libcrypt1/1:4.4.27-1.1
+[2023-05-24T15:06:17+00:00] Linking /builds/target/backtesting/ubuntu/jammy/libcrypt1/1:4.4.27-1.1
+Sleeping 40
+[2023-05-24T15:07:17+00:00] Remaining luci status:
+[2023-05-24T15:07:17+00:00]     SUCCESS (loaded initial version) for libcrypt.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 376 at 2023-05-24T15:02:37.290099Z
+[2023-05-24T15:07:17+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 381 at 2023-05-24T15:03:18.928897Z
+[2023-05-24T15:07:17+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 381 at 2023-05-24T15:04:19.188272Z
+[2023-05-24T15:07:17+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 381 at 2023-05-24T15:05:19.477365Z
+[2023-05-24T15:07:17+00:00]     SUCCESS (updated to new version) for libcrypt.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libcrypt.so.1] in PID 381 at 2023-05-24T15:06:18.770898Z
+[2023-05-24T15:07:17+00:00] Finished docker
+[2023-05-24T15:07:17+00:00] Setting permissions for 21604:10430
+[2023-05-24T15:07:17+00:00] Finished

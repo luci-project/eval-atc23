@@ -1,0 +1,86 @@
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8183 kB]
+Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [244 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [14.6 kB]
+Fetched 8649 kB in 1s (7044 kB/s)
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  make-doc
+The following NEW packages will be installed:
+  make
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 396 kB of archives.
+After this operation, 1630 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 make amd64 4.3-4.1 [396 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 396 kB in 0s (12.2 MB/s)
+Selecting previously unselected package make.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6664 files and directories currently installed.)
+Preparing to unpack .../make_4.3-4.1_amd64.deb ...
+Unpacking make (4.3-4.1) ...
+Setting up make (4.3-4.1) ...
+[2023-05-24T15:36:25+00:00] Installing luci
+make: Entering directory '/builds/luci'
+make: Leaving directory '/builds/luci'
+[2023-05-24T15:36:25+00:00] Preparing luci
+[2023-05-24T15:36:25+00:00] Test environment (docker) started
+Changing '/lib64/ld-linux-x86-64.so.2' to '/opt/luci/ld-luci.so'...
+Linking backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-1.2ubuntu1
+[2023-05-24T15:36:25+00:00] Linking /builds/target/backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-1.2ubuntu1
+[2023-05-24T15:36:32+00:00] Started test app with PID 375
+Sleeping 10
+Linking backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-1ubuntu3
+[2023-05-24T15:36:42+00:00] Linking /builds/target/backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-1ubuntu3
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:36:44.913733Z
+[2023-05-24T15:36:47+00:00] Luci status has failed update:
+[2023-05-24T15:36:47+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 375 at 2023-05-24T15:36:33.300147Z
+[2023-05-24T15:36:47+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 375 at 2023-05-24T15:36:33.304160Z
+[2023-05-24T15:36:47+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 375 at 2023-05-24T15:36:33.308140Z
+[2023-05-24T15:36:47+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:36:44.913733Z
+[2023-05-24T15:36:47+00:00] Killed test app with PID 375
+[2023-05-24T15:36:49+00:00] Started test app with PID 421
+Sleeping 10
+Linking backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1
+[2023-05-24T15:36:59+00:00] Linking /builds/target/backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 426 at 2023-05-24T15:37:00.942293Z
+[2023-05-24T15:37:04+00:00] Luci status has failed update:
+[2023-05-24T15:37:04+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 421 at 2023-05-24T15:36:50.339838Z
+[2023-05-24T15:37:04+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 421 at 2023-05-24T15:36:50.346906Z
+[2023-05-24T15:37:04+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 421 at 2023-05-24T15:36:50.351347Z
+[2023-05-24T15:37:04+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 426 at 2023-05-24T15:37:00.942293Z
+[2023-05-24T15:37:04+00:00] Killed test app with PID 421
+[2023-05-24T15:37:06+00:00] Started test app with PID 467
+Sleeping 10
+Linking backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1.1
+[2023-05-24T15:37:16+00:00] Linking /builds/target/backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1.1
+Sleeping 10
+Linking backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1.2
+[2023-05-24T15:37:31+00:00] Linking /builds/target/backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1.2
+Sleeping 10
+Linking backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1.3
+[2023-05-24T15:37:46+00:00] Linking /builds/target/backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1.3
+Sleeping 10
+Linking backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1.4
+[2023-05-24T15:38:01+00:00] Linking /builds/target/backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1.4
+Sleeping 10
+Linking backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1.5
+[2023-05-24T15:38:17+00:00] Linking /builds/target/backtesting/ubuntu/focal/zlib1g/1:1.2.11.dfsg-2ubuntu1.5
+Sleeping 10
+[2023-05-24T15:38:32+00:00] Remaining luci status:
+[2023-05-24T15:38:32+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 467 at 2023-05-24T15:37:07.392121Z
+[2023-05-24T15:38:32+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:37:18.982095Z
+[2023-05-24T15:38:32+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:37:32.998433Z
+[2023-05-24T15:38:32+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:37:48.015297Z
+[2023-05-24T15:38:32+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:38:04.033209Z
+[2023-05-24T15:38:32+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:38:19.049966Z
+[2023-05-24T15:38:32+00:00] Finished docker
+[2023-05-24T15:38:32+00:00] Setting permissions for 21604:10430
+[2023-05-24T15:38:32+00:00] Finished

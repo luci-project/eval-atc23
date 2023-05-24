@@ -1,0 +1,60 @@
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8183 kB]
+Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [244 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [14.6 kB]
+Fetched 8649 kB in 1s (7115 kB/s)
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  make-doc
+The following NEW packages will be installed:
+  make
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 396 kB of archives.
+After this operation, 1630 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 make amd64 4.3-4.1 [396 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 396 kB in 0s (12.6 MB/s)
+Selecting previously unselected package make.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6664 files and directories currently installed.)
+Preparing to unpack .../make_4.3-4.1_amd64.deb ...
+Unpacking make (4.3-4.1) ...
+Setting up make (4.3-4.1) ...
+[2023-05-24T15:38:37+00:00] Installing luci
+make: Entering directory '/builds/luci'
+make: Leaving directory '/builds/luci'
+[2023-05-24T15:38:37+00:00] Preparing luci
+[2023-05-24T15:38:37+00:00] Test environment (docker) started
+Changing '/lib64/ld-linux-x86-64.so.2' to '/opt/luci/ld-luci.so'...
+Linking backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu7
+[2023-05-24T15:38:37+00:00] Linking /builds/target/backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu7
+[2023-05-24T15:38:44+00:00] Started test app with PID 375
+Sleeping 10
+Linking backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu8
+[2023-05-24T15:38:54+00:00] Linking /builds/target/backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu8
+Sleeping 10
+Linking backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu9
+[2023-05-24T15:39:09+00:00] Linking /builds/target/backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu9
+Sleeping 10
+Linking backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu9.1
+[2023-05-24T15:39:24+00:00] Linking /builds/target/backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu9.1
+Sleeping 10
+Linking backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu9.2
+[2023-05-24T15:39:39+00:00] Linking /builds/target/backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu9.2
+Sleeping 10
+[2023-05-24T15:39:55+00:00] Remaining luci status:
+[2023-05-24T15:39:55+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 375 at 2023-05-24T15:38:45.369634Z
+[2023-05-24T15:39:55+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:38:56.969931Z
+[2023-05-24T15:39:55+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:39:11.986939Z
+[2023-05-24T15:39:55+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:39:26.002622Z
+[2023-05-24T15:39:55+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:39:42.020985Z
+[2023-05-24T15:39:55+00:00] Finished docker
+[2023-05-24T15:39:55+00:00] Setting permissions for 21604:10430
+[2023-05-24T15:39:55+00:00] Finished

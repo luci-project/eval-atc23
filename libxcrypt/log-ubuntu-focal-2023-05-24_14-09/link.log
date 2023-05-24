@@ -1,0 +1,13 @@
+[2023-05-24T14:52:58+00:00] Installing luci
+[2023-05-24T14:52:58+00:00] Preparing luci
+[2023-05-24T14:52:58+00:00] Linking /builds/target/backtesting/ubuntu/focal/libcrypt1/1:4.4.10-5
+[2023-05-24T14:54:01+00:00] Linking /builds/target/backtesting/ubuntu/focal/libcrypt1/1:4.4.10-7
+[2023-05-24T14:55:01+00:00] Linking /builds/target/backtesting/ubuntu/focal/libcrypt1/1:4.4.10-9
+[2023-05-24T14:56:01+00:00] Linking /builds/target/backtesting/ubuntu/focal/libcrypt1/1:4.4.10-10
+[2023-05-24T14:57:02+00:00] Linking /builds/target/backtesting/ubuntu/focal/libcrypt1/1:4.4.10-10ubuntu1
+[2023-05-24T14:58:02+00:00] Linking /builds/target/backtesting/ubuntu/focal/libcrypt1/1:4.4.10-10ubuntu2
+[2023-05-24T14:59:02+00:00] Linking /builds/target/backtesting/ubuntu/focal/libcrypt1/1:4.4.10-10ubuntu3
+[2023-05-24T15:00:03+00:00] Linking /builds/target/backtesting/ubuntu/focal/libcrypt1/1:4.4.10-10ubuntu4
+[2023-05-24T15:01:03+00:00] Linking /builds/target/backtesting/ubuntu/focal/libcrypt1/1:4.4.10-10ubuntu5
+[2023-05-24T15:02:03+00:00] Setting permissions for 21604:10430
+[2023-05-24T15:02:03+00:00] Finished

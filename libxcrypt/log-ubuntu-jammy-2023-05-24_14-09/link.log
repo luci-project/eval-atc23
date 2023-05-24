@@ -1,0 +1,9 @@
+[2023-05-24T15:02:13+00:00] Installing luci
+[2023-05-24T15:02:13+00:00] Preparing luci
+[2023-05-24T15:02:13+00:00] Linking /builds/target/backtesting/ubuntu/jammy/libcrypt1/1:4.4.18-4ubuntu1
+[2023-05-24T15:03:16+00:00] Linking /builds/target/backtesting/ubuntu/jammy/libcrypt1/1:4.4.18-4ubuntu2
+[2023-05-24T15:04:16+00:00] Linking /builds/target/backtesting/ubuntu/jammy/libcrypt1/1:4.4.26-1
+[2023-05-24T15:05:17+00:00] Linking /builds/target/backtesting/ubuntu/jammy/libcrypt1/1:4.4.27-1
+[2023-05-24T15:06:17+00:00] Linking /builds/target/backtesting/ubuntu/jammy/libcrypt1/1:4.4.27-1.1
+[2023-05-24T15:07:17+00:00] Setting permissions for 21604:10430
+[2023-05-24T15:07:17+00:00] Finished

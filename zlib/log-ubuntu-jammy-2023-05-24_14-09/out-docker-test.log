@@ -1,0 +1,9 @@
+[2023-05-24T15:38:37+00:00] Test environment (docker) started
+[2023-05-24T15:38:44+00:00] Started test app with PID 375
+[2023-05-24T15:39:55+00:00] Remaining luci status:
+[2023-05-24T15:39:55+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 375 at 2023-05-24T15:38:45.369634Z
+[2023-05-24T15:39:55+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:38:56.969931Z
+[2023-05-24T15:39:55+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:39:11.986939Z
+[2023-05-24T15:39:55+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:39:26.002622Z
+[2023-05-24T15:39:55+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:39:42.020985Z
+[2023-05-24T15:39:55+00:00] Finished docker

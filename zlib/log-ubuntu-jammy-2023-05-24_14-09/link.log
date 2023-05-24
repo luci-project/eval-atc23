@@ -1,0 +1,9 @@
+[2023-05-24T15:38:37+00:00] Installing luci
+[2023-05-24T15:38:37+00:00] Preparing luci
+[2023-05-24T15:38:37+00:00] Linking /builds/target/backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu7
+[2023-05-24T15:38:54+00:00] Linking /builds/target/backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu8
+[2023-05-24T15:39:09+00:00] Linking /builds/target/backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu9
+[2023-05-24T15:39:24+00:00] Linking /builds/target/backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu9.1
+[2023-05-24T15:39:39+00:00] Linking /builds/target/backtesting/ubuntu/jammy/zlib1g/1:1.2.11.dfsg-2ubuntu9.2
+[2023-05-24T15:39:55+00:00] Setting permissions for 21604:10430
+[2023-05-24T15:39:55+00:00] Finished

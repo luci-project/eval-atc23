@@ -1,0 +1,4 @@
+SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 471 at 2023-05-24T15:34:10.463065Z
+SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:34:10.469434Z
+ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 471 at 2023-05-24T15:34:10.484282Z
+SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 476 at 2023-05-24T15:34:22.071656Z

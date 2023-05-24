@@ -1,0 +1,12 @@
+# log-vanilla-test-2023-05-24_14-09
+Custom (vanilla): 35 / 47 (74%)
+
+# log-debian-bullseye-2023-05-24_14-09
+Debian Bullseye (libcrypt1 1:4.4.10 - 1:4.4.18): 7 / 7 (100%)
+
+# log-ubuntu-focal-2023-05-24_14-09
+Ubuntu Focal (libcrypt1 1:4.4.10 - 1:4.4.10): 8 / 8 (100%)
+
+# log-ubuntu-jammy-2023-05-24_14-09
+Ubuntu Jammy (libcrypt1 1:4.4.18 - 1:4.4.27): 4 / 4 (100%)
+

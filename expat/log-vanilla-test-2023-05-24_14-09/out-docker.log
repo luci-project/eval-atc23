@@ -1,0 +1,211 @@
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8183 kB]
+Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [244 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [14.6 kB]
+Fetched 8649 kB in 1s (8389 kB/s)
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  make-doc
+The following NEW packages will be installed:
+  make
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 396 kB of archives.
+After this operation, 1630 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 make amd64 4.3-4.1 [396 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 396 kB in 0s (12.1 MB/s)
+Selecting previously unselected package make.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6664 files and directories currently installed.)
+Preparing to unpack .../make_4.3-4.1_amd64.deb ...
+Unpacking make (4.3-4.1) ...
+Setting up make (4.3-4.1) ...
+[2023-05-24T12:21:38+00:00] Installing luci
+make: Entering directory '/builds/luci'
+make: Leaving directory '/builds/luci'
+[2023-05-24T12:21:38+00:00] Preparing luci
+[2023-05-24T12:21:38+00:00] Test environment (docker) started
+Changing '/lib64/ld-linux-x86-64.so.2' to '/opt/luci/ld-luci.so'...
+Linking 1a6d93c530e1aa1ca3a567b05bad894e19027d18
+[2023-05-24T12:21:38+00:00] Linking /builds/target/1a6d93c530e1aa1ca3a567b05bad894e19027d18
+[2023-05-24T12:21:50+00:00] Started test app with PID 383
+Sleeping 20
+Linking 4d2c9d031a786bc19f0cd3bc594acc58e94c234f
+[2023-05-24T12:22:10+00:00] Linking /builds/target/4d2c9d031a786bc19f0cd3bc594acc58e94c234f
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 388 at 2023-05-24T12:22:11.741753Z
+[2023-05-24T12:22:20+00:00] Luci status has failed update:
+[2023-05-24T12:22:20+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 383 at 2023-05-24T12:21:51.139499Z
+[2023-05-24T12:22:20+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 383 at 2023-05-24T12:21:51.143458Z
+[2023-05-24T12:22:20+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 383 at 2023-05-24T12:21:51.147188Z
+[2023-05-24T12:22:20+00:00]     FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 388 at 2023-05-24T12:22:11.741753Z
+[2023-05-24T12:22:20+00:00] Killed test app with PID 383
+[2023-05-24T12:22:22+00:00] Started test app with PID 435
+Sleeping 20
+Linking 62574fc8be5458f10c4133e3907daa9ceda3a5d0
+[2023-05-24T12:22:42+00:00] Linking /builds/target/62574fc8be5458f10c4133e3907daa9ceda3a5d0
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 440 at 2023-05-24T12:22:44.785470Z
+[2023-05-24T12:22:52+00:00] Luci status has failed update:
+[2023-05-24T12:22:52+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 435 at 2023-05-24T12:22:23.182187Z
+[2023-05-24T12:22:52+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 435 at 2023-05-24T12:22:23.186223Z
+[2023-05-24T12:22:52+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 435 at 2023-05-24T12:22:23.189897Z
+[2023-05-24T12:22:52+00:00]     FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 440 at 2023-05-24T12:22:44.785470Z
+[2023-05-24T12:22:52+00:00] Killed test app with PID 435
+[2023-05-24T12:22:54+00:00] Started test app with PID 489
+Sleeping 20
+Linking ee0adc0d9d245f4f18863c997be9a1bfeeb0a070
+[2023-05-24T12:23:14+00:00] Linking /builds/target/ee0adc0d9d245f4f18863c997be9a1bfeeb0a070
+Sleeping 20
+Linking fbc46fa2be307280648147543c053d05910f7a85
+[2023-05-24T12:23:44+00:00] Linking /builds/target/fbc46fa2be307280648147543c053d05910f7a85
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 493 at 2023-05-24T12:23:46.852301Z
+[2023-05-24T12:23:54+00:00] Luci status has failed update:
+[2023-05-24T12:23:54+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 489 at 2023-05-24T12:22:55.225456Z
+[2023-05-24T12:23:54+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 489 at 2023-05-24T12:22:55.230888Z
+[2023-05-24T12:23:54+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 489 at 2023-05-24T12:22:55.234665Z
+[2023-05-24T12:23:54+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 493 at 2023-05-24T12:23:16.828557Z
+[2023-05-24T12:23:54+00:00]     FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 493 at 2023-05-24T12:23:46.852301Z
+[2023-05-24T12:23:54+00:00] Killed test app with PID 489
+[2023-05-24T12:23:56+00:00] Started test app with PID 572
+Sleeping 20
+Linking c4446687cfc6c5fd7f6371aeaf24c69402a3589e
+[2023-05-24T12:24:16+00:00] Linking /builds/target/c4446687cfc6c5fd7f6371aeaf24c69402a3589e
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 577 at 2023-05-24T12:24:17.892232Z
+[2023-05-24T12:24:26+00:00] Luci status has failed update:
+[2023-05-24T12:24:26+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 572 at 2023-05-24T12:23:57.287576Z
+[2023-05-24T12:24:26+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 572 at 2023-05-24T12:23:57.291553Z
+[2023-05-24T12:24:26+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 572 at 2023-05-24T12:23:57.295200Z
+[2023-05-24T12:24:26+00:00]     FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 577 at 2023-05-24T12:24:17.892232Z
+[2023-05-24T12:24:26+00:00] Killed test app with PID 572
+[2023-05-24T12:24:28+00:00] Started test app with PID 627
+Sleeping 20
+Linking 7c3eedb20b287c5b3e026eaebf657e3c38981329
+[2023-05-24T12:24:48+00:00] Linking /builds/target/7c3eedb20b287c5b3e026eaebf657e3c38981329
+Sleeping 20
+Linking 97c6bd01990090d4015364ae37dd141f3c39a30f
+[2023-05-24T12:25:18+00:00] Linking /builds/target/97c6bd01990090d4015364ae37dd141f3c39a30f
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 632 at 2023-05-24T12:25:19.950937Z
+[2023-05-24T12:25:28+00:00] Luci status has failed update:
+[2023-05-24T12:25:28+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 627 at 2023-05-24T12:24:29.342480Z
+[2023-05-24T12:25:28+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 627 at 2023-05-24T12:24:29.346248Z
+[2023-05-24T12:25:28+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 627 at 2023-05-24T12:24:29.349558Z
+[2023-05-24T12:25:28+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 632 at 2023-05-24T12:24:49.927290Z
+[2023-05-24T12:25:28+00:00]     FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 632 at 2023-05-24T12:25:19.950937Z
+[2023-05-24T12:25:28+00:00] Killed test app with PID 627
+[2023-05-24T12:25:30+00:00] Started test app with PID 711
+Sleeping 20
+Linking fc577ad9cb2f8a480418c8187c788c60347bee68
+[2023-05-24T12:25:50+00:00] Linking /builds/target/fc577ad9cb2f8a480418c8187c788c60347bee68
+Sleeping 20
+Linking 968b8cc46dbee47b83318d5f31a8e7907199614b
+[2023-05-24T12:26:20+00:00] Linking /builds/target/968b8cc46dbee47b83318d5f31a8e7907199614b
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 717 at 2023-05-24T12:26:23.017429Z
+[2023-05-24T12:26:30+00:00] Luci status has failed update:
+[2023-05-24T12:26:30+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 711 at 2023-05-24T12:25:31.400194Z
+[2023-05-24T12:26:30+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 711 at 2023-05-24T12:25:31.403721Z
+[2023-05-24T12:26:30+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 711 at 2023-05-24T12:25:31.407003Z
+[2023-05-24T12:26:30+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 717 at 2023-05-24T12:25:51.991294Z
+[2023-05-24T12:26:30+00:00]     FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 717 at 2023-05-24T12:26:23.017429Z
+[2023-05-24T12:26:30+00:00] Killed test app with PID 711
+[2023-05-24T12:26:32+00:00] Started test app with PID 803
+Sleeping 20
+Linking 39e487da353b20bb3a724311d179ba0fddffc65b
+[2023-05-24T12:26:52+00:00] Linking /builds/target/39e487da353b20bb3a724311d179ba0fddffc65b
+Sleeping 20
+Linking d3b78b42a2dcdea98e22625cfff67a49d47e6025
+[2023-05-24T12:27:23+00:00] Linking /builds/target/d3b78b42a2dcdea98e22625cfff67a49d47e6025
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 808 at 2023-05-24T12:27:25.082620Z
+[2023-05-24T12:27:33+00:00] Luci status has failed update:
+[2023-05-24T12:27:33+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 803 at 2023-05-24T12:26:33.464223Z
+[2023-05-24T12:27:33+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 803 at 2023-05-24T12:26:33.467975Z
+[2023-05-24T12:27:33+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 803 at 2023-05-24T12:26:33.471212Z
+[2023-05-24T12:27:33+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 808 at 2023-05-24T12:26:54.055564Z
+[2023-05-24T12:27:33+00:00]     FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 808 at 2023-05-24T12:27:25.082620Z
+[2023-05-24T12:27:33+00:00] Killed test app with PID 803
+[2023-05-24T12:27:35+00:00] Started test app with PID 895
+Sleeping 20
+Linking 91b17cfeb8edf60ca23e33fe59ac231d0f2efb48
+[2023-05-24T12:27:55+00:00] Linking /builds/target/91b17cfeb8edf60ca23e33fe59ac231d0f2efb48
+Sleeping 20
+Linking a7bc26b69768f7fb24f0c7976fae24b157b85b13
+[2023-05-24T12:28:25+00:00] Linking /builds/target/a7bc26b69768f7fb24f0c7976fae24b157b85b13
+Sleeping 20
+Linking 162e16b0a7392a20ecdb2a4d0d13b5a03a7b2380
+[2023-05-24T12:28:55+00:00] Linking /builds/target/162e16b0a7392a20ecdb2a4d0d13b5a03a7b2380
+Sleeping 20
+Linking 2d58706dad5a6b996ee143790f812bd0af4acde2
+[2023-05-24T12:29:25+00:00] Linking /builds/target/2d58706dad5a6b996ee143790f812bd0af4acde2
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 900 at 2023-05-24T12:29:26.210939Z
+[2023-05-24T12:29:35+00:00] Luci status has failed update:
+[2023-05-24T12:29:35+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 895 at 2023-05-24T12:27:35.521946Z
+[2023-05-24T12:29:35+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 895 at 2023-05-24T12:27:35.526908Z
+[2023-05-24T12:29:35+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 895 at 2023-05-24T12:27:35.530180Z
+[2023-05-24T12:29:35+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 900 at 2023-05-24T12:27:57.130295Z
+[2023-05-24T12:29:35+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 900 at 2023-05-24T12:28:27.154255Z
+[2023-05-24T12:29:35+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 900 at 2023-05-24T12:28:56.178956Z
+[2023-05-24T12:29:35+00:00]     FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 900 at 2023-05-24T12:29:26.210939Z
+[2023-05-24T12:29:35+00:00] Killed test app with PID 895
+[2023-05-24T12:29:37+00:00] Started test app with PID 1059
+Sleeping 20
+Linking ac2b235d3cea96ed105bbfc0052ae9b79e8ccb78
+[2023-05-24T12:29:57+00:00] Linking /builds/target/ac2b235d3cea96ed105bbfc0052ae9b79e8ccb78
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1064 at 2023-05-24T12:29:59.264666Z
+[2023-05-24T12:30:07+00:00] Luci status has failed update:
+[2023-05-24T12:30:07+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1059 at 2023-05-24T12:29:37.651286Z
+[2023-05-24T12:30:07+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1059 at 2023-05-24T12:29:37.654772Z
+[2023-05-24T12:30:07+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1059 at 2023-05-24T12:29:37.658123Z
+[2023-05-24T12:30:07+00:00]     FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1064 at 2023-05-24T12:29:59.264666Z
+[2023-05-24T12:30:07+00:00] Killed test app with PID 1059
+[2023-05-24T12:30:09+00:00] Started test app with PID 1128
+Sleeping 20
+Linking a28238bdeebc087071777001245df1876a11f5ee
+[2023-05-24T12:30:29+00:00] Linking /builds/target/a28238bdeebc087071777001245df1876a11f5ee
+Sleeping 20
+Linking e26a263aa9182d1e4552cd615857f0f61df3ba42
+[2023-05-24T12:30:59+00:00] Linking /builds/target/e26a263aa9182d1e4552cd615857f0f61df3ba42
+Sleeping 20
+Linking 57c7da69b78e3698e112a6b5da19d5109b8232d1
+[2023-05-24T12:31:29+00:00] Linking /builds/target/57c7da69b78e3698e112a6b5da19d5109b8232d1
+Sleeping 20
+Linking 81b89678e200820271b72cacdd45fb5868855765
+[2023-05-24T12:31:59+00:00] Linking /builds/target/81b89678e200820271b72cacdd45fb5868855765
+Sleeping 20
+Linking 97a4840578693a346e79302909b67d97492e1880
+[2023-05-24T12:32:29+00:00] Linking /builds/target/97a4840578693a346e79302909b67d97492e1880
+Sleeping 20
+Linking 65a21f2b2a306d29b44e70264aca948aa0454219
+[2023-05-24T12:32:59+00:00] Linking /builds/target/65a21f2b2a306d29b44e70264aca948aa0454219
+Sleeping 20
+Linking 27d5b8ba1771f916d9cfea2aac6bdac72071dc66
+[2023-05-24T12:33:29+00:00] Linking /builds/target/27d5b8ba1771f916d9cfea2aac6bdac72071dc66
+Sleeping 20
+Linking 3bab6c09bbe8bf42d84b81563ddbcf4cca4be838
+[2023-05-24T12:33:59+00:00] Linking /builds/target/3bab6c09bbe8bf42d84b81563ddbcf4cca4be838
+Sleeping 20
+Linking d77291a4824d78e697c5dc2b8024fd65ab31e209
+[2023-05-24T12:34:29+00:00] Linking /builds/target/d77291a4824d78e697c5dc2b8024fd65ab31e209
+Sleeping 20
+Linking 654d2de0da85662fcc7644a7acd7c2dd2cfb21f0
+[2023-05-24T12:34:59+00:00] Linking /builds/target/654d2de0da85662fcc7644a7acd7c2dd2cfb21f0
+Sleeping 20
+[2023-05-24T12:35:29+00:00] Remaining luci status:
+[2023-05-24T12:35:29+00:00]     SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1128 at 2023-05-24T12:30:09.709281Z
+[2023-05-24T12:35:29+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1133 at 2023-05-24T12:30:31.316644Z
+[2023-05-24T12:35:29+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1133 at 2023-05-24T12:31:01.348225Z
+[2023-05-24T12:35:29+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1133 at 2023-05-24T12:31:31.383133Z
+[2023-05-24T12:35:29+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1133 at 2023-05-24T12:32:01.415390Z
+[2023-05-24T12:35:29+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1133 at 2023-05-24T12:32:31.448527Z
+[2023-05-24T12:35:29+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1133 at 2023-05-24T12:33:01.481273Z
+[2023-05-24T12:35:29+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1133 at 2023-05-24T12:33:31.514146Z
+[2023-05-24T12:35:29+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1133 at 2023-05-24T12:34:00.544655Z
+[2023-05-24T12:35:29+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1133 at 2023-05-24T12:34:31.579563Z
+[2023-05-24T12:35:29+00:00]     SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/libexpat.so.1] in PID 1133 at 2023-05-24T12:35:01.613334Z
+[2023-05-24T12:35:29+00:00] Finished docker
+[2023-05-24T12:35:29+00:00] Setting permissions for 21604:10430
+[2023-05-24T12:35:29+00:00] Finished

@@ -1,0 +1,404 @@
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8183 kB]
+Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [244 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [14.6 kB]
+Fetched 8649 kB in 1s (8597 kB/s)
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  make-doc
+The following NEW packages will be installed:
+  make
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 396 kB of archives.
+After this operation, 1630 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 make amd64 4.3-4.1 [396 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 396 kB in 0s (13.2 MB/s)
+Selecting previously unselected package make.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6664 files and directories currently installed.)
+Preparing to unpack .../make_4.3-4.1_amd64.deb ...
+Unpacking make (4.3-4.1) ...
+Setting up make (4.3-4.1) ...
+[2023-05-24T15:20:03+00:00] Installing luci
+make: Entering directory '/builds/luci'
+make: Leaving directory '/builds/luci'
+[2023-05-24T15:20:03+00:00] Preparing luci
+[2023-05-24T15:20:03+00:00] Test environment (docker) started
+Changing '/lib64/ld-linux-x86-64.so.2' to '/opt/luci/ld-luci.so'...
+Linking 7c2a874e50b871d04fbd19501f7b42cff55e5abc
+[2023-05-24T15:20:03+00:00] Linking /builds/target/7c2a874e50b871d04fbd19501f7b42cff55e5abc
+[2023-05-24T15:20:10+00:00] Started test app with PID 378
+Sleeping 10
+Linking 13a294f044ef0a89b2dcbfbb5d4d4c792673348e
+[2023-05-24T15:20:20+00:00] Linking /builds/target/13a294f044ef0a89b2dcbfbb5d4d4c792673348e
+Sleeping 10
+Linking 8e34b3a8024c028dd9fd21d70525fc6d215efde5
+[2023-05-24T15:20:35+00:00] Linking /builds/target/8e34b3a8024c028dd9fd21d70525fc6d215efde5
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 383 at 2023-05-24T15:20:37.868423Z
+[2023-05-24T15:20:40+00:00] Luci status has failed update:
+[2023-05-24T15:20:40+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 378 at 2023-05-24T15:20:11.251191Z
+[2023-05-24T15:20:40+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 378 at 2023-05-24T15:20:11.255290Z
+[2023-05-24T15:20:40+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 378 at 2023-05-24T15:20:11.259037Z
+[2023-05-24T15:20:40+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 383 at 2023-05-24T15:20:21.848891Z
+[2023-05-24T15:20:40+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 383 at 2023-05-24T15:20:37.868423Z
+[2023-05-24T15:20:40+00:00] Killed test app with PID 378
+[2023-05-24T15:20:42+00:00] Started test app with PID 446
+Sleeping 10
+Linking 85e7d7d9ba71d95a9e6a64b98bae4fac09f06f1c
+[2023-05-24T15:20:52+00:00] Linking /builds/target/85e7d7d9ba71d95a9e6a64b98bae4fac09f06f1c
+Sleeping 10
+Linking 086e982175da84b3db958191031380794315f95f
+[2023-05-24T15:21:07+00:00] Linking /builds/target/086e982175da84b3db958191031380794315f95f
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 450 at 2023-05-24T15:21:08.921764Z
+[2023-05-24T15:21:12+00:00] Luci status has failed update:
+[2023-05-24T15:21:12+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 446 at 2023-05-24T15:20:43.306633Z
+[2023-05-24T15:21:12+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 446 at 2023-05-24T15:20:43.310944Z
+[2023-05-24T15:21:12+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 446 at 2023-05-24T15:20:43.314974Z
+[2023-05-24T15:21:12+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 450 at 2023-05-24T15:20:54.905937Z
+[2023-05-24T15:21:12+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 450 at 2023-05-24T15:21:08.921764Z
+[2023-05-24T15:21:12+00:00] Killed test app with PID 446
+[2023-05-24T15:21:14+00:00] Started test app with PID 514
+Sleeping 10
+Linking 4b5a43a219d51066c01ff2ab86af18b967f2d0dd
+[2023-05-24T15:21:24+00:00] Linking /builds/target/4b5a43a219d51066c01ff2ab86af18b967f2d0dd
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 520 at 2023-05-24T15:21:26.961417Z
+[2023-05-24T15:21:29+00:00] Luci status has failed update:
+[2023-05-24T15:21:29+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 514 at 2023-05-24T15:21:15.362557Z
+[2023-05-24T15:21:29+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 514 at 2023-05-24T15:21:15.366732Z
+[2023-05-24T15:21:29+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 514 at 2023-05-24T15:21:15.370530Z
+[2023-05-24T15:21:29+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 520 at 2023-05-24T15:21:26.961417Z
+[2023-05-24T15:21:29+00:00] Killed test app with PID 514
+[2023-05-24T15:21:31+00:00] Started test app with PID 562
+Sleeping 10
+Linking f81ba93d4a7e43fccf4730e5e7404ee765a76e3e
+[2023-05-24T15:21:41+00:00] Linking /builds/target/f81ba93d4a7e43fccf4730e5e7404ee765a76e3e
+Sleeping 10
+Linking b97ec631c6f7dd9cff2e3caf3b38e70b006e1b2d
+[2023-05-24T15:21:56+00:00] Linking /builds/target/b97ec631c6f7dd9cff2e3caf3b38e70b006e1b2d
+Sleeping 10
+Linking a2506218cd8c32416d0d15260834f3c23d910fc8
+[2023-05-24T15:22:12+00:00] Linking /builds/target/a2506218cd8c32416d0d15260834f3c23d910fc8
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 566 at 2023-05-24T15:22:14.037156Z
+[2023-05-24T15:22:17+00:00] Luci status has failed update:
+[2023-05-24T15:22:17+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 562 at 2023-05-24T15:21:32.401119Z
+[2023-05-24T15:22:17+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 562 at 2023-05-24T15:21:32.406967Z
+[2023-05-24T15:22:17+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 562 at 2023-05-24T15:21:32.410962Z
+[2023-05-24T15:22:17+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 566 at 2023-05-24T15:21:44.000785Z
+[2023-05-24T15:22:17+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 566 at 2023-05-24T15:21:58.017399Z
+[2023-05-24T15:22:17+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 566 at 2023-05-24T15:22:14.037156Z
+[2023-05-24T15:22:17+00:00] Killed test app with PID 562
+[2023-05-24T15:22:19+00:00] Started test app with PID 654
+Sleeping 10
+Linking 7a33a861d1526894272a8a4b08527ce32316d750
+[2023-05-24T15:22:29+00:00] Linking /builds/target/7a33a861d1526894272a8a4b08527ce32316d750
+Sleeping 10
+Linking f0e76a6634eb26e3ddc6dfc6f2489553eff8c8f4
+[2023-05-24T15:22:44+00:00] Linking /builds/target/f0e76a6634eb26e3ddc6dfc6f2489553eff8c8f4
+Sleeping 10
+Linking 7a6955760ba950eb82f57929f8f6c9847c65f0af
+[2023-05-24T15:22:59+00:00] Linking /builds/target/7a6955760ba950eb82f57929f8f6c9847c65f0af
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 658 at 2023-05-24T15:23:01.111203Z
+[2023-05-24T15:23:04+00:00] Luci status has failed update:
+[2023-05-24T15:23:04+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 654 at 2023-05-24T15:22:19.475131Z
+[2023-05-24T15:23:04+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 654 at 2023-05-24T15:22:19.486971Z
+[2023-05-24T15:23:04+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 654 at 2023-05-24T15:22:19.491039Z
+[2023-05-24T15:23:04+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 658 at 2023-05-24T15:22:31.075613Z
+[2023-05-24T15:23:04+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 658 at 2023-05-24T15:22:46.101894Z
+[2023-05-24T15:23:04+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 658 at 2023-05-24T15:23:01.111203Z
+[2023-05-24T15:23:04+00:00] Killed test app with PID 654
+[2023-05-24T15:23:06+00:00] Started test app with PID 746
+Sleeping 10
+Linking 79fbcdc939b5d515218187a0d5f2526fb632075a
+[2023-05-24T15:23:16+00:00] Linking /builds/target/79fbcdc939b5d515218187a0d5f2526fb632075a
+Sleeping 10
+Linking 9811b53dd9e8f67015c7199fff12b5bfc6965330
+[2023-05-24T15:23:31+00:00] Linking /builds/target/9811b53dd9e8f67015c7199fff12b5bfc6965330
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 751 at 2023-05-24T15:23:32.166202Z
+[2023-05-24T15:23:36+00:00] Luci status has failed update:
+[2023-05-24T15:23:36+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 746 at 2023-05-24T15:23:06.548829Z
+[2023-05-24T15:23:36+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 746 at 2023-05-24T15:23:06.560947Z
+[2023-05-24T15:23:36+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 746 at 2023-05-24T15:23:06.564966Z
+[2023-05-24T15:23:36+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 751 at 2023-05-24T15:23:18.147929Z
+[2023-05-24T15:23:36+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 751 at 2023-05-24T15:23:32.166202Z
+[2023-05-24T15:23:36+00:00] Killed test app with PID 746
+[2023-05-24T15:23:38+00:00] Started test app with PID 816
+Sleeping 10
+Linking 0484693e1723bbab791c56f95597bd7dbe867d03
+[2023-05-24T15:23:48+00:00] Linking /builds/target/0484693e1723bbab791c56f95597bd7dbe867d03
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 821 at 2023-05-24T15:23:50.205608Z
+[2023-05-24T15:23:53+00:00] Luci status has failed update:
+[2023-05-24T15:23:53+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 816 at 2023-05-24T15:23:38.607306Z
+[2023-05-24T15:23:53+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 816 at 2023-05-24T15:23:38.611386Z
+[2023-05-24T15:23:53+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 816 at 2023-05-24T15:23:38.615302Z
+[2023-05-24T15:23:53+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 821 at 2023-05-24T15:23:50.205608Z
+[2023-05-24T15:23:53+00:00] Killed test app with PID 816
+Sleeping 10
+[2023-05-24T15:23:55+00:00] Started test app with PID 864
+Linking 6b8233bfe00e79134cb1b84fc49d4f750a797f79
+[2023-05-24T15:24:05+00:00] Linking /builds/target/6b8233bfe00e79134cb1b84fc49d4f750a797f79
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 868 at 2023-05-24T15:24:06.242093Z
+[2023-05-24T15:24:10+00:00] Luci status has failed update:
+[2023-05-24T15:24:10+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 864 at 2023-05-24T15:23:55.643946Z
+[2023-05-24T15:24:10+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 864 at 2023-05-24T15:23:55.651832Z
+[2023-05-24T15:24:10+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 864 at 2023-05-24T15:23:55.655556Z
+[2023-05-24T15:24:10+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 868 at 2023-05-24T15:24:06.242093Z
+[2023-05-24T15:24:10+00:00] Killed test app with PID 864
+[2023-05-24T15:24:12+00:00] Started test app with PID 912
+Sleeping 10
+Linking 9c3a5830218c4e7fff23b8fc4386269db77a03a9
+[2023-05-24T15:24:22+00:00] Linking /builds/target/9c3a5830218c4e7fff23b8fc4386269db77a03a9
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 917 at 2023-05-24T15:24:24.281654Z
+[2023-05-24T15:24:27+00:00] Luci status has failed update:
+[2023-05-24T15:24:27+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 912 at 2023-05-24T15:24:12.682322Z
+[2023-05-24T15:24:27+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 912 at 2023-05-24T15:24:12.686433Z
+[2023-05-24T15:24:27+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 912 at 2023-05-24T15:24:12.690417Z
+[2023-05-24T15:24:27+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 917 at 2023-05-24T15:24:24.281654Z
+[2023-05-24T15:24:27+00:00] Killed test app with PID 912
+[2023-05-24T15:24:29+00:00] Started test app with PID 960
+Sleeping 10
+Linking abf180a067223611620dd97dd5681df7c7fa7c9b
+[2023-05-24T15:24:39+00:00] Linking /builds/target/abf180a067223611620dd97dd5681df7c7fa7c9b
+Sleeping 10
+Linking b1c19ca6d82c98a8be6cd9cad7a9c5fa5e8e634e
+[2023-05-24T15:24:54+00:00] Linking /builds/target/b1c19ca6d82c98a8be6cd9cad7a9c5fa5e8e634e
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 965 at 2023-05-24T15:24:56.334482Z
+[2023-05-24T15:24:59+00:00] Luci status has failed update:
+[2023-05-24T15:24:59+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 960 at 2023-05-24T15:24:29.732509Z
+[2023-05-24T15:24:59+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 960 at 2023-05-24T15:24:29.737844Z
+[2023-05-24T15:24:59+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 960 at 2023-05-24T15:24:29.741459Z
+[2023-05-24T15:24:59+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 965 at 2023-05-24T15:24:41.314795Z
+[2023-05-24T15:24:59+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 965 at 2023-05-24T15:24:56.334482Z
+[2023-05-24T15:24:59+00:00] Killed test app with PID 960
+[2023-05-24T15:25:01+00:00] Started test app with PID 1032
+Sleeping 10
+Linking d6231142d2b883a8c3b253fa34992b5cdb4ac2fe
+[2023-05-24T15:25:11+00:00] Linking /builds/target/d6231142d2b883a8c3b253fa34992b5cdb4ac2fe
+Sleeping 10
+Linking 639be997883d9016baaf46017a2802b2ce1698bd
+[2023-05-24T15:25:26+00:00] Linking /builds/target/639be997883d9016baaf46017a2802b2ce1698bd
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1036 at 2023-05-24T15:25:28.398261Z
+[2023-05-24T15:25:31+00:00] Luci status has failed update:
+[2023-05-24T15:25:31+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1032 at 2023-05-24T15:25:01.776680Z
+[2023-05-24T15:25:31+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1032 at 2023-05-24T15:25:01.782447Z
+[2023-05-24T15:25:31+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1032 at 2023-05-24T15:25:01.786407Z
+[2023-05-24T15:25:31+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1036 at 2023-05-24T15:25:13.385424Z
+[2023-05-24T15:25:31+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1036 at 2023-05-24T15:25:28.398261Z
+[2023-05-24T15:25:31+00:00] Killed test app with PID 1032
+[2023-05-24T15:25:33+00:00] Started test app with PID 1110
+Sleeping 10
+Linking f6194ef39af5864f792412460c354cc339dde7d1
+[2023-05-24T15:25:43+00:00] Linking /builds/target/f6194ef39af5864f792412460c354cc339dde7d1
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1115 at 2023-05-24T15:25:45.440374Z
+[2023-05-24T15:25:48+00:00] Luci status has failed update:
+[2023-05-24T15:25:48+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1110 at 2023-05-24T15:25:33.837794Z
+[2023-05-24T15:25:48+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1110 at 2023-05-24T15:25:33.843474Z
+[2023-05-24T15:25:48+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1110 at 2023-05-24T15:25:33.847390Z
+[2023-05-24T15:25:48+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1115 at 2023-05-24T15:25:45.440374Z
+[2023-05-24T15:25:48+00:00] Killed test app with PID 1110
+[2023-05-24T15:25:50+00:00] Started test app with PID 1162
+Sleeping 10
+Linking d004b047838a7e803818b4973a2e39e0ff8c1fa2
+[2023-05-24T15:26:00+00:00] Linking /builds/target/d004b047838a7e803818b4973a2e39e0ff8c1fa2
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1166 at 2023-05-24T15:26:01.505284Z
+[2023-05-24T15:26:05+00:00] Luci status has failed update:
+[2023-05-24T15:26:05+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1162 at 2023-05-24T15:25:50.879234Z
+[2023-05-24T15:26:05+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1162 at 2023-05-24T15:25:50.885117Z
+[2023-05-24T15:26:05+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1162 at 2023-05-24T15:25:50.892081Z
+[2023-05-24T15:26:05+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1166 at 2023-05-24T15:26:01.505284Z
+[2023-05-24T15:26:05+00:00] Killed test app with PID 1162
+[2023-05-24T15:26:07+00:00] Started test app with PID 1214
+Sleeping 10
+Linking dc5a43ebfadb6b775f6e64bfeb5a461c66acb394
+[2023-05-24T15:26:17+00:00] Linking /builds/target/dc5a43ebfadb6b775f6e64bfeb5a461c66acb394
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1218 at 2023-05-24T15:26:18.549142Z
+[2023-05-24T15:26:22+00:00] Luci status has failed update:
+[2023-05-24T15:26:22+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1214 at 2023-05-24T15:26:07.948424Z
+[2023-05-24T15:26:22+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1214 at 2023-05-24T15:26:07.955054Z
+[2023-05-24T15:26:22+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1214 at 2023-05-24T15:26:07.959043Z
+[2023-05-24T15:26:22+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1218 at 2023-05-24T15:26:18.549142Z
+[2023-05-24T15:26:22+00:00] Killed test app with PID 1214
+[2023-05-24T15:26:24+00:00] Started test app with PID 1266
+Sleeping 10
+Linking 7df877eccdd826e94df53215f65dee639428e83f
+[2023-05-24T15:26:34+00:00] Linking /builds/target/7df877eccdd826e94df53215f65dee639428e83f
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1270 at 2023-05-24T15:26:36.591900Z
+[2023-05-24T15:26:39+00:00] Luci status has failed update:
+[2023-05-24T15:26:39+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1266 at 2023-05-24T15:26:24.990899Z
+[2023-05-24T15:26:39+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1266 at 2023-05-24T15:26:24.995026Z
+[2023-05-24T15:26:39+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1266 at 2023-05-24T15:26:24.998980Z
+[2023-05-24T15:26:39+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1270 at 2023-05-24T15:26:36.591900Z
+[2023-05-24T15:26:39+00:00] Killed test app with PID 1266
+[2023-05-24T15:26:41+00:00] Started test app with PID 1318
+Sleeping 10
+Linking e0ff940e1adb68d3575705ebf1546d9f07ad3b4a
+[2023-05-24T15:26:51+00:00] Linking /builds/target/e0ff940e1adb68d3575705ebf1546d9f07ad3b4a
+Sleeping 10
+Linking 7751bd4c715ea8478113e34b49b5a794a4642e8e
+[2023-05-24T15:27:06+00:00] Linking /builds/target/7751bd4c715ea8478113e34b49b5a794a4642e8e
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1322 at 2023-05-24T15:27:08.650199Z
+[2023-05-24T15:27:11+00:00] Luci status has failed update:
+[2023-05-24T15:27:11+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1318 at 2023-05-24T15:26:42.028254Z
+[2023-05-24T15:27:11+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1318 at 2023-05-24T15:26:42.032346Z
+[2023-05-24T15:27:11+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1318 at 2023-05-24T15:26:42.036155Z
+[2023-05-24T15:27:11+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1322 at 2023-05-24T15:26:53.627725Z
+[2023-05-24T15:27:11+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1322 at 2023-05-24T15:27:08.650199Z
+[2023-05-24T15:27:11+00:00] Killed test app with PID 1318
+[2023-05-24T15:27:13+00:00] Started test app with PID 1394
+Sleeping 10
+Linking a1141160bcf563f1a269be68a21f1651f687bb69
+[2023-05-24T15:27:23+00:00] Linking /builds/target/a1141160bcf563f1a269be68a21f1651f687bb69
+Sleeping 10
+Linking 05d47d2627a68a15ba23fb10b17fbc73551aeec1
+[2023-05-24T15:27:38+00:00] Linking /builds/target/05d47d2627a68a15ba23fb10b17fbc73551aeec1
+Sleeping 10
+Linking 7147f24cd7b27dd95f6e841851a111cb311a9c07
+[2023-05-24T15:27:53+00:00] Linking /builds/target/7147f24cd7b27dd95f6e841851a111cb311a9c07
+Sleeping 10
+Linking f4498bea2865325dce71189af47a047529229f22
+[2023-05-24T15:28:08+00:00] Linking /builds/target/f4498bea2865325dce71189af47a047529229f22
+Sleeping 10
+Linking a7d70663cf4a7d4013ff7d285da01a164ed9b207
+[2023-05-24T15:28:23+00:00] Linking /builds/target/a7d70663cf4a7d4013ff7d285da01a164ed9b207
+Sleeping 10
+Linking 73014202489f913dbffc91d22089ea8a8920c054
+[2023-05-24T15:28:38+00:00] Linking /builds/target/73014202489f913dbffc91d22089ea8a8920c054
+Sleeping 10
+Linking 9712272c78b9d9c93746d9c8e156a3728c65ca72
+[2023-05-24T15:28:53+00:00] Linking /builds/target/9712272c78b9d9c93746d9c8e156a3728c65ca72
+Sleeping 10
+Linking 10daf0d4d7815447799d555d04d30325836e1d44
+[2023-05-24T15:29:08+00:00] Linking /builds/target/10daf0d4d7815447799d555d04d30325836e1d44
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1398 at 2023-05-24T15:29:09.832029Z
+[2023-05-24T15:29:13+00:00] Luci status has failed update:
+[2023-05-24T15:29:13+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1394 at 2023-05-24T15:27:14.087710Z
+[2023-05-24T15:29:13+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1394 at 2023-05-24T15:27:14.091899Z
+[2023-05-24T15:29:13+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1394 at 2023-05-24T15:27:14.105831Z
+[2023-05-24T15:29:13+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1398 at 2023-05-24T15:27:25.688977Z
+[2023-05-24T15:29:13+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1398 at 2023-05-24T15:27:40.714883Z
+[2023-05-24T15:29:13+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1398 at 2023-05-24T15:27:55.729258Z
+[2023-05-24T15:29:13+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1398 at 2023-05-24T15:28:10.748705Z
+[2023-05-24T15:29:13+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1398 at 2023-05-24T15:28:25.768997Z
+[2023-05-24T15:29:13+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1398 at 2023-05-24T15:28:40.791933Z
+[2023-05-24T15:29:13+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1398 at 2023-05-24T15:28:55.808832Z
+[2023-05-24T15:29:13+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1398 at 2023-05-24T15:29:09.832029Z
+[2023-05-24T15:29:13+00:00] Killed test app with PID 1394
+[2023-05-24T15:29:15+00:00] Started test app with PID 1618
+Sleeping 10
+Linking fe61dfb8a27754137c2f6a1ff59b1e55d615210e
+[2023-05-24T15:29:25+00:00] Linking /builds/target/fe61dfb8a27754137c2f6a1ff59b1e55d615210e
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1623 at 2023-05-24T15:29:27.867914Z
+[2023-05-24T15:29:30+00:00] Luci status has failed update:
+[2023-05-24T15:29:30+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1618 at 2023-05-24T15:29:16.266718Z
+[2023-05-24T15:29:30+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1618 at 2023-05-24T15:29:16.270606Z
+[2023-05-24T15:29:30+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1618 at 2023-05-24T15:29:16.274241Z
+[2023-05-24T15:29:30+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1623 at 2023-05-24T15:29:27.867914Z
+[2023-05-24T15:29:30+00:00] Killed test app with PID 1618
+[2023-05-24T15:29:32+00:00] Started test app with PID 1669
+Sleeping 10
+Linking defd366a41f061dc9dc2bb7ab88876909bd5934c
+[2023-05-24T15:29:42+00:00] Linking /builds/target/defd366a41f061dc9dc2bb7ab88876909bd5934c
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1673 at 2023-05-24T15:29:44.909084Z
+[2023-05-24T15:29:47+00:00] Luci status has failed update:
+[2023-05-24T15:29:47+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1669 at 2023-05-24T15:29:33.307401Z
+[2023-05-24T15:29:47+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1669 at 2023-05-24T15:29:33.312726Z
+[2023-05-24T15:29:47+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1669 at 2023-05-24T15:29:33.316393Z
+[2023-05-24T15:29:47+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1673 at 2023-05-24T15:29:44.909084Z
+[2023-05-24T15:29:47+00:00] Killed test app with PID 1669
+[2023-05-24T15:29:49+00:00] Started test app with PID 1720
+Sleeping 10
+Linking e75de023b6cd7177c8e44ef1c72b74f5efde5418
+[2023-05-24T15:29:59+00:00] Linking /builds/target/e75de023b6cd7177c8e44ef1c72b74f5efde5418
+Sleeping 10
+Linking 94acb3c1a0fbd14482224d6af3699ddb9e163510
+[2023-05-24T15:30:14+00:00] Linking /builds/target/94acb3c1a0fbd14482224d6af3699ddb9e163510
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1724 at 2023-05-24T15:30:15.968947Z
+[2023-05-24T15:30:19+00:00] Luci status has failed update:
+[2023-05-24T15:30:19+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1720 at 2023-05-24T15:29:50.347559Z
+[2023-05-24T15:30:19+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1720 at 2023-05-24T15:29:50.351694Z
+[2023-05-24T15:30:19+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1720 at 2023-05-24T15:29:50.362087Z
+[2023-05-24T15:30:19+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1724 at 2023-05-24T15:30:00.949013Z
+[2023-05-24T15:30:19+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1724 at 2023-05-24T15:30:15.968947Z
+[2023-05-24T15:30:19+00:00] Killed test app with PID 1720
+[2023-05-24T15:30:21+00:00] Started test app with PID 1796
+Sleeping 10
+Linking 30a1c7065dc1dc2c2ed68ed403792b660bfdd805
+[2023-05-24T15:30:31+00:00] Linking /builds/target/30a1c7065dc1dc2c2ed68ed403792b660bfdd805
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1801 at 2023-05-24T15:30:34.011110Z
+[2023-05-24T15:30:36+00:00] Luci status has failed update:
+[2023-05-24T15:30:36+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1796 at 2023-05-24T15:30:22.410512Z
+[2023-05-24T15:30:36+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1796 at 2023-05-24T15:30:22.414681Z
+[2023-05-24T15:30:36+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1796 at 2023-05-24T15:30:22.418334Z
+[2023-05-24T15:30:36+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1801 at 2023-05-24T15:30:34.011110Z
+[2023-05-24T15:30:36+00:00] Killed test app with PID 1796
+[2023-05-24T15:30:39+00:00] Started test app with PID 1847
+Sleeping 10
+Linking 0b166094092efa2b92200cbb67f390e86c181ab4
+[2023-05-24T15:30:49+00:00] Linking /builds/target/0b166094092efa2b92200cbb67f390e86c181ab4
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1852 at 2023-05-24T15:30:51.056468Z
+[2023-05-24T15:30:54+00:00] Luci status has failed update:
+[2023-05-24T15:30:54+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1847 at 2023-05-24T15:30:39.449606Z
+[2023-05-24T15:30:54+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1847 at 2023-05-24T15:30:39.455346Z
+[2023-05-24T15:30:54+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1847 at 2023-05-24T15:30:39.465847Z
+[2023-05-24T15:30:54+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1852 at 2023-05-24T15:30:51.056468Z
+[2023-05-24T15:30:54+00:00] Killed test app with PID 1847
+[2023-05-24T15:30:56+00:00] Started test app with PID 1898
+Sleeping 10
+Linking 139c67fc879b0836dcc1285947f0d353efe42e2d
+[2023-05-24T15:31:06+00:00] Linking /builds/target/139c67fc879b0836dcc1285947f0d353efe42e2d
+Sleeping 10
+Linking b7bc38845416febaba0d3736fec890750ad9fb28
+[2023-05-24T15:31:21+00:00] Linking /builds/target/b7bc38845416febaba0d3736fec890750ad9fb28
+Sleeping 10
+Linking 50893291621658f355bc5b4d450a8d06a563053d
+[2023-05-24T15:31:36+00:00] Linking /builds/target/50893291621658f355bc5b4d450a8d06a563053d
+Sleeping 10
+Linking 2fa463bacfff79181df1a5270fb67cc679a53e71
+[2023-05-24T15:31:51+00:00] Linking /builds/target/2fa463bacfff79181df1a5270fb67cc679a53e71
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1902 at 2023-05-24T15:31:53.152947Z
+[2023-05-24T15:31:56+00:00] Luci status has failed update:
+[2023-05-24T15:31:56+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 1898 at 2023-05-24T15:30:56.489815Z
+[2023-05-24T15:31:56+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1898 at 2023-05-24T15:30:56.502432Z
+[2023-05-24T15:31:56+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 1898 at 2023-05-24T15:30:56.506406Z
+[2023-05-24T15:31:56+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1902 at 2023-05-24T15:31:08.091632Z
+[2023-05-24T15:31:56+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1902 at 2023-05-24T15:31:23.111193Z
+[2023-05-24T15:31:56+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1902 at 2023-05-24T15:31:38.130812Z
+[2023-05-24T15:31:56+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 1902 at 2023-05-24T15:31:53.152947Z
+[2023-05-24T15:31:56+00:00] Killed test app with PID 1898
+[2023-05-24T15:31:58+00:00] Started test app with PID 2024
+Sleeping 10
+Linking 4a090adef8c773087ec8916ad3c2236ef560df27
+[2023-05-24T15:32:08+00:00] Linking /builds/target/4a090adef8c773087ec8916ad3c2236ef560df27
+Sleeping 10
+Linking cacf7f1d4e3d44d871b605da3b647f07d718623f
+[2023-05-24T15:32:23+00:00] Linking /builds/target/cacf7f1d4e3d44d871b605da3b647f07d718623f
+Sleeping 10
+Linking 21767c654d31d2dccdde4330529775c6c5fd5389
+[2023-05-24T15:32:38+00:00] Linking /builds/target/21767c654d31d2dccdde4330529775c6c5fd5389
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 2028 at 2023-05-24T15:32:39.235282Z
+[2023-05-24T15:32:43+00:00] Luci status has failed update:
+[2023-05-24T15:32:43+00:00]     SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 2024 at 2023-05-24T15:31:58.593120Z
+[2023-05-24T15:32:43+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 2024 at 2023-05-24T15:31:58.597763Z
+[2023-05-24T15:32:43+00:00]     ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 2024 at 2023-05-24T15:31:58.607408Z
+[2023-05-24T15:32:43+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 2028 at 2023-05-24T15:32:10.205166Z
+[2023-05-24T15:32:43+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 2028 at 2023-05-24T15:32:25.214720Z
+[2023-05-24T15:32:43+00:00]     FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 2028 at 2023-05-24T15:32:39.235282Z
+[2023-05-24T15:32:43+00:00] Killed test app with PID 2024
+[2023-05-24T15:32:45+00:00] Started test app with PID 2125
+Sleeping 10
+Linking 04f42ceca40f73e2978b50e93806c2a18c1281fc
+[2023-05-24T15:32:55+00:00] Linking /builds/target/04f42ceca40f73e2978b50e93806c2a18c1281fc
+Sleeping 10
+[2023-05-24T15:33:10+00:00] Remaining luci status:
+[2023-05-24T15:33:10+00:00]     SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 2125 at 2023-05-24T15:32:45.685636Z
+[2023-05-24T15:33:10+00:00]     SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/libz.so.1] in PID 2130 at 2023-05-24T15:32:56.276889Z
+[2023-05-24T15:33:10+00:00] Finished docker
+[2023-05-24T15:33:10+00:00] Setting permissions for 21604:10430
+[2023-05-24T15:33:10+00:00] Finished

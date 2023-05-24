@@ -1,0 +1,15 @@
+[2023-05-24T12:45:37+00:00] Installing luci
+[2023-05-24T12:45:37+00:00] Preparing luci
+[2023-05-24T12:45:37+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.6-2
+[2023-05-24T12:46:09+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.7-1
+[2023-05-24T12:46:40+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.7-2
+[2023-05-24T12:47:10+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.9-1
+[2023-05-24T12:47:40+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.10-1
+[2023-05-24T12:48:10+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.10-2
+[2023-05-24T12:48:40+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.10-2+deb11u1
+[2023-05-24T12:49:10+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.10-2+deb11u2
+[2023-05-24T12:49:40+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.10-2+deb11u3
+[2023-05-24T12:50:10+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.10-2+deb11u4
+[2023-05-24T12:50:40+00:00] Linking /builds/target/backtesting/debian/bullseye/libexpat1/2.2.10-2+deb11u5
+[2023-05-24T12:51:10+00:00] Setting permissions for 21604:10430
+[2023-05-24T12:51:10+00:00] Finished

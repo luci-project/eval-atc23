@@ -1,0 +1,18 @@
+SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 375 at 2023-05-24T15:36:33.300147Z
+SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 375 at 2023-05-24T15:36:33.304160Z
+ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 375 at 2023-05-24T15:36:33.308140Z
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 380 at 2023-05-24T15:36:44.913733Z
+
+SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 421 at 2023-05-24T15:36:50.339838Z
+SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 421 at 2023-05-24T15:36:50.346906Z
+ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 421 at 2023-05-24T15:36:50.351347Z
+FAILED (new version is incompatible) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 426 at 2023-05-24T15:37:00.942293Z
+
+SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 467 at 2023-05-24T15:37:07.381292Z
+SUCCESS (loaded initial version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 467 at 2023-05-24T15:37:07.392121Z
+ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 467 at 2023-05-24T15:37:07.396088Z
+SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:37:18.982095Z
+SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:37:32.998433Z
+SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:37:48.015297Z
+SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:38:04.033209Z
+SUCCESS (updated to new version) for libz.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1] in PID 471 at 2023-05-24T15:38:19.049966Z

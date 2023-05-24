@@ -1,0 +1,390 @@
+6	0	376	src/main.cpp	206	Detecting outdated access via userfaultfd
+6	0	376	src/main.cpp	226	Delay for detecting outdated access is 3s
+4	0	376	src/loader.cpp	729	Created (file modification) handler thread
+6	0	376	src/loader.cpp	167	Loading linux-vdso.so.1 from memory at 7ffe4d1c2000...
+6	0	376	src/object/identity.cpp	94	Loading linux-vdso.so.1...
+6	0	376	src/object/dynamic.cpp	53	Set Base of linux-vdso.so.1 to 7ffe4d1c2000
+4	0	376	src/object/identity.cpp	459	Successfully loaded linux-vdso.so.1 v0 with base 7ffe4d1c2000
+6	0	376	src/loader.cpp	167	Loading /opt/luci/ from memory at 6ffff0000000...
+6	0	376	src/object/identity.cpp	94	Loading ...
+6	0	376	src/object/identity.cpp	336	Executable ld-luci.so (/opt/luci/) has dynamic section
+6	0	376	src/object/executable.cpp	29	Relocation read-only at 6ffff01c1278 with 32136 bytes
+4	0	376	src/object/identity.cpp	459	Successfully loaded /opt/luci/ v0 with base 0
+4	0	376	src/loader.cpp	70	Base of /opt/luci/ is 0
+6	0	376	src/loader.cpp	81	Preserving FPU using XSAVE
+4	0	376	src/main.cpp	240	Dynamic updates are enabled!
+4	0	376	src/main.cpp	245	Recursively comparing function dependencies on updates!
+6	0	376	src/main.cpp	272	Writing status info to /builds/target//log-debian-buster-2023-05-24_14-09/status.info
+6	0	376	src/main.cpp	291	Add '/builds/tmproot/lib;/builds/tmproot/lib/x86_64-linux-gnu;/builds/tmproot/lib64;/builds/tmproot/usr/lib;/builds/tmproot/usr/lib/x86_64-linux-gnu' (from LD_LIBRARY_PATH) to library search path...
+6	0	376	src/main.cpp	297	Adding contents of '/opt/luci/libpath.conf' to library search path...
+5	0	376	src/file.cpp	183	Mapped '/opt/luci/libpath.conf' (139 bytes)
+6	0	376	src/main.cpp	309	Library config has 6 search path entries!
+6	0	376	src/loader.cpp	167	Loading /builds/test/run from memory at 55eaf31c0000...
+6	0	376	src/object/identity.cpp	94	Loading run...
+6	0	376	src/object/dynamic.cpp	53	Set Base of /builds/test/run to 55eaf31c0000
+6	0	376	src/object/executable.cpp	29	Relocation read-only at 4dd8 with 552 bytes
+6	0	376	src/loader.cpp	167	Loading /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1...
+6	0	376	src/object/identity.cpp	266	Library /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 is a symbolic link (hence we do not expect changes to the binary itself)
+6	0	376	src/object/identity.cpp	94	Loading libz.so.1...
+6	0	376	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 to 600000000000
+4	0	376	src/object/identity.cpp	390	Calculate Binary hash of [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	0	376	src/object/executable.cpp	29	Relocation read-only at 218cc8 with 824 bytes
+6	0	376	src/loader.cpp	167	Loading /lib/x86_64-linux-gnu/libc.so.6...
+6	0	376	src/object/identity.cpp	266	Library /lib/x86_64-linux-gnu/libc.so.6 is a symbolic link (hence we do not expect changes to the binary itself)
+6	0	376	src/object/identity.cpp	94	Loading libc.so.6...
+6	0	376	src/object/dynamic.cpp	53	Set Base of /lib/x86_64-linux-gnu/libc.so.6 to 60000021a000
+4	0	376	src/object/identity.cpp	390	Calculate Binary hash of [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	376	src/object/executable.cpp	29	Relocation read-only at 1ca768 with 14488 bytes
+3	1	376	src/object/dynamic.cpp	200	Library 'ld-linux-x86-64.so.2' will be skipped (exclude list)
+6	1	376	src/memory_segment.cpp	84	Mapping 139264 Bytes (fd 8) at 60000021a000...
+6	1	376	src/memory_segment.cpp	84	Mapping 1413120 Bytes (fd 8) at 60000023c000...
+6	1	376	src/memory_segment.cpp	84	Mapping 323584 Bytes (fd 8) at 600000395000...
+6	1	376	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd -1) at 6000003e4000...
+6	1	376	src/memory_segment.cpp	96	Copy 14488 Bytes from 1c9768 to 6000003e4768
+6	1	376	src/memory_segment.cpp	64	Created shared memory at fd 9
+6	1	376	src/memory_segment.cpp	84	Mapping 24576 Bytes (fd 9) at 6000003e8000...
+6	1	376	src/memory_segment.cpp	96	Copy 6048 Bytes from 1cd000 to 6000003e8000
+6	1	376	src/comp/glibc/patch.cpp	58	Patched '_dl_addr' (843 bytes) @ 134aa0 with 6ffff001432b in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	376	src/comp/glibc/patch.cpp	58	Patched '__libc_dlopen_mode' (128 bytes) @ 135030 with 6ffff0012289 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	376	src/comp/glibc/patch.cpp	58	Patched '__libc_dlclose' (45 bytes) @ 1352c0 with 6ffff0011f97 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	376	src/comp/glibc/patch.cpp	58	Patched '__libc_dlsym' (161 bytes) @ 1350b0 with 6ffff00126c8 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	376	src/comp/glibc/patch.cpp	58	Patched '__libc_dlvsym' (345 bytes) @ 135160 with 6ffff0012782 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	376	src/comp/glibc/patch.cpp	58	Patched '__libc_fork' (458 bytes) @ c79b0 with 6ffff000f610 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	1	376	src/object/dynamic.cpp	221	Applied GLIBC patches at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	1	376	src/object/identity.cpp	459	Successfully loaded /lib/x86_64-linux-gnu/libc.so.6 v0 (Build ID e15ec78d51a522023f9cfc58dc284f379d81860b) with base 60000021a000
+6	1	376	src/object/identity.cpp	194	Watching for modifications at /lib/x86_64-linux-gnu/libc.so.6
+6	1	376	src/memory_segment.cpp	84	Mapping 102400 Bytes (fd 7) at 600000000000...
+6	1	376	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd -1) at 600000218000...
+6	1	376	src/memory_segment.cpp	96	Copy 824 Bytes from 18cc8 to 600000218cc8
+6	1	376	src/memory_segment.cpp	64	Created shared memory at fd 10
+6	1	376	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 600000219000...
+6	1	376	src/memory_segment.cpp	96	Copy 512 Bytes from 19000 to 600000219000
+4	1	376	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 v0 (Build ID 908b5a955d0a73fb8d31e0f927d0cdba810cb300) with base 600000000000
+6	1	376	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+4	1	376	src/object/identity.cpp	459	Successfully loaded /builds/test/run v0 with base 55eaf31c0000
+6	1	376	src/main.cpp	496	Library search order:
+ - linux-vdso.so.1 (linux-vdso.so.1)
+ - ld-luci.so (/opt/luci/)
+ - run (/builds/test/run)
+ - libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1)
+ - libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6)
+6	1	376	src/loader.cpp	269	Using VDSO clock_gettime at 7ffe4d1c2900
+6	1	376	src/loader.cpp	273	Using VDSO clock_getres at 7ffe4d1c2b70
+6	1	376	src/loader.cpp	277	Using VDSO getcpu at 7ffe4d1c2bd0
+6	1	376	src/loader.cpp	281	Using VDSO time at 7ffe4d1c28d0
+4	1	376	src/tls.cpp	142	Allocate Thread 70000050a880 with 144B (+ 1664B) TLS starting at 70000050a160
+4	1	376	src/tls.cpp	151	Changed %fs of ThreadID 376 to 70000050a880
+6	1	376	src/object/identity.cpp	483	Preparing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	1	376	src/object/dynamic.cpp	233	Prepare [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0] with 1ce000
+6	1	376	src/object/dynamic.cpp	353	Unable to resolve weak symbol __libpthread_freeres [invalid version] (libc.so.6)...
+6	1	376	src/object/identity.cpp	483	Preparing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+4	1	376	src/object/dynamic.cpp	233	Prepare [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0] with 219000
+6	1	376	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libz.so.1)...
+6	1	376	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libz.so.1)...
+6	1	376	src/object/dynamic.cpp	353	Unable to resolve weak symbol _Jv_RegisterClasses [invalid version] (libz.so.1)...
+6	1	376	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libz.so.1)...
+6	1	376	src/object/identity.cpp	483	Preparing [Object run (/builds/test/run) v0]
+4	1	376	src/object/dynamic.cpp	233	Prepare [Object run (/builds/test/run) v0] with 5000
+6	1	376	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (run)...
+6	1	376	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (run)...
+6	1	376	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (run)...
+6	1	376	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	376	src/object/identity.cpp	516	Finalizing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	1	376	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	1	376	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	1	376	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+6	1	376	src/loader.cpp	298	Stack Guard: ea49fdf660614200
+6	1	376	src/loader.cpp	299	Pointer Guard: a93b88be3d566efb
+4	1	376	src/tls.cpp	122	Copy 16 bytes from 6000003e4768 to 70000050a7f0 (144 bytes)
+4	1	376	src/comp/gdb.cpp	36	GDB debug structure in ld-luci.so (/opt/luci/) at *6ffff01c8f10 = 6ffff01f00c0
+4	1	376	src/comp/gdb.cpp	36	GDB debug structure in run (/builds/test/run) at *55eaf31c4ec0 = 6ffff01f00c0
+6	1	376	src/object/dynamic.cpp	445	Preinitialize [Object run (/builds/test/run) v0]
+6	1	376	src/object/identity.cpp	533	Initializing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	376	src/object/dynamic.cpp	448	Initialize [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	376	src/object/identity.cpp	533	Initializing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	1	376	src/object/dynamic.cpp	448	Initialize [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+4	1	376	src/loader.cpp	456	Arguments for 55eaf31c1270 (with stackpointer 7ffe4d1bc240):
+	1. "/builds/test/run"
+
+4	1	376	src/process.cpp	124	Handing over to process at 55eaf31c1270
+6	10	381	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+6	10	381	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+6	10	381	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+4	12	381	src/loader_helper.cpp	79	Loading libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1)
+6	12	381	src/object/identity.cpp	94	Loading libz.so.1...
+6	12	381	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 to 6000003ee000
+4	12	381	src/object/identity.cpp	390	Calculate Binary hash of [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v1]
+4	12	381	src/object/dynamic.cpp	370	Checking if libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) can patch previous version...
+6	12	381	src/object/dynamic.cpp	376	Found 171 differences in libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) (compared to the current version)
+3	12	381	src/object/dynamic.cpp	380	New version of libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) has non-trivial changes in the data section...
+3	12	381	src/object/identity.cpp	402	Got new version of /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1, however, it is incompatible with current version and hence cannot be employed...
+4	15	381	src/loader_helper.cpp	16	helper loop handler ends (Signal 15)
+6	0	424	src/main.cpp	206	Detecting outdated access via userfaultfd
+6	0	424	src/main.cpp	226	Delay for detecting outdated access is 3s
+4	0	424	src/loader.cpp	729	Created (file modification) handler thread
+6	0	424	src/loader.cpp	167	Loading linux-vdso.so.1 from memory at 7ffcccb88000...
+6	0	424	src/object/identity.cpp	94	Loading linux-vdso.so.1...
+6	0	424	src/object/dynamic.cpp	53	Set Base of linux-vdso.so.1 to 7ffcccb88000
+4	0	424	src/object/identity.cpp	459	Successfully loaded linux-vdso.so.1 v0 with base 7ffcccb88000
+6	0	424	src/loader.cpp	167	Loading /opt/luci/ from memory at 6ffff0000000...
+6	0	424	src/object/identity.cpp	94	Loading ...
+6	0	424	src/object/identity.cpp	336	Executable ld-luci.so (/opt/luci/) has dynamic section
+6	0	424	src/object/executable.cpp	29	Relocation read-only at 6ffff01c1278 with 32136 bytes
+4	0	424	src/object/identity.cpp	459	Successfully loaded /opt/luci/ v0 with base 0
+4	0	424	src/loader.cpp	70	Base of /opt/luci/ is 0
+6	0	424	src/loader.cpp	81	Preserving FPU using XSAVE
+4	0	424	src/main.cpp	240	Dynamic updates are enabled!
+4	0	424	src/main.cpp	245	Recursively comparing function dependencies on updates!
+6	0	424	src/main.cpp	272	Writing status info to /builds/target//log-debian-buster-2023-05-24_14-09/status.info
+6	0	424	src/main.cpp	291	Add '/builds/tmproot/lib;/builds/tmproot/lib/x86_64-linux-gnu;/builds/tmproot/lib64;/builds/tmproot/usr/lib;/builds/tmproot/usr/lib/x86_64-linux-gnu' (from LD_LIBRARY_PATH) to library search path...
+6	0	424	src/main.cpp	297	Adding contents of '/opt/luci/libpath.conf' to library search path...
+5	0	424	src/file.cpp	183	Mapped '/opt/luci/libpath.conf' (139 bytes)
+6	0	424	src/main.cpp	309	Library config has 6 search path entries!
+6	0	424	src/loader.cpp	167	Loading /builds/test/run from memory at 55fd3de5c000...
+6	0	424	src/object/identity.cpp	94	Loading run...
+6	0	424	src/object/dynamic.cpp	53	Set Base of /builds/test/run to 55fd3de5c000
+6	0	424	src/object/executable.cpp	29	Relocation read-only at 4dd8 with 552 bytes
+6	0	424	src/loader.cpp	167	Loading /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1...
+6	0	424	src/object/identity.cpp	266	Library /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 is a symbolic link (hence we do not expect changes to the binary itself)
+6	0	424	src/object/identity.cpp	94	Loading libz.so.1...
+6	0	424	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 to 600000000000
+4	0	424	src/object/identity.cpp	390	Calculate Binary hash of [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	1	424	src/object/executable.cpp	29	Relocation read-only at 21cc90 with 880 bytes
+6	1	424	src/loader.cpp	167	Loading /lib/x86_64-linux-gnu/libc.so.6...
+6	1	424	src/object/identity.cpp	266	Library /lib/x86_64-linux-gnu/libc.so.6 is a symbolic link (hence we do not expect changes to the binary itself)
+6	1	424	src/object/identity.cpp	94	Loading libc.so.6...
+6	1	424	src/object/dynamic.cpp	53	Set Base of /lib/x86_64-linux-gnu/libc.so.6 to 60000021e000
+4	1	424	src/object/identity.cpp	390	Calculate Binary hash of [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	424	src/object/executable.cpp	29	Relocation read-only at 1ca768 with 14488 bytes
+3	1	424	src/object/dynamic.cpp	200	Library 'ld-linux-x86-64.so.2' will be skipped (exclude list)
+6	1	424	src/memory_segment.cpp	84	Mapping 139264 Bytes (fd 8) at 60000021e000...
+6	1	424	src/memory_segment.cpp	84	Mapping 1413120 Bytes (fd 8) at 600000240000...
+6	1	424	src/memory_segment.cpp	84	Mapping 323584 Bytes (fd 8) at 600000399000...
+6	1	424	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd -1) at 6000003e8000...
+6	1	424	src/memory_segment.cpp	96	Copy 14488 Bytes from 1c9768 to 6000003e8768
+6	1	424	src/memory_segment.cpp	64	Created shared memory at fd 9
+6	1	424	src/memory_segment.cpp	84	Mapping 24576 Bytes (fd 9) at 6000003ec000...
+6	1	424	src/memory_segment.cpp	96	Copy 6048 Bytes from 1cd000 to 6000003ec000
+6	1	424	src/comp/glibc/patch.cpp	58	Patched '_dl_addr' (843 bytes) @ 134aa0 with 6ffff001432b in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	424	src/comp/glibc/patch.cpp	58	Patched '__libc_dlopen_mode' (128 bytes) @ 135030 with 6ffff0012289 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	424	src/comp/glibc/patch.cpp	58	Patched '__libc_dlclose' (45 bytes) @ 1352c0 with 6ffff0011f97 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	424	src/comp/glibc/patch.cpp	58	Patched '__libc_dlsym' (161 bytes) @ 1350b0 with 6ffff00126c8 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	424	src/comp/glibc/patch.cpp	58	Patched '__libc_dlvsym' (345 bytes) @ 135160 with 6ffff0012782 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	424	src/comp/glibc/patch.cpp	58	Patched '__libc_fork' (458 bytes) @ c79b0 with 6ffff000f610 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	1	424	src/object/dynamic.cpp	221	Applied GLIBC patches at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	1	424	src/object/identity.cpp	459	Successfully loaded /lib/x86_64-linux-gnu/libc.so.6 v0 (Build ID e15ec78d51a522023f9cfc58dc284f379d81860b) with base 60000021e000
+6	1	424	src/object/identity.cpp	194	Watching for modifications at /lib/x86_64-linux-gnu/libc.so.6
+6	1	424	src/memory_segment.cpp	84	Mapping 114688 Bytes (fd 7) at 600000000000...
+6	1	424	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd -1) at 60000021c000...
+6	1	424	src/memory_segment.cpp	96	Copy 880 Bytes from 1cc90 to 60000021cc90
+6	1	424	src/memory_segment.cpp	64	Created shared memory at fd 10
+6	1	424	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 60000021d000...
+6	1	424	src/memory_segment.cpp	96	Copy 392 Bytes from 1d000 to 60000021d000
+4	1	424	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 v0 (Build ID 3af7c4bceb19b6c83f76e2822b9a23041d85f6d1) with base 600000000000
+6	1	424	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+4	1	424	src/object/identity.cpp	459	Successfully loaded /builds/test/run v0 with base 55fd3de5c000
+6	1	424	src/main.cpp	496	Library search order:
+ - linux-vdso.so.1 (linux-vdso.so.1)
+ - ld-luci.so (/opt/luci/)
+ - run (/builds/test/run)
+ - libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1)
+ - libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6)
+6	1	424	src/loader.cpp	269	Using VDSO clock_gettime at 7ffcccb88900
+6	1	424	src/loader.cpp	273	Using VDSO clock_getres at 7ffcccb88b70
+6	1	424	src/loader.cpp	277	Using VDSO getcpu at 7ffcccb88bd0
+6	1	424	src/loader.cpp	281	Using VDSO time at 7ffcccb888d0
+4	1	424	src/tls.cpp	142	Allocate Thread 70000051c880 with 144B (+ 1664B) TLS starting at 70000051c160
+4	1	424	src/tls.cpp	151	Changed %fs of ThreadID 424 to 70000051c880
+6	1	424	src/object/identity.cpp	483	Preparing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	1	424	src/object/dynamic.cpp	233	Prepare [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0] with 1ce000
+6	1	424	src/object/dynamic.cpp	353	Unable to resolve weak symbol __libpthread_freeres [invalid version] (libc.so.6)...
+6	1	424	src/object/identity.cpp	483	Preparing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+4	1	424	src/object/dynamic.cpp	233	Prepare [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0] with 21d000
+6	1	424	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libz.so.1)...
+6	1	424	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libz.so.1)...
+6	1	424	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libz.so.1)...
+6	1	424	src/object/identity.cpp	483	Preparing [Object run (/builds/test/run) v0]
+4	1	424	src/object/dynamic.cpp	233	Prepare [Object run (/builds/test/run) v0] with 5000
+6	1	424	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (run)...
+6	1	424	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (run)...
+6	1	424	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (run)...
+6	1	424	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	424	src/object/identity.cpp	516	Finalizing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	1	424	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	1	424	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	1	424	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+6	1	424	src/loader.cpp	298	Stack Guard: da77ce354a982700
+6	1	424	src/loader.cpp	299	Pointer Guard: 2bc8b73e7c3dac98
+4	1	424	src/tls.cpp	122	Copy 16 bytes from 6000003e8768 to 70000051c7f0 (144 bytes)
+4	1	424	src/comp/gdb.cpp	36	GDB debug structure in ld-luci.so (/opt/luci/) at *6ffff01c8f10 = 6ffff01f00c0
+4	1	424	src/comp/gdb.cpp	36	GDB debug structure in run (/builds/test/run) at *55fd3de60ec0 = 6ffff01f00c0
+6	1	424	src/object/dynamic.cpp	445	Preinitialize [Object run (/builds/test/run) v0]
+6	1	424	src/object/identity.cpp	533	Initializing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	424	src/object/dynamic.cpp	448	Initialize [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	1	424	src/object/identity.cpp	533	Initializing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	1	424	src/object/dynamic.cpp	448	Initialize [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+4	1	424	src/loader.cpp	456	Arguments for 55fd3de5d270 (with stackpointer 7ffccca561a0):
+	1. "/builds/test/run"
+
+4	1	424	src/process.cpp	124	Handing over to process at 55fd3de5d270
+6	10	429	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+6	10	429	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+6	10	429	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+4	12	429	src/loader_helper.cpp	79	Loading libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1)
+6	12	429	src/object/identity.cpp	94	Loading libz.so.1...
+6	12	429	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 to 6000003f2000
+4	12	429	src/object/identity.cpp	390	Calculate Binary hash of [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v1]
+4	13	429	src/object/dynamic.cpp	370	Checking if libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) can patch previous version...
+6	13	429	src/object/dynamic.cpp	376	Found 111 differences in libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) (compared to the current version)
+3	13	429	src/object/dynamic.cpp	380	New version of libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) has non-trivial changes in the data section...
+3	13	429	src/object/identity.cpp	402	Got new version of /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1, however, it is incompatible with current version and hence cannot be employed...
+4	16	429	src/loader_helper.cpp	16	helper loop handler ends (Signal 15)
+6	0	471	src/main.cpp	206	Detecting outdated access via userfaultfd
+6	0	471	src/main.cpp	226	Delay for detecting outdated access is 3s
+4	0	471	src/loader.cpp	729	Created (file modification) handler thread
+6	0	471	src/loader.cpp	167	Loading linux-vdso.so.1 from memory at 7ffc6f5b4000...
+6	0	471	src/object/identity.cpp	94	Loading linux-vdso.so.1...
+6	0	471	src/object/dynamic.cpp	53	Set Base of linux-vdso.so.1 to 7ffc6f5b4000
+4	0	471	src/object/identity.cpp	459	Successfully loaded linux-vdso.so.1 v0 with base 7ffc6f5b4000
+6	0	471	src/loader.cpp	167	Loading /opt/luci/ from memory at 6ffff0000000...
+6	0	471	src/object/identity.cpp	94	Loading ...
+6	0	471	src/object/identity.cpp	336	Executable ld-luci.so (/opt/luci/) has dynamic section
+6	0	471	src/object/executable.cpp	29	Relocation read-only at 6ffff01c1278 with 32136 bytes
+4	0	471	src/object/identity.cpp	459	Successfully loaded /opt/luci/ v0 with base 0
+4	0	471	src/loader.cpp	70	Base of /opt/luci/ is 0
+6	0	471	src/loader.cpp	81	Preserving FPU using XSAVE
+4	0	471	src/main.cpp	240	Dynamic updates are enabled!
+4	0	471	src/main.cpp	245	Recursively comparing function dependencies on updates!
+6	0	471	src/main.cpp	272	Writing status info to /builds/target//log-debian-buster-2023-05-24_14-09/status.info
+6	0	471	src/main.cpp	291	Add '/builds/tmproot/lib;/builds/tmproot/lib/x86_64-linux-gnu;/builds/tmproot/lib64;/builds/tmproot/usr/lib;/builds/tmproot/usr/lib/x86_64-linux-gnu' (from LD_LIBRARY_PATH) to library search path...
+6	0	471	src/main.cpp	297	Adding contents of '/opt/luci/libpath.conf' to library search path...
+5	0	471	src/file.cpp	183	Mapped '/opt/luci/libpath.conf' (139 bytes)
+6	0	471	src/main.cpp	309	Library config has 6 search path entries!
+6	0	471	src/loader.cpp	167	Loading /builds/test/run from memory at 559dd04d1000...
+6	0	471	src/object/identity.cpp	94	Loading run...
+6	0	471	src/object/dynamic.cpp	53	Set Base of /builds/test/run to 559dd04d1000
+6	0	471	src/object/executable.cpp	29	Relocation read-only at 4dd8 with 552 bytes
+6	0	471	src/loader.cpp	167	Loading /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1...
+6	0	471	src/object/identity.cpp	266	Library /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 is a symbolic link (hence we do not expect changes to the binary itself)
+6	0	471	src/object/identity.cpp	94	Loading libz.so.1...
+6	0	471	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 to 600000000000
+4	0	471	src/object/identity.cpp	390	Calculate Binary hash of [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	0	471	src/object/executable.cpp	29	Relocation read-only at 1cc90 with 880 bytes
+6	0	471	src/loader.cpp	167	Loading /lib/x86_64-linux-gnu/libc.so.6...
+6	0	471	src/object/identity.cpp	266	Library /lib/x86_64-linux-gnu/libc.so.6 is a symbolic link (hence we do not expect changes to the binary itself)
+6	0	471	src/object/identity.cpp	94	Loading libc.so.6...
+6	0	471	src/object/dynamic.cpp	53	Set Base of /lib/x86_64-linux-gnu/libc.so.6 to 60000001e000
+4	0	471	src/object/identity.cpp	390	Calculate Binary hash of [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	471	src/object/executable.cpp	29	Relocation read-only at 1ca768 with 14488 bytes
+3	0	471	src/object/dynamic.cpp	200	Library 'ld-linux-x86-64.so.2' will be skipped (exclude list)
+6	0	471	src/memory_segment.cpp	84	Mapping 139264 Bytes (fd 8) at 60000001e000...
+6	0	471	src/memory_segment.cpp	84	Mapping 1413120 Bytes (fd 8) at 600000040000...
+6	0	471	src/memory_segment.cpp	84	Mapping 323584 Bytes (fd 8) at 600000199000...
+6	0	471	src/memory_segment.cpp	84	Mapping 16384 Bytes (fd -1) at 6000001e8000...
+6	0	471	src/memory_segment.cpp	96	Copy 14488 Bytes from 1c9768 to 6000001e8768
+6	0	471	src/memory_segment.cpp	64	Created shared memory at fd 9
+6	0	471	src/memory_segment.cpp	84	Mapping 24576 Bytes (fd 9) at 6000001ec000...
+6	0	471	src/memory_segment.cpp	96	Copy 6048 Bytes from 1cd000 to 6000001ec000
+6	0	471	src/comp/glibc/patch.cpp	58	Patched '_dl_addr' (843 bytes) @ 134aa0 with 6ffff001432b in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	471	src/comp/glibc/patch.cpp	58	Patched '__libc_dlopen_mode' (128 bytes) @ 135030 with 6ffff0012289 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	471	src/comp/glibc/patch.cpp	58	Patched '__libc_dlclose' (45 bytes) @ 1352c0 with 6ffff0011f97 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	471	src/comp/glibc/patch.cpp	58	Patched '__libc_dlsym' (161 bytes) @ 1350b0 with 6ffff00126c8 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	471	src/comp/glibc/patch.cpp	58	Patched '__libc_dlvsym' (345 bytes) @ 135160 with 6ffff0012782 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	471	src/comp/glibc/patch.cpp	58	Patched '__libc_fork' (458 bytes) @ c79b0 with 6ffff000f610 in [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	0	471	src/object/dynamic.cpp	221	Applied GLIBC patches at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	0	471	src/object/identity.cpp	459	Successfully loaded /lib/x86_64-linux-gnu/libc.so.6 v0 (Build ID e15ec78d51a522023f9cfc58dc284f379d81860b) with base 60000001e000
+6	0	471	src/object/identity.cpp	194	Watching for modifications at /lib/x86_64-linux-gnu/libc.so.6
+6	0	471	src/memory_segment.cpp	84	Mapping 12288 Bytes (fd 7) at 600000000000...
+6	0	471	src/memory_segment.cpp	84	Mapping 73728 Bytes (fd 7) at 600000003000...
+6	0	471	src/memory_segment.cpp	84	Mapping 24576 Bytes (fd 7) at 600000015000...
+6	0	471	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd -1) at 60000001c000...
+6	0	471	src/memory_segment.cpp	96	Copy 880 Bytes from 1bc90 to 60000001cc90
+6	0	471	src/memory_segment.cpp	64	Created shared memory at fd 10
+6	0	471	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 60000001d000...
+6	0	471	src/memory_segment.cpp	96	Copy 392 Bytes from 1c000 to 60000001d000
+4	0	471	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 v0 (Build ID f50d857c61aaa657d9b0dbb1565f423c9d37d7da) with base 600000000000
+6	0	471	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+4	0	471	src/object/identity.cpp	459	Successfully loaded /builds/test/run v0 with base 559dd04d1000
+6	0	471	src/main.cpp	496	Library search order:
+ - linux-vdso.so.1 (linux-vdso.so.1)
+ - ld-luci.so (/opt/luci/)
+ - run (/builds/test/run)
+ - libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1)
+ - libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6)
+6	0	471	src/loader.cpp	269	Using VDSO clock_gettime at 7ffc6f5b4900
+6	0	471	src/loader.cpp	273	Using VDSO clock_getres at 7ffc6f5b4b70
+6	0	471	src/loader.cpp	277	Using VDSO getcpu at 7ffc6f5b4bd0
+6	0	471	src/loader.cpp	281	Using VDSO time at 7ffc6f5b48d0
+4	0	471	src/tls.cpp	142	Allocate Thread 70000051e880 with 144B (+ 1664B) TLS starting at 70000051e160
+4	0	471	src/tls.cpp	151	Changed %fs of ThreadID 471 to 70000051e880
+6	0	471	src/object/identity.cpp	483	Preparing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+4	0	471	src/object/dynamic.cpp	233	Prepare [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0] with 1ce000
+6	0	471	src/object/dynamic.cpp	353	Unable to resolve weak symbol __libpthread_freeres [invalid version] (libc.so.6)...
+6	0	471	src/object/identity.cpp	483	Preparing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+4	0	471	src/object/dynamic.cpp	233	Prepare [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0] with 1d000
+6	0	471	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libz.so.1)...
+6	0	471	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libz.so.1)...
+6	0	471	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libz.so.1)...
+6	0	471	src/object/identity.cpp	483	Preparing [Object run (/builds/test/run) v0]
+4	0	471	src/object/dynamic.cpp	233	Prepare [Object run (/builds/test/run) v0] with 5000
+6	0	471	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (run)...
+6	0	471	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (run)...
+6	0	471	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (run)...
+6	0	471	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	471	src/object/identity.cpp	516	Finalizing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	0	471	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	0	471	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	0	471	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+6	0	471	src/loader.cpp	298	Stack Guard: bc14799e8fcb7300
+6	0	471	src/loader.cpp	299	Pointer Guard: 726916e9337f44e3
+4	0	471	src/tls.cpp	122	Copy 16 bytes from 6000001e8768 to 70000051e7f0 (144 bytes)
+4	0	471	src/comp/gdb.cpp	36	GDB debug structure in ld-luci.so (/opt/luci/) at *6ffff01c8f10 = 6ffff01f00c0
+4	0	471	src/comp/gdb.cpp	36	GDB debug structure in run (/builds/test/run) at *559dd04d5ec0 = 6ffff01f00c0
+6	0	471	src/object/dynamic.cpp	445	Preinitialize [Object run (/builds/test/run) v0]
+6	0	471	src/object/identity.cpp	533	Initializing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	471	src/object/dynamic.cpp	448	Initialize [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	0	471	src/object/identity.cpp	533	Initializing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	0	471	src/object/dynamic.cpp	448	Initialize [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+4	0	471	src/loader.cpp	456	Arguments for 559dd04d2270 (with stackpointer 7ffc6f56b3c0):
+	1. "/builds/test/run"
+
+4	0	471	src/process.cpp	124	Handing over to process at 559dd04d2270
+6	10	476	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+6	10	476	src/loader_helper.cpp	56	Notification for file modification in /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+6	10	476	src/object/identity.cpp	194	Watching for modifications at /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+4	12	476	src/loader_helper.cpp	79	Loading libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1)
+6	12	476	src/object/identity.cpp	94	Loading libz.so.1...
+6	12	476	src/object/dynamic.cpp	53	Set Base of /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 to 6000001f2000
+4	12	476	src/object/identity.cpp	390	Calculate Binary hash of [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v1]
+4	12	476	src/object/dynamic.cpp	370	Checking if libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) can patch previous version...
+6	12	476	src/object/dynamic.cpp	376	Found 13 differences in libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) (compared to the current version)
+6	12	476	src/object/executable.cpp	29	Relocation read-only at 1cc90 with 880 bytes
+6	12	476	src/memory_segment.cpp	84	Mapping 12288 Bytes (fd 11) at 6000001f2000...
+6	12	476	src/memory_segment.cpp	84	Mapping 73728 Bytes (fd 11) at 6000001f5000...
+6	12	476	src/memory_segment.cpp	84	Mapping 24576 Bytes (fd 11) at 600000207000...
+6	12	476	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd -1) at 60000020e000...
+6	12	476	src/memory_segment.cpp	96	Copy 880 Bytes from 1bc90 to 60000020ec90
+6	12	476	src/memory_segment.cpp	84	Mapping 4096 Bytes (fd 10) at 60000020f000...
+4	12	476	src/object/identity.cpp	446	Prepare new version of /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1
+4	12	476	src/object/dynamic.cpp	233	Prepare [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v1] with 1d000
+6	12	476	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_deregisterTMCloneTable [invalid version] (libz.so.1)...
+6	12	476	src/object/dynamic.cpp	353	Unable to resolve weak symbol __gmon_start__ [invalid version] (libz.so.1)...
+6	12	476	src/object/dynamic.cpp	353	Unable to resolve weak symbol _ITM_registerTMCloneTable [invalid version] (libz.so.1)...
+4	12	476	src/object/identity.cpp	459	Successfully loaded /builds/tmproot/lib/x86_64-linux-gnu/libz.so.1 v1 (Build ID 77c0a3ff3cbeb8a213378969793b1baea8e07d97) with base 6000001f2000
+6	12	476	src/object/identity.cpp	504	Updating relocations at [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	12	476	src/object/identity.cpp	504	Updating relocations at [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v1]
+6	12	476	src/object/identity.cpp	504	Updating relocations at [Object ld-luci.so (/opt/luci/) v0]
+6	12	476	src/object/identity.cpp	504	Updating relocations at [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	12	476	src/object/identity.cpp	504	Updating relocations at [Object run (/builds/test/run) v0]
+6	12	476	src/object/identity.cpp	516	Finalizing [Object libc.so.6 (/lib/x86_64-linux-gnu/libc.so.6) v0]
+6	12	476	src/object/identity.cpp	516	Finalizing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v1]
+6	12	476	src/object/identity.cpp	516	Finalizing [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	12	476	src/object/identity.cpp	516	Finalizing [Object ld-luci.so (/opt/luci/) v0]
+6	12	476	src/object/identity.cpp	516	Finalizing [Object linux-vdso.so.1 (linux-vdso.so.1) v0]
+6	12	476	src/object/identity.cpp	516	Finalizing [Object run (/builds/test/run) v0]
+4	15	476	src/loader_helper.cpp	105	Protecting [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0]
+6	15	476	src/memory_segment.cpp	124	Created compose back buffer at 200000003000 for 600000003000 (73728 Bytes)
+4	15	476	src/memory_segment.cpp	150	Updated 600000003000 (73728 Bytes) of [Object libz.so.1 (/builds/tmproot/lib/x86_64-linux-gnu/libz.so.1) v0] with composite back buffer (private mapping)
+6	15	476	src/memory_segment.cpp	214	Registered Userfault for memory segment 600000003000 (73728 Bytes)!
+6	15	476	src/memory_segment.cpp	225	Memory segment 600000003000 (73728 Bytes) disabled, contents moved to 200000003000
+4	25	476	src/loader_helper.cpp	16	helper loop handler ends (Signal 15)

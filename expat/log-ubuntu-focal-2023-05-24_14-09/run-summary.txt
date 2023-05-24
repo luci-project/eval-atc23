@@ -1,0 +1,54 @@
+**Expat dynamic updates with Luci**
+[start]
+2.2.7-2 (used in 1. start of test application)
+	test case runs: 37 (2023-05-24 12:51:32+00:00 - 2023-05-24 12:51:52+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 10
+	mean / median run time: 581.6ms / 579ms
+	standard deviation of run time: 7.3ms
+
+2.2.9-1 (used in 1. start of test application)
+	test case runs: 56 (2023-05-24 12:51:53+00:00 - 2023-05-24 12:52:22+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 8
+	mean / median run time: 527.4ms / 526.0ms
+	standard deviation of run time: 5.1ms
+
+2.2.9-1build1 (used in 1. start of test application)
+	test case runs: 57 (2023-05-24 12:52:23+00:00 - 2023-05-24 12:52:52+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 8
+	mean / median run time: 527.9ms / 526ms
+	standard deviation of run time: 5.7ms
+
+2.2.9-1ubuntu0.2 (used in 1. start of test application)
+	test case runs: 58 (2023-05-24 12:52:53+00:00 - 2023-05-24 12:53:22+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 5
+	mean / median run time: 520.1ms / 518.0ms
+	standard deviation of run time: 5.5ms
+
+2.2.9-1ubuntu0.4 (used in 1. start of test application)
+	test case runs: 58 (2023-05-24 12:53:23+00:00 - 2023-05-24 12:53:52+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 4
+	mean / median run time: 519.7ms / 518.0ms
+	standard deviation of run time: 5.0ms
+
+2.2.9-1ubuntu0.5 (used in 1. start of test application)
+	test case runs: 51 (2023-05-24 12:53:53+00:00 - 2023-05-24 12:54:21+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 3
+	mean / median run time: 560.9ms / 560ms
+	standard deviation of run time: 4.0ms
+
+2.2.9-1ubuntu0.6 (used in 1. start of test application)
+	test case runs: 56 (2023-05-24 12:54:22+00:00 - 2023-05-24 12:54:50+00:00)
+	number of test cases per run: 341
+	max. number of failed test cases in a run: 3
+	mean / median run time: 519.4ms / 517.0ms
+	standard deviation of run time: 9.9ms
+
+
+**Summary**
+Updated 6 / 6 (100%) versions

@@ -1,0 +1,23 @@
+SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 380 at 2023-05-24T12:55:10.867987Z
+SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 380 at 2023-05-24T12:55:10.873234Z
+ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 380 at 2023-05-24T12:55:10.878487Z
+SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 385 at 2023-05-24T12:55:31.472302Z
+SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 385 at 2023-05-24T12:56:01.492921Z
+SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 385 at 2023-05-24T12:56:32.517374Z
+SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 385 at 2023-05-24T12:57:01.536161Z
+SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 385 at 2023-05-24T12:57:32.559031Z
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 385 at 2023-05-24T12:58:02.579712Z
+
+SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 562 at 2023-05-24T12:58:13.015983Z
+SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 562 at 2023-05-24T12:58:13.022646Z
+ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 562 at 2023-05-24T12:58:13.027325Z
+SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 567 at 2023-05-24T12:58:34.623730Z
+SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 567 at 2023-05-24T12:59:04.645349Z
+SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 567 at 2023-05-24T12:59:34.665178Z
+FAILED (new version is incompatible) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 567 at 2023-05-24T13:00:04.687112Z
+
+SUCCESS (loaded initial version) for libc.so.6 [/lib/x86_64-linux-gnu/libc.so.6] in PID 694 at 2023-05-24T13:00:15.122819Z
+SUCCESS (loaded initial version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 694 at 2023-05-24T13:00:15.128832Z
+ERROR (not able to watch for file modifications) for run [/builds/test/run] in PID 694 at 2023-05-24T13:00:15.133783Z
+SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 699 at 2023-05-24T13:00:36.729886Z
+SUCCESS (updated to new version) for libexpat.so.1 [/builds/tmproot/lib/x86_64-linux-gnu/libexpat.so.1] in PID 699 at 2023-05-24T13:01:06.750297Z
