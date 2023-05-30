@@ -23,6 +23,9 @@ elif [ -f "/.dockerenv" ] ; then
 	# Preinit APT
 	ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 	export DEBIAN_FRONTEND=noninteractive
+	# Use alternative debian repo
+	echo "Acquire { https::Verify-Peer false }" >/etc/apt/apt.conf.d/99verify-peer.conf
+	sed -ie "s|http://deb.debian.org/|https://debian.inf.tu-dresden.de/|" /etc/apt/sources.list
 	apt-get update
 
 	# Setup
