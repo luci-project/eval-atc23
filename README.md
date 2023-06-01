@@ -26,9 +26,10 @@ Further dependencies are the official repositories of
 For the evaluation, Packages for Debian and Ubuntu from [Canonical Launchpad](https://launchpad.net/), Debian [Snapshot](https://snapshot.debian.org/) and [Metasnap](https://metasnap.debian.net/) are used.
 Building and testing is performed inside a Docker container using [official Debian images](https://hub.docker.com/_/debian).
 
-We strongly recommend using a freshly installed *Ubuntu Focal Fossa (20.04)* for evaluation to circumvent unwanted effects, such as certain customizations of the system configuration.
-
 ### Local Install
+
+We recommend using a freshly installed [*Ubuntu Focal Fossa (20.04) Desktop*](https://releases.ubuntu.com/20.04/) for evaluation to avoid unwanted effects, such as certain customizations of the system configuration.
+The experiments are intended to be run as a normal user (not root) in a non-containerized environment (since they use Docker containers themselves).
 
 Make sure that you meet the requirements (e.g., [Docker engine](https://docs.docker.com/engine/install/) installed) — for a new *Ubuntu Focal* installation execute
 
